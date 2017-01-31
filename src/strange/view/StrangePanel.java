@@ -3,6 +3,7 @@ import javax.swing.*;
 import strange.controller.StrangeController;
 import java.awt.Event.*;
 import java.awt.Color;
+import java.awt.Dimension;
 
 public class StrangePanel extends JPanel
 {
@@ -30,6 +31,14 @@ public class StrangePanel extends JPanel
 	
 	public void setupPanel()
 	{
+		this.setLayout(baseLayout);
+		this.setPreferredSize(new Dimension(900, 600));
+		this.setBackground(Color.DARK_GRAY);
+		
+		
+		this.add(leftButton);
+		this.add(rightButton);
+		this.add(storyBox);
 		
 	}
 	
