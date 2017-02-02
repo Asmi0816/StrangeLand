@@ -95,7 +95,9 @@ public class StrangePanel extends JPanel
 		{
 			public void actionPerformed(ActionEvent selection)
 			{
-				int selected = 1;
+				storyBox.setText("");
+				rightButton.setText("Continue");
+				leftButton.setText("Continue");
 			}
 
 		});
@@ -104,7 +106,9 @@ public class StrangePanel extends JPanel
 		{
 			public void actionPerformed(ActionEvent selection)
 			{
-				int selected = 0;
+				
+				rightButton.setText("Continue");
+				leftButton.setText("Continue");
 			}
 
 		});
