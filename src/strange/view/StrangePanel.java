@@ -14,6 +14,7 @@ public class StrangePanel extends JPanel
 	private int health;
 	private int food;
 	private int water;
+	private int level;
 	private JButton rightButton;
 	private JButton leftButton;
 	private JLabel strangeLabel;
@@ -42,6 +43,7 @@ public class StrangePanel extends JPanel
 		health = 50;
 		water = 100;
 		food = 100;
+		level = 0;
 		setupPanel();
 		setupLayout();
 		setupListeners();
