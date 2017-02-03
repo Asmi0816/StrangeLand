@@ -103,6 +103,7 @@ public class StrangePanel extends JPanel
 		{
 			public void actionPerformed(ActionEvent selection)
 			{
+				//This is only the start to changing the test and buttons so you can interact in the game.
 				storyBox.setText("");
 				rightButton.setText("Continue");
 				leftButton.setText("Continue");
@@ -122,3 +123,4 @@ public class StrangePanel extends JPanel
 		});
 	}
 }
+//good start to your game man
