@@ -16,6 +16,7 @@ public class StrangePanel extends JPanel
 	private int food;
 	private int water;
 	private int level;
+	private JScrollPane labelPane;
 	private JButton rightButton;
 	private JButton leftButton;
 	private JLabel strangeLabel;
@@ -39,6 +40,8 @@ public class StrangePanel extends JPanel
 		this.rightButton = new JButton("This is a spot you can press to affect the game.");
 		this.leftButton = new JButton("This is a spot you can press to affect the game.");
 		this.storyBox = new JLabel("<html>This is a mix of the two games Reigns and LifeLine both amazing. <br>You will have text show up on the screen and you press buttons to affect the story.<br> Press either button to start the game.<html>");
+		storyBox.setForeground(Color.BLACK);
+		storyBox.setBackground(Color.WHITE);
 		this.strangeLabel = new JLabel();
 		//this.mapLabel = new JLabel();
 		this.healthLabel = new JLabel("HEALTH: ");
@@ -62,6 +65,7 @@ public class StrangePanel extends JPanel
 		this.setLayout(baseLayout);
 		this.setPreferredSize(new Dimension(900, 600));
 		this.add(leftButton);
+		
 		this.add(rightButton);
 		this.add(storyBox);
 		this.add(healthLabel);
@@ -87,6 +91,7 @@ public class StrangePanel extends JPanel
 		baseLayout.putConstraint(SpringLayout.SOUTH, storyBox, -375, SpringLayout.SOUTH, this);
 		healthLabel.setFont(new Font("Tahoma", Font.PLAIN, 26));
 		foodLabel.setFont(new Font("Tahoma", Font.PLAIN, 26));
+	
 		baseLayout.putConstraint(SpringLayout.NORTH, foodLabel, 200, SpringLayout.NORTH, this);
 		baseLayout.putConstraint(SpringLayout.WEST, foodLabel, 75, SpringLayout.WEST, this);
 		baseLayout.putConstraint(SpringLayout.NORTH, waterLabel, 80, SpringLayout.NORTH, this);
