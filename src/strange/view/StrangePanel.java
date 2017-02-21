@@ -40,8 +40,7 @@ public class StrangePanel extends JPanel
 		this.rightButton = new JButton("This is a spot you can press to affect the game.");
 		this.leftButton = new JButton("This is a spot you can press to affect the game.");
 		this.storyBox = new JLabel("<html>This is a mix of the two games Reigns and LifeLine both amazing. <br>You will have text show up on the screen and you press buttons to affect the story.<br> Press either button to start the game.<html>");
-		storyBox.setForeground(Color.BLACK);
-		storyBox.setBackground(Color.WHITE);
+		baseLayout.putConstraint(SpringLayout.SOUTH, storyBox, -275, SpringLayout.SOUTH, this);
 		this.strangeLabel = new JLabel();
 		//this.mapLabel = new JLabel();
 		this.healthLabel = new JLabel("HEALTH: ");
@@ -84,11 +83,11 @@ public class StrangePanel extends JPanel
 		baseLayout.putConstraint(SpringLayout.NORTH, rightButton, 0, SpringLayout.NORTH, leftButton);
 		baseLayout.putConstraint(SpringLayout.SOUTH, rightButton, 0, SpringLayout.SOUTH, leftButton);
 		storyBox.setFont(new Font("AR DARLING", Font.PLAIN, 16));
+		baseLayout.putConstraint(SpringLayout.SOUTH, storyBox, -275, SpringLayout.SOUTH, this);
 		baseLayout.putConstraint(SpringLayout.WEST, rightButton, 707, SpringLayout.WEST, this);
 		baseLayout.putConstraint(SpringLayout.NORTH, leftButton, 500, SpringLayout.NORTH, this);
 		waterLabel.setFont(new Font("Tahoma", Font.PLAIN, 26));
 		baseLayout.putConstraint(SpringLayout.NORTH, storyBox, 30, SpringLayout.NORTH, this);
-		baseLayout.putConstraint(SpringLayout.SOUTH, storyBox, -375, SpringLayout.SOUTH, this);
 		healthLabel.setFont(new Font("Tahoma", Font.PLAIN, 26));
 		foodLabel.setFont(new Font("Tahoma", Font.PLAIN, 26));
 	
