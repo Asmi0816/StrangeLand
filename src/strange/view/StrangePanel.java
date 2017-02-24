@@ -1,11 +1,17 @@
 package strange.view;
-import javax.swing.*;
-import strange.controller.StrangeController;
-import java.awt.event.*;
-import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Font;
-import java.awt.Image;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.SpringLayout;
+
+import strange.controller.StrangeController;
 
 
 public class StrangePanel extends JPanel
@@ -21,7 +27,7 @@ public class StrangePanel extends JPanel
 	private JButton leftButton;
 	private JLabel strangeLabel;
 	private JLabel mapLabel;
-	private JLabel storyBox;
+	private StoryPanel storyPanel;
 	private JLabel foodLabel;
 	private JLabel healthLabel;
 	private JLabel waterLabel;
@@ -39,9 +45,9 @@ public class StrangePanel extends JPanel
 		this.baseLayout = new SpringLayout();
 		this.rightButton = new JButton("This is a spot you can press to affect the game.");
 		this.leftButton = new JButton("This is a spot you can press to affect the game.");
-		this.storyBox = new JLabel("<html>This is a mix of the two games Reigns and LifeLine both amazing. <br>You will have text show up on the screen and you press buttons to affect the story.<br> Press either button to start the game.<html>");
-		baseLayout.putConstraint(SpringLayout.SOUTH, storyBox, -275, SpringLayout.SOUTH, this);
 		this.strangeLabel = new JLabel();
+		this.labelPane = new JScrollPane();
+		this.storyPanel = new StoryPanel(baseController);
 		//this.mapLabel = new JLabel();
 		this.healthLabel = new JLabel("HEALTH: ");
 		this.foodLabel = new JLabel("FOOD: ");
@@ -64,9 +70,9 @@ public class StrangePanel extends JPanel
 		this.setLayout(baseLayout);
 		this.setPreferredSize(new Dimension(900, 600));
 		this.add(leftButton);
-		
+		this.add(labelPane);
 		this.add(rightButton);
-		this.add(storyBox);
+		labelPane.setViewportView(storyPanel);
 		this.add(healthLabel);
 		this.add(foodLabel);
 		this.add(waterLabel);
@@ -82,15 +88,13 @@ public class StrangePanel extends JPanel
 	{
 		baseLayout.putConstraint(SpringLayout.NORTH, rightButton, 0, SpringLayout.NORTH, leftButton);
 		baseLayout.putConstraint(SpringLayout.SOUTH, rightButton, 0, SpringLayout.SOUTH, leftButton);
-		storyBox.setFont(new Font("AR DARLING", Font.PLAIN, 16));
-		baseLayout.putConstraint(SpringLayout.SOUTH, storyBox, -275, SpringLayout.SOUTH, this);
 		baseLayout.putConstraint(SpringLayout.WEST, rightButton, 707, SpringLayout.WEST, this);
 		baseLayout.putConstraint(SpringLayout.NORTH, leftButton, 500, SpringLayout.NORTH, this);
 		waterLabel.setFont(new Font("Tahoma", Font.PLAIN, 26));
-		baseLayout.putConstraint(SpringLayout.NORTH, storyBox, 30, SpringLayout.NORTH, this);
 		healthLabel.setFont(new Font("Tahoma", Font.PLAIN, 26));
 		foodLabel.setFont(new Font("Tahoma", Font.PLAIN, 26));
-	
+		baseLayout.putConstraint(SpringLayout.NORTH, labelPane, 100, SpringLayout.NORTH, this);
+		baseLayout.putConstraint(SpringLayout.SOUTH, labelPane, -300, SpringLayout.SOUTH, this);
 		baseLayout.putConstraint(SpringLayout.NORTH, foodLabel, 200, SpringLayout.NORTH, this);
 		baseLayout.putConstraint(SpringLayout.WEST, foodLabel, 75, SpringLayout.WEST, this);
 		baseLayout.putConstraint(SpringLayout.NORTH, waterLabel, 80, SpringLayout.NORTH, this);
@@ -102,14 +106,16 @@ public class StrangePanel extends JPanel
 		baseLayout.putConstraint(SpringLayout.EAST, leftButton, -707, SpringLayout.EAST, this);
 		leftButton.setFont(new Font("AR CENA", Font.PLAIN, 17));
 		rightButton.setFont(new Font("AR CENA", Font.PLAIN, 17));
+		baseLayout.putConstraint(SpringLayout.NORTH, labelPane, 50, SpringLayout.NORTH, this);
+		baseLayout.putConstraint(SpringLayout.WEST, labelPane, 350, SpringLayout.WEST, this);
+		baseLayout.putConstraint(SpringLayout.EAST, labelPane, -25, SpringLayout.EAST, this);
+		baseLayout.putConstraint(SpringLayout.SOUTH, labelPane, -300, SpringLayout.SOUTH, this);
 		baseLayout.putConstraint(SpringLayout.NORTH, strangeLabel, 12, SpringLayout.NORTH, this);
 		baseLayout.putConstraint(SpringLayout.WEST, strangeLabel, 12, SpringLayout.WEST, this);
 		baseLayout.putConstraint(SpringLayout.WEST, leftButton, 50, SpringLayout.WEST, this);
 		baseLayout.putConstraint(SpringLayout.SOUTH, strangeLabel, -12, SpringLayout.SOUTH, this);
 		baseLayout.putConstraint(SpringLayout.EAST, strangeLabel, -12, SpringLayout.EAST, this);
-		baseLayout.putConstraint(SpringLayout.WEST, storyBox, 200, SpringLayout.WEST, this);
-		baseLayout.putConstraint(SpringLayout.EAST, storyBox, -200, SpringLayout.EAST, this);
-		storyBox.setHorizontalAlignment(SwingConstants.CENTER);
+		
 	}
 	
 	public void setupListeners()
@@ -120,7 +126,8 @@ public class StrangePanel extends JPanel
 			{
 				if(level == 0)
 				{
-				storyBox.setIcon(newsPaper);
+				storyPanel.getNewsLabel().setIcon(newsPaper);
+				storyPanel.getNewsLabel().setText("");
 				rightButton.setText("Continue");
 				leftButton.setText("Continue");
 				level++;
@@ -134,8 +141,14 @@ public class StrangePanel extends JPanel
 			public void actionPerformed(ActionEvent selection)
 			{
 				
+				if(level == 0)
+				{
+				storyPanel.getNewsLabel().setIcon(newsPaper);
+				storyPanel.getNewsLabel().setText("");
 				rightButton.setText("Continue");
 				leftButton.setText("Continue");
+				level++;
+				}
 			}
 
 		});

@@ -8,4 +8,15 @@ public class StrangeController
 	{
 		baseFrame = new StrangeFrame(this);
 	}
+	public void waitFor2()
+	{
+		try
+		{
+		    Thread.sleep(999);
+		} 
+		catch(InterruptedException ex) 
+		{
+		    Thread.currentThread().interrupt();
+		}
+	}
 }
