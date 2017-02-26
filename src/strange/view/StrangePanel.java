@@ -143,7 +143,7 @@ public class StrangePanel extends JPanel
 				}
 				else if(level == 2)
 				{
-					storyPanel.getFirstChoice1().setVisible(true);
+					storyPanel.getFirstChoice2().setVisible(true);
 					rightButton.setText("");
 					leftButton.setText("");
 					level++;
@@ -176,7 +176,7 @@ public class StrangePanel extends JPanel
 				
 				else if(level == 2)
 				{
-					storyPanel.getFirstChoice2().setVisible(true);
+					storyPanel.getFirstChoice1().setVisible(true);
 					rightButton.setText("");
 					leftButton.setText("");
 					
