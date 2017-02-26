@@ -73,6 +73,7 @@ public class StrangePanel extends JPanel
 		this.add(labelPane);
 		this.add(rightButton);
 		labelPane.setViewportView(storyPanel);
+		labelPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
 		this.add(healthLabel);
 		this.add(foodLabel);
 		this.add(waterLabel);
@@ -133,9 +134,18 @@ public class StrangePanel extends JPanel
 				level++;
 				}
 				
-				if(level == 1)
+				else if(level == 1)
 				{
 					storyPanel.getFirstLabel().setVisible(true);
+					rightButton.setText("Who is this?");
+					leftButton.setText("Well was it fun?");
+					level++;
+				}
+				else if(level == 2)
+				{
+					storyPanel.getFirstChoice1().setVisible(true);
+					rightButton.setText("");
+					leftButton.setText("");
 					level++;
 				}
 			}
@@ -156,9 +166,20 @@ public class StrangePanel extends JPanel
 				level++;
 				}
 				
-				if(level == 1)
+				else if(level == 1)
 				{
 					storyPanel.getFirstLabel().setVisible(true);
+					rightButton.setText("Who is this?");
+					leftButton.setText("Well was it fun?");
+					level++;
+				}
+				
+				else if(level == 2)
+				{
+					storyPanel.getFirstChoice2().setVisible(true);
+					rightButton.setText("");
+					leftButton.setText("");
+					
 					level++;
 				}
 			}
