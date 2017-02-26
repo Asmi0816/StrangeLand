@@ -46,7 +46,7 @@ public class StrangePanel extends JPanel
 		this.rightButton = new JButton("This is a spot you can press to affect the game.");
 		this.leftButton = new JButton("This is a spot you can press to affect the game.");
 		this.strangeLabel = new JLabel();
-		this.labelPane = new JScrollPane();
+		this.labelPane = new JScrollPane(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS, JScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
 		this.storyPanel = new StoryPanel(baseController);
 		//this.mapLabel = new JLabel();
 		this.healthLabel = new JLabel("HEALTH: ");
@@ -132,6 +132,12 @@ public class StrangePanel extends JPanel
 				leftButton.setText("Continue");
 				level++;
 				}
+				
+				if(level == 1)
+				{
+					storyPanel.getFirstLabel().setVisible(true);
+					level++;
+				}
 			}
 
 		});
@@ -148,6 +154,12 @@ public class StrangePanel extends JPanel
 				rightButton.setText("Continue");
 				leftButton.setText("Continue");
 				level++;
+				}
+				
+				if(level == 1)
+				{
+					storyPanel.getFirstLabel().setVisible(true);
+					level++;
 				}
 			}
 
