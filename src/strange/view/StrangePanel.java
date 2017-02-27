@@ -136,6 +136,12 @@ public class StrangePanel extends JPanel
 				
 				else if(level == 1)
 				{
+					storyPanel.getStartUp().setVisible(true);
+					baseController.waitFor2();
+					storyPanel.getStartUp1().setVisible(true);
+					baseController.waitFor2();
+					storyPanel.getStartUp2().setVisible(true);
+					baseController.waitFor2();
 					storyPanel.getFirstLabel().setVisible(true);
 					rightButton.setText("Who is this?");
 					leftButton.setText("Well was it fun?");
@@ -168,6 +174,12 @@ public class StrangePanel extends JPanel
 				
 				else if(level == 1)
 				{
+					storyPanel.getStartUp().setVisible(true);
+					baseController.waitFor2();
+					storyPanel.getStartUp1().setVisible(true);
+					baseController.waitFor2();
+					storyPanel.getStartUp2().setVisible(true);
+					baseController.waitFor2();
 					storyPanel.getFirstLabel().setVisible(true);
 					rightButton.setText("Who is this?");
 					leftButton.setText("Well was it fun?");
