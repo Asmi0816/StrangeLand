@@ -5,6 +5,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 import javax.swing.ImageIcon;
+import javax.swing.Timer;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -18,6 +19,7 @@ public class StrangePanel extends JPanel
 {
 	private StrangeController baseController;
 	private SpringLayout baseLayout;
+	private Timer waitTimer;
 	private int health;
 	private int food;
 	private int water;
@@ -136,15 +138,23 @@ public class StrangePanel extends JPanel
 				
 				else if(level == 1)
 				{
-					storyPanel.getStartUp().setVisible(true);
-					baseController.waitFor2();
-					storyPanel.getStartUp1().setVisible(true);
-					baseController.waitFor2();
-					storyPanel.getStartUp2().setVisible(true);
-					baseController.waitFor2();
-					storyPanel.getFirstLabel().setVisible(true);
-					rightButton.setText("Who is this?");
-					leftButton.setText("Well was it fun?");
+					Thread thread = new Thread(new Runnable() {
+						@Override
+						public void run() {
+							storyPanel.getStartUp().setVisible(true);
+							baseController.waitFor2();
+							storyPanel.repaint();
+							repaint();
+							storyPanel.getStartUp1().setVisible(true);
+							baseController.waitFor2();
+							storyPanel.getStartUp2().setVisible(true);
+							baseController.waitFor2();
+							storyPanel.getFirstLabel().setVisible(true);
+							rightButton.setText("Who is this?");
+							leftButton.setText("Well was it fun?");
+						}
+					});
+					thread.start();
 					level++;
 				}
 				else if(level == 2)
@@ -174,15 +184,21 @@ public class StrangePanel extends JPanel
 				
 				else if(level == 1)
 				{
-					storyPanel.getStartUp().setVisible(true);
-					baseController.waitFor2();
-					storyPanel.getStartUp1().setVisible(true);
-					baseController.waitFor2();
-					storyPanel.getStartUp2().setVisible(true);
-					baseController.waitFor2();
-					storyPanel.getFirstLabel().setVisible(true);
-					rightButton.setText("Who is this?");
-					leftButton.setText("Well was it fun?");
+					Thread thread = new Thread(new Runnable() {
+						@Override
+						public void run() {
+							storyPanel.getStartUp().setVisible(true);
+							baseController.waitFor2();
+							storyPanel.getStartUp1().setVisible(true);
+							baseController.waitFor2();
+							storyPanel.getStartUp2().setVisible(true);
+							baseController.waitFor2();
+							storyPanel.getFirstLabel().setVisible(true);
+							rightButton.setText("Who is this?");
+							leftButton.setText("Well was it fun?");
+						}
+					});
+					thread.start();
 					level++;
 				}
 				

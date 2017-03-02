@@ -19,9 +19,11 @@ public class StrangeFrame extends JFrame
 	
 	public void setupFrame()
 	{
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		this.setContentPane(basePanel);
 		this.setResizable(false);
 		this.setSize(new Dimension(1080,720));
+		this.setLocationRelativeTo(null);
 		this.setTitle("Strange Land");
 		this.setVisible(true);
 	}
