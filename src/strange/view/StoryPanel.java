@@ -16,6 +16,11 @@ public class StoryPanel extends JPanel
 	private JLabel firstLabel;
 	private JLabel firstChoice1;
 	private JLabel firstChoice2;
+	private JLabel openingStory;
+	private JLabel openingStory2;
+	private JLabel openingStory3;
+	private JLabel openingStory4;
+	
 	private StrangeController baseController;
 	
 	public StoryPanel(StrangeController baseController)
@@ -39,6 +44,14 @@ public class StoryPanel extends JPanel
 		
 		this.firstChoice2 = new JLabel("I'm Michael Larson. Are you the person I'm supposed to contact in a time of emergency?");
 		
+		this.openingStory = new JLabel("Great.");
+		
+		
+		this.openingStory2 = new JLabel("Hey Anthony, can you get a less sarcastic moron to help me?");
+		this.openingStory3 = new JLabel("I'm going to die out here with a useless idiot leading me to my doom.");
+		
+		this.openingStory4 = new JLabel("Hey, do you acctually know how to get me out of this mess?");
+		
 		
 		setupPanel();
 		setupLayout();
@@ -57,6 +70,10 @@ public class StoryPanel extends JPanel
 		this.add(firstLabel);
 		this.add(firstChoice1);
 		this.add(firstChoice2);
+		this.add(openingStory);
+		this.add(openingStory2);
+		this.add(openingStory3);
+		this.add(openingStory4);
 	}
 	
 	public void setupLayout()
@@ -67,6 +84,10 @@ public class StoryPanel extends JPanel
 		startUp.setVisible(false);
 		startUp1.setVisible(false);
 		startUp2.setVisible(false);
+		openingStory.setVisible(false);
+		openingStory2.setVisible(false);
+		openingStory3.setVisible(false);
+		openingStory4.setVisible(false);
 		baseLayout.putConstraint(SpringLayout.NORTH, firstLabel, 600, SpringLayout.NORTH, newsLabel);
 		baseLayout.putConstraint(SpringLayout.NORTH, firstChoice1, 40, SpringLayout.NORTH, firstLabel);
 		baseLayout.putConstraint(SpringLayout.NORTH, firstChoice2, 40, SpringLayout.NORTH, firstLabel);
@@ -74,12 +95,20 @@ public class StoryPanel extends JPanel
 		startUp.setForeground(new Color(124, 252, 0));
 		baseLayout.putConstraint(SpringLayout.NORTH, startUp, 525, SpringLayout.NORTH, newsLabel);
 		startUp1.setForeground(new Color(124, 252, 0));
+		baseLayout.putConstraint(SpringLayout.NORTH, openingStory, 20, SpringLayout.NORTH, firstChoice2);
+		openingStory.setForeground(new Color(124, 252, 0));
+		openingStory2.setForeground(new Color(124, 252, 0));
 		baseLayout.putConstraint(SpringLayout.NORTH, startUp1, 550, SpringLayout.NORTH, newsLabel);
 		startUp2.setForeground(new Color(124, 252, 0));
+		baseLayout.putConstraint(SpringLayout.NORTH, openingStory2, 20, SpringLayout.NORTH, openingStory);
 		baseLayout.putConstraint(SpringLayout.NORTH, startUp2, 575, SpringLayout.NORTH, newsLabel);
 		firstLabel.setForeground(new Color(124, 252, 0));
 		firstChoice1.setForeground(new Color(124, 252, 0));
 		firstChoice2.setForeground(new Color(124, 252, 0));
+		openingStory3.setForeground(new Color(124, 252, 0));
+		baseLayout.putConstraint(SpringLayout.NORTH, openingStory3, 20, SpringLayout.NORTH, openingStory2);
+		openingStory4.setForeground(new Color(124, 252, 0));
+		baseLayout.putConstraint(SpringLayout.NORTH, openingStory4, 20, SpringLayout.NORTH, openingStory3);
 	}
 	public JLabel getNewsLabel() 
 	{
@@ -150,6 +179,45 @@ public class StoryPanel extends JPanel
 
 	public void setStartUp2(JLabel startUp2) {
 		this.startUp2 = startUp2;
+	}
+
+	public JLabel getOpeningStory() {
+		return openingStory;
+	}
+
+
+	public void setOpeningStory(JLabel openingStory) {
+		this.openingStory = openingStory;
+	}
+
+
+	public JLabel getOpeningStory2() {
+		return openingStory2;
+	}
+
+
+	public void setOpeningStory2(JLabel openingStory2) {
+		this.openingStory2 = openingStory2;
+	}
+
+
+	public JLabel getOpeningStory3() {
+		return openingStory3;
+	}
+
+
+	public void setOpeningStory3(JLabel openingStory3) {
+		this.openingStory3 = openingStory3;
+	}
+
+
+	public JLabel getOpeningStory4() {
+		return openingStory4;
+	}
+
+
+	public void setOpeningStory4(JLabel openingStory4) {
+		this.openingStory4 = openingStory4;
 	}
 
 

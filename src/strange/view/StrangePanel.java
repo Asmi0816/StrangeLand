@@ -160,8 +160,8 @@ public class StrangePanel extends JPanel
 				else if(level == 2)
 				{
 					storyPanel.getFirstChoice2().setVisible(true);
-					rightButton.setText("");
-					leftButton.setText("");
+					rightButton.setText("Yes what happened to you?");
+					leftButton.setText("No way! I didn't sign up for this and acctually think a problem would happen!");
 					level++;
 				}
 			}
@@ -205,9 +205,43 @@ public class StrangePanel extends JPanel
 				else if(level == 2)
 				{
 					storyPanel.getFirstChoice1().setVisible(true);
-					rightButton.setText("");
-					leftButton.setText("");
+					rightButton.setText("Anthony Hawkins");
+					leftButton.setText("No one of interest.");
 					
+					level++;
+				}
+				else if (level == 3)
+				{
+					Thread thread = new Thread(new Runnable() {
+						@Override
+						public void run() {
+							storyPanel.getOpeningStory().setVisible(true);
+							baseController.waitFor2();
+							storyPanel.getOpeningStory2().setVisible(true);
+							baseController.waitFor2();
+							repaint();
+							rightButton.setText("Awww, c'mon we're making a connection.");
+							leftButton.setText(" Alright cool it, I'm the only one here.");
+						}
+					});
+					thread.start();
+					level++;
+				}
+				else if (level == 4)
+				{
+					Thread thread = new Thread(new Runnable() {
+						@Override
+						public void run() {
+							storyPanel.getOpeningStory3().setVisible(true);
+							baseController.waitFor2();
+							storyPanel.getOpeningStory4().setVisible(true);
+							baseController.waitFor2();
+							repaint();
+							rightButton.setText("What happened to you?");
+							leftButton.setText("Yes, I have a rough idea of how to get you out.");
+						}
+					});
+					thread.start();
 					level++;
 				}
 			}
