@@ -47,7 +47,7 @@ public class StoryPanel extends JPanel
 		this.openingStory = new JLabel("Great.");
 		
 		
-		this.openingStory2 = new JLabel("Hey Anthony, can you get a less sarcastic moron to help me?");
+		this.openingStory2 = new JLabel("Hey, can you get a less sarcastic moron to help me?");
 		this.openingStory3 = new JLabel("I'm going to die out here with a useless idiot leading me to my doom.");
 		
 		this.openingStory4 = new JLabel("Hey, do you acctually know how to get me out of this mess?");
