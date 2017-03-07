@@ -23,7 +23,7 @@ public class StrangePanel extends JPanel
 	private int health;
 	private int food;
 	private int water;
-	private int level;
+	private String level;
 	private JScrollPane labelPane;
 	private JButton rightButton;
 	private JButton leftButton;
@@ -45,8 +45,8 @@ public class StrangePanel extends JPanel
 	{
 		this.baseController = baseController;
 		this.baseLayout = new SpringLayout();
-		this.rightButton = new JButton("This is a spot you can press to affect the game.");
-		this.leftButton = new JButton("This is a spot you can press to affect the game.");
+		this.rightButton = new JButton("Right button");
+		this.leftButton = new JButton("Left button");
 		this.strangeLabel = new JLabel();
 		this.labelPane = new JScrollPane(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS, JScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
 		this.storyPanel = new StoryPanel(baseController);
@@ -60,7 +60,7 @@ public class StrangePanel extends JPanel
 		health = 50;
 		water = 100;
 		food = 100;
-		level = 0;
+		level = "";
 		setupPanel();
 		setupLayout();
 		setupListeners();
@@ -127,24 +127,22 @@ public class StrangePanel extends JPanel
 		{
 			public void actionPerformed(ActionEvent selection)
 			{
-				if(level == 0)
+				if(level.equals(""))
 				{
 				storyPanel.getNewsLabel().setIcon(newsPaper);
 				storyPanel.getNewsLabel().setText("");
 				rightButton.setText("Continue");
 				leftButton.setText("Continue");
-				level++;
+				level = level + "1";
 				}
 				
-				else if(level == 1)
+				else if(level.equals("1"))
 				{
 					Thread thread = new Thread(new Runnable() {
 						@Override
 						public void run() {
 							storyPanel.getStartUp().setVisible(true);
 							baseController.waitFor2();
-							storyPanel.repaint();
-							repaint();
 							storyPanel.getStartUp1().setVisible(true);
 							baseController.waitFor2();
 							storyPanel.getStartUp2().setVisible(true);
@@ -155,15 +153,57 @@ public class StrangePanel extends JPanel
 						}
 					});
 					thread.start();
-					level++;
+					level = level + "1";
 				}
-				else if(level == 2)
+				else if(level.equals("11"))
 				{
 					storyPanel.getFirstChoice2().setVisible(true);
 					rightButton.setText("Yes what happened to you?");
-					leftButton.setText("No way! I didn't sign up for this and acctually think a problem would happen!");
-					level++;
+					leftButton.setText("No way! I think a problem would acctually happen!");
+					level = level + "1";
 				}
+				
+				else if(level.equals("111"))
+				{
+					Thread thread = new Thread(new Runnable() 
+					{
+						@Override
+						public void run() 
+						{
+							storyPanel.getStory1_1().setVisible(true);
+							baseController.waitFor2();
+							storyPanel.getStory1_2().setVisible(true);
+							rightButton.setText("Tell me what's around you");
+							leftButton.setText("Whether I do or not doesn't matter anymore");
+							
+						}
+					});
+					thread.start();
+					level = level + "1";
+				}
+				else if(level.equals("1111"))
+				{
+					Thread thread = new Thread(new Runnable() 
+					{
+						@Override
+						public void run() 
+						{
+							storyPanel.getStory1_3().setVisible(true);
+							baseController.waitFor2();
+							storyPanel.getStory1_4().setVisible(true);
+							baseController.waitFor2();
+							storyPanel.getStory1_5().setVisible(true);
+							baseController.waitFor2();
+							storyPanel.getStory1_6().setVisible(true);
+							rightButton.setText("Slow down what ocean?");
+							leftButton.setText("Calm down we need to get busy if we are to save you.");
+							
+						}
+					});
+					thread.start();
+					level = level + "1";
+				}
+				
 			}
 
 		});
@@ -173,16 +213,16 @@ public class StrangePanel extends JPanel
 			public void actionPerformed(ActionEvent selection)
 			{
 				
-				if(level == 0)
+				if(level.equals(""))
 				{
 				storyPanel.getNewsLabel().setIcon(newsPaper);
 				storyPanel.getNewsLabel().setText("");
 				rightButton.setText("Continue");
 				leftButton.setText("Continue");
-				level++;
+				level = level + "1";
 				}
 				
-				else if(level == 1)
+				else if(level.equals("1"))
 				{
 					Thread thread = new Thread(new Runnable() {
 						@Override
@@ -199,18 +239,18 @@ public class StrangePanel extends JPanel
 						}
 					});
 					thread.start();
-					level++;
+					level = level + "1";
 				}
 				
-				else if(level == 2)
+				else if(level.equalsIgnoreCase("11"))
 				{
 					storyPanel.getFirstChoice1().setVisible(true);
 					rightButton.setText("Anthony Hawkins");
 					leftButton.setText("No one of interest.");
 					
-					level++;
+					level = level + "0";
 				}
-				else if (level == 3)
+				else if (level.equals("110"))
 				{
 					Thread thread = new Thread(new Runnable() {
 						@Override
@@ -225,9 +265,9 @@ public class StrangePanel extends JPanel
 						}
 					});
 					thread.start();
-					level++;
+					level = level + "0";
 				}
-				else if (level == 4)
+				else if (level.equals(1100))
 				{
 					Thread thread = new Thread(new Runnable() {
 						@Override
@@ -242,7 +282,7 @@ public class StrangePanel extends JPanel
 						}
 					});
 					thread.start();
-					level++;
+					level = level + "0";
 				}
 			}
 
