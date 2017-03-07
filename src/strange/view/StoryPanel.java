@@ -88,12 +88,10 @@ public class StoryPanel extends JPanel
 		this.story1_16 = new JLabel("I was knocked off my feet and slammed into the guard rail, slipping underneath and into the cold water below.");
 		this.story1_17 = new JLabel("I must have drifted to shore unconsious, but now that I look back, there should be water around me. But there's nothing.");
 		this.story1_18 = new JLabel("I got a gash on my side but it doesn't seem life threatening.");
-		
 		this.story1_19 = new JLabel("As far as broken bones...");
-		
 		this.story1_20 = new JLabel("Don't have any as far as I can tell.");
-	
-		this.story1_21 = new JLabel("");
+		this.story1_21 = new JLabel("No, all I have is the raincoat suit I was wearing and my clothes underneath.");
+		
 		
 		
 		
@@ -139,6 +137,7 @@ public class StoryPanel extends JPanel
 		this.add(story1_18);
 		this.add(story1_19);
 		this.add(story1_20);
+		this.add(story1_21);
 	}
 	
 	public void setupLayout()
@@ -173,6 +172,7 @@ public class StoryPanel extends JPanel
 		story1_18.setVisible(false);
 		story1_19.setVisible(false);
 		story1_20.setVisible(false);
+		story1_21.setVisible(false);
 		baseLayout.putConstraint(SpringLayout.NORTH, firstLabel, 600, SpringLayout.NORTH, newsLabel);
 		baseLayout.putConstraint(SpringLayout.NORTH, firstChoice1, 40, SpringLayout.NORTH, firstLabel);
 		baseLayout.putConstraint(SpringLayout.NORTH, firstChoice2, 40, SpringLayout.NORTH, firstLabel);
@@ -234,6 +234,8 @@ public class StoryPanel extends JPanel
 		baseLayout.putConstraint(SpringLayout.NORTH, story1_19, 20, SpringLayout.NORTH, story1_18);
 		story1_20.setForeground(new Color(124, 252, 0));
 		baseLayout.putConstraint(SpringLayout.NORTH, story1_20, 20, SpringLayout.NORTH, story1_19);
+		baseLayout.putConstraint(SpringLayout.NORTH, story1_21, 20, SpringLayout.NORTH, story1_20);
+		story1_21.setForeground(new Color(124, 252, 0));
 	}
 	public JLabel getNewsLabel() 
 	{

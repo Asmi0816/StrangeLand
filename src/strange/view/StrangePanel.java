@@ -144,7 +144,7 @@ public class StrangePanel extends JPanel
             ex.printStackTrace();
         }
 		
-		Timer songRepeat = new Timer(1000 * 125, new ActionListener() 
+		Timer songRepeat = new Timer(1000 * 126, new ActionListener() 
 		{
 		    public void actionPerformed(ActionEvent e) 
 		    {
@@ -331,6 +331,23 @@ public class StrangePanel extends JPanel
 							baseController.waitFor2();
 							rightButton.setText("Do you have any gear to patch the wound?");
 							leftButton.setText("How late is it now?");
+							
+						}
+					});
+					thread.start();
+					level = level + "1";
+				}
+				
+				else if(level.equals("1111111"))
+				{
+					Thread thread = new Thread(new Runnable() 
+					{
+						@Override
+						public void run() 
+						{
+							storyPanel.getStory1_21().setVisible(true);
+							rightButton.setText("You should rip the bottom part of your shirt off to bandage that cut.");
+							leftButton.setText("You do have nothing.");
 							
 						}
 					});
