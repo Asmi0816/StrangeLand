@@ -3,14 +3,20 @@ import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.File;
 
+import javax.sound.sampled.AudioInputStream;
+import javax.sound.sampled.AudioSystem;
+import javax.sound.sampled.Clip;
 import javax.swing.ImageIcon;
 import javax.swing.Timer;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
+
 import javax.swing.SpringLayout;
+import javax.swing.Timer;
 
 import strange.controller.StrangeController;
 
@@ -41,15 +47,16 @@ public class StrangePanel extends JPanel
 	private ImageIcon newsPaper;
 	
 	
+	
 	public StrangePanel(StrangeController baseController)
 	{
 		this.baseController = baseController;
+		this.storyPanel = new StoryPanel(baseController);
 		this.baseLayout = new SpringLayout();
 		this.rightButton = new JButton("Right button");
 		this.leftButton = new JButton("Left button");
 		this.strangeLabel = new JLabel();
 		this.labelPane = new JScrollPane(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS, JScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
-		this.storyPanel = new StoryPanel(baseController);
 		//this.mapLabel = new JLabel();
 		this.healthLabel = new JLabel("HEALTH: ");
 		this.foodLabel = new JLabel("FOOD: ");
@@ -63,6 +70,7 @@ public class StrangePanel extends JPanel
 		level = "";
 		setupPanel();
 		setupLayout();
+		setupTimer();
 		setupListeners();
 		
 	}
@@ -119,6 +127,44 @@ public class StrangePanel extends JPanel
 		baseLayout.putConstraint(SpringLayout.SOUTH, strangeLabel, -12, SpringLayout.SOUTH, this);
 		baseLayout.putConstraint(SpringLayout.EAST, strangeLabel, -12, SpringLayout.EAST, this);
 		
+	}
+	
+	public void setupTimer()
+	{
+		try
+    	{
+    		
+            AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(new File("C:/Users/Arick Smith/Music/MySong.wav").getAbsoluteFile());
+            Clip clip = AudioSystem.getClip();
+            clip.open(audioInputStream);
+            clip.start();
+        }
+    	catch(Exception ex) {
+            System.out.println("Error with playing sound.");
+            ex.printStackTrace();
+        }
+		
+		Timer songRepeat = new Timer(1000 * 125, new ActionListener() 
+		{
+		    public void actionPerformed(ActionEvent e) 
+		    {
+		    	
+		    	try
+		    	{
+		    		
+		            AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(new File("C:/Users/Arick Smith/Music/MySong.wav").getAbsoluteFile());
+		            Clip clip = AudioSystem.getClip();
+		            clip.open(audioInputStream);
+		            clip.start();
+		        }
+		    	catch(Exception ex) {
+		            System.out.println("Error with playing sound.");
+		            ex.printStackTrace();
+		        }
+		    }
+		});
+		
+		songRepeat.start();
 	}
 	
 	public void setupListeners()
@@ -203,7 +249,94 @@ public class StrangePanel extends JPanel
 					thread.start();
 					level = level + "1";
 				}
-				
+				else if(level.equals("11111"))
+				{
+					Thread thread = new Thread(new Runnable() 
+					{
+						@Override
+						public void run() 
+						{
+							storyPanel.getStory1_7().setVisible(true);
+							baseController.waitFor2();
+							baseController.waitFor2();
+							baseController.waitFor2();
+							baseController.waitFor2();
+							storyPanel.getStory1_8().setVisible(true);
+							baseController.waitFor2();
+							baseController.waitFor2();
+							baseController.waitFor2();
+							baseController.waitFor2();
+							storyPanel.getStory1_9().setVisible(true);
+							baseController.waitFor2();
+							baseController.waitFor2();
+							baseController.waitFor2();
+							baseController.waitFor2();
+							storyPanel.getStory1_10().setVisible(true);
+							baseController.waitFor2();
+							baseController.waitFor2();
+							baseController.waitFor2();
+							baseController.waitFor2();
+							storyPanel.getStory1_11().setVisible(true);
+							baseController.waitFor2();
+							baseController.waitFor2();
+							baseController.waitFor2();
+							baseController.waitFor2();
+							storyPanel.getStory1_12().setVisible(true);
+							baseController.waitFor2();
+							baseController.waitFor2();
+							baseController.waitFor2();
+							baseController.waitFor2();
+							storyPanel.getStory1_13().setVisible(true);
+							baseController.waitFor2();
+							baseController.waitFor2();
+							baseController.waitFor2();
+							baseController.waitFor2();
+							storyPanel.getStory1_14().setVisible(true);
+							baseController.waitFor2();
+							baseController.waitFor2();
+							baseController.waitFor2();
+							baseController.waitFor2();
+							storyPanel.getStory1_15().setVisible(true);
+							baseController.waitFor2();
+							baseController.waitFor2();
+							baseController.waitFor2();
+							baseController.waitFor2();
+							storyPanel.getStory1_16().setVisible(true);
+							baseController.waitFor2();
+							baseController.waitFor2();
+							baseController.waitFor2();
+							baseController.waitFor2();
+							storyPanel.getStory1_17().setVisible(true);
+							
+							rightButton.setText("Are you hurt?");
+							leftButton.setText("Are you alive?");
+							
+						}
+					});
+					thread.start();
+					level = level + "1";
+				}
+				else if(level.equals("111111"))
+				{
+					Thread thread = new Thread(new Runnable() 
+					{
+						@Override
+						public void run() 
+						{
+							storyPanel.getStory1_18().setVisible(true);
+							baseController.waitFor2();
+							storyPanel.getStory1_19().setVisible(true);
+							baseController.waitFor2();
+							storyPanel.getStory1_20().setVisible(true);
+							baseController.waitFor2();
+							rightButton.setText("Do you have any gear to patch the wound?");
+							leftButton.setText("How late is it now?");
+							
+						}
+					});
+					thread.start();
+					level = level + "1";
+				}
 			}
 
 		});
@@ -287,5 +420,7 @@ public class StrangePanel extends JPanel
 			}
 
 		});
+		
+		
 	}
 }

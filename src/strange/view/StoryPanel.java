@@ -63,9 +63,9 @@ public class StoryPanel extends JPanel
 		this.startUp = new JLabel("Booting up...");
 		this.startUp1 = new JLabel("Logging in...");
 		this.startUp2 = new JLabel("receving signal...");
-		this.firstLabel = new JLabel("... fun!' They said, 'nothing could ever go wrong!' they said.");
+		this.firstLabel = new JLabel("\"Fun! Nothing could ever go wrong!\" they said.");
 		this.firstChoice1 = new JLabel("Who is this?");
-		this.firstChoice2 = new JLabel("I'm Michael Larson. Are you the person I'm supposed to contact in a time of emergency?");
+		this.firstChoice2 = new JLabel("I'm Michael Larson. Are you the person I'm supposed to contact in an emergency?");
 		this.openingStory = new JLabel("Great.");
 		this.openingStory2 = new JLabel("Hey, can you get a less sarcastic moron to help me?");
 		this.openingStory3 = new JLabel("I'm going to die out here with a useless idiot leading me to my doom.");
@@ -75,19 +75,25 @@ public class StoryPanel extends JPanel
 		this.story1_3 = new JLabel("All that is around me for about a mile is sand and rocks.");
 		this.story1_4 = new JLabel("There are some mountains in the distance.");
 		this.story1_5 = new JLabel("Ocean...");
-		this.story1_6 = new JLabel("Where's the ocean!");
-		this.story1_7 = new JLabel("While I was on the U.S. WaveForm. We were heading towards the alleged 'mysterious electromagnetic readings'.");
+		this.story1_6 = new JLabel("Where's the ocean?");
+		this.story1_7 = new JLabel("While I was on the U.S. WaveForm, we were heading towards the alleged 'mysterious electromagnetic readings'.");
 		this.story1_8 = new JLabel("But as we got closer and closer to the signal more and more instruments went off-line.");
 		this.story1_9 = new JLabel("This was something we prepared for though knowing that the systems would be affected.");
-		this.story1_10 = new JLabel("But even our backups began to fail inexplicably.");
-		this.story1_11 = new JLabel("The sun began to rise with a beutiful orange hues in the sky.");
-		this.story1_12 = new JLabel("Then a old adage came to mind, 'Red sky in the morning, sailors take warning. Red sky at night, sailors delight.'" );
+		this.story1_10 = new JLabel("But even our backups began to fail.");
+		this.story1_11 = new JLabel("The sun began to rise. It was the most beautiful orange I've ever seen.");
+		this.story1_12 = new JLabel("Then an old adage came to mind, 'Red sky in the morning, sailors take warning. Red sky at night, sailors delight.'" );
 		this.story1_13 = new JLabel("Lo and behold, there was truth in this saying. Because not 3 hours later, dark, menicing clouds blotted out the sun.");
 		this.story1_14 = new JLabel("A heavy downpour began and everyone on board rushed to strap things down so they wern't lost in the wind.");
-		this.story1_15 = new JLabel("As we were distracted, a massive rouge wave ploughed into the side of the ship.");
-		this.story1_16 = new JLabel("I was knocked off my feet and slamed into the gaurd rail, slipping underneath and into the cold water below.");
-		this.story1_17 = new JLabel("I must have drifted to shore unconsious, but now that I look back, there should be water around me but there's nothing.");
+		this.story1_15 = new JLabel("As we were distracted, a massive rogue wave plowed into the side of the ship.");
+		this.story1_16 = new JLabel("I was knocked off my feet and slammed into the guard rail, slipping underneath and into the cold water below.");
+		this.story1_17 = new JLabel("I must have drifted to shore unconsious, but now that I look back, there should be water around me. But there's nothing.");
+		this.story1_18 = new JLabel("I got a gash on my side but it doesn't seem life threatening.");
 		
+		this.story1_19 = new JLabel("As far as broken bones...");
+		
+		this.story1_20 = new JLabel("Don't have any as far as I can tell.");
+	
+		this.story1_21 = new JLabel("");
 		
 		
 		
@@ -130,8 +136,9 @@ public class StoryPanel extends JPanel
 		this.add(story1_15);
 		this.add(story1_16);
 		this.add(story1_17);
-		
-		
+		this.add(story1_18);
+		this.add(story1_19);
+		this.add(story1_20);
 	}
 	
 	public void setupLayout()
@@ -163,6 +170,9 @@ public class StoryPanel extends JPanel
 		story1_15.setVisible(false);
 		story1_16.setVisible(false);
 		story1_17.setVisible(false);
+		story1_18.setVisible(false);
+		story1_19.setVisible(false);
+		story1_20.setVisible(false);
 		baseLayout.putConstraint(SpringLayout.NORTH, firstLabel, 600, SpringLayout.NORTH, newsLabel);
 		baseLayout.putConstraint(SpringLayout.NORTH, firstChoice1, 40, SpringLayout.NORTH, firstLabel);
 		baseLayout.putConstraint(SpringLayout.NORTH, firstChoice2, 40, SpringLayout.NORTH, firstLabel);
@@ -218,6 +228,12 @@ public class StoryPanel extends JPanel
 		baseLayout.putConstraint(SpringLayout.NORTH, story1_16, 20, SpringLayout.NORTH, story1_15);
 		story1_17.setForeground(new Color(124, 252, 0));
 		baseLayout.putConstraint(SpringLayout.NORTH, story1_17, 20, SpringLayout.NORTH, story1_16);
+		story1_18.setForeground(new Color(124, 252, 0));
+		baseLayout.putConstraint(SpringLayout.NORTH, story1_18, 20, SpringLayout.NORTH, story1_17);
+		story1_19.setForeground(new Color(124, 252, 0));
+		baseLayout.putConstraint(SpringLayout.NORTH, story1_19, 20, SpringLayout.NORTH, story1_18);
+		story1_20.setForeground(new Color(124, 252, 0));
+		baseLayout.putConstraint(SpringLayout.NORTH, story1_20, 20, SpringLayout.NORTH, story1_19);
 	}
 	public JLabel getNewsLabel() 
 	{
