@@ -91,6 +91,7 @@ public class StoryPanel extends JPanel
 		
 		
 		
+		
 		setupPanel();
 		setupLayout();
 		
@@ -100,7 +101,7 @@ public class StoryPanel extends JPanel
 	public void setupPanel()
 	{
 		this.setLayout(baseLayout);
-		this.setPreferredSize(new Dimension(400, 1200));
+		this.setPreferredSize(new Dimension(400, 8000));
 		this.add(newsLabel);
 		this.add(startUp);
 		this.add(startUp1);
@@ -195,6 +196,28 @@ public class StoryPanel extends JPanel
 		baseLayout.putConstraint(SpringLayout.NORTH, story1_5, 20, SpringLayout.NORTH, story1_4);
 		story1_6.setForeground(new Color(124, 252, 0));
 		baseLayout.putConstraint(SpringLayout.NORTH, story1_6, 20, SpringLayout.NORTH, story1_5);
+		story1_7.setForeground(new Color(124, 252, 0));
+		baseLayout.putConstraint(SpringLayout.NORTH, story1_7, 20, SpringLayout.NORTH, story1_6);
+		story1_8.setForeground(new Color(124, 252, 0));
+		baseLayout.putConstraint(SpringLayout.NORTH, story1_8, 20, SpringLayout.NORTH, story1_7);
+		story1_9.setForeground(new Color(124, 252, 0));
+		baseLayout.putConstraint(SpringLayout.NORTH, story1_9, 20, SpringLayout.NORTH, story1_8);
+		story1_10.setForeground(new Color(124, 252, 0));
+		baseLayout.putConstraint(SpringLayout.NORTH, story1_10, 20, SpringLayout.NORTH, story1_9);
+		story1_11.setForeground(new Color(124, 252, 0));
+		baseLayout.putConstraint(SpringLayout.NORTH, story1_11, 20, SpringLayout.NORTH, story1_10);
+		story1_12.setForeground(new Color(124, 252, 0));
+		baseLayout.putConstraint(SpringLayout.NORTH, story1_12, 20, SpringLayout.NORTH, story1_11);
+		story1_13.setForeground(new Color(124, 252, 0));
+		baseLayout.putConstraint(SpringLayout.NORTH, story1_13, 20, SpringLayout.NORTH, story1_12);
+		story1_14.setForeground(new Color(124, 252, 0));
+		baseLayout.putConstraint(SpringLayout.NORTH, story1_14, 20, SpringLayout.NORTH, story1_13);
+		story1_15.setForeground(new Color(124, 252, 0));
+		baseLayout.putConstraint(SpringLayout.NORTH, story1_15, 20, SpringLayout.NORTH, story1_14);
+		story1_16.setForeground(new Color(124, 252, 0));
+		baseLayout.putConstraint(SpringLayout.NORTH, story1_16, 20, SpringLayout.NORTH, story1_15);
+		story1_17.setForeground(new Color(124, 252, 0));
+		baseLayout.putConstraint(SpringLayout.NORTH, story1_17, 20, SpringLayout.NORTH, story1_16);
 	}
 	public JLabel getNewsLabel() 
 	{
