@@ -180,14 +180,14 @@ public class StoryPanel extends JPanel
 		this.story1_35 = new JLabel("But I really don't think I need it.");
 		this.story1_36 = new JLabel("...");
 		this.story1_37 = new JLabel("...");
-		this.story1_38 = new JLabel("Okay... not to sound ungrateful for you advice.");
+		this.story1_38 = new JLabel("Okay... not to sound ungrateful for your advice.");
 		this.story1_39 = new JLabel("(because I am grateful for your advice.)");
 		this.story1_40 = new JLabel("But this rock, warm as it may be, isn't doing any good.");
 		this.story1_41 = new JLabel("All it does is weigh me down and wear me out.");
 		this.story1_42 = new JLabel("Can I please just drop it?");
 		this.story1_43 = new JLabel("Fine, I'll do as you ask.");
 		this.story1_44 = new JLabel("...");
-		this.story1_45 = new JLabel("Wow, it just droped in temperature a lot.");
+		this.story1_45 = new JLabel("Wow, it just dropped in temperature a lot.");
 		this.story1_46 = new JLabel("Like a lot, a lot.");
 		this.story1_47 = new JLabel("This rock is warm but not warm enough...");
 		this.story1_48 = new JLabel("Alright, I'm going to head to what looks like a cave on the side of the mountain.");
