@@ -144,7 +144,7 @@ public class StrangePanel extends JPanel
             ex.printStackTrace();
         }
 		
-		Timer songRepeat = new Timer(1000 * 126, new ActionListener() 
+		Timer songRepeat = new Timer(1000 * 127, new ActionListener() 
 		{
 		    public void actionPerformed(ActionEvent e) 
 		    {
@@ -354,6 +354,56 @@ public class StrangePanel extends JPanel
 					thread.start();
 					level = level + "1";
 				}
+				else if(level.equals("11111111"))
+				{
+					health = health + 20;
+					Thread thread = new Thread(new Runnable() 
+					{
+						@Override
+						public void run() 
+						{
+							storyPanel.getStory1_22().setVisible(true);
+							baseController.waitFor2();
+							storyPanel.getStory1_23().setVisible(true);
+							baseController.waitFor2();
+							storyPanel.getStory1_24().setVisible(true);
+							baseController.waitFor2();
+							rightButton.setText("Grab some wood from around you and build a fire!");
+							leftButton.setText("Stones, grab stones that were exposed to the sun!");
+							
+						}
+					});
+					thread.start();
+					level = level + "1";
+				}
+				else if(level.equals("1111111110"))
+				{
+					
+					Thread thread = new Thread(new Runnable() 
+					{
+						@Override
+						public void run() 
+						{
+							storyPanel.getStory1_28().setVisible(true);
+							baseController.waitFor2();
+							storyPanel.getStory1_29().setVisible(true);
+							baseController.waitFor2();
+							storyPanel.getStory1_30().setVisible(true);
+							baseController.waitFor2();
+							storyPanel.getStory1_31().setVisible(true);
+							baseController.waitFor2();
+							storyPanel.getStory1_32().setVisible(true);
+							baseController.waitFor2();
+							storyPanel.getStory1_33().setVisible(true);
+							baseController.waitFor2();
+							rightButton.setText("Ditch the rocks.");
+							leftButton.setText("Could get cold you should keep carrying a few.");
+							
+						}
+					});
+					thread.start();
+					level = level + "1";
+				}
 			}
 
 		});
@@ -434,7 +484,134 @@ public class StrangePanel extends JPanel
 					thread.start();
 					level = level + "0";
 				}
+				else if(level.equals("111111111"))
+				{
+					
+					Thread thread = new Thread(new Runnable() 
+					{
+						@Override
+						public void run() 
+						{
+							storyPanel.getStory1_25().setVisible(true);
+							baseController.waitFor2();
+							storyPanel.getStory1_26().setVisible(true);
+							baseController.waitFor2();
+							storyPanel.getStory1_27().setVisible(true);
+							baseController.waitFor2();
+							rightButton.setText("I agree. You should start moving towards the mountains tonight.");
+							leftButton.setText("I think you should get some sleep.");
+							
+						}
+					});
+					thread.start();
+					level = level + "0";
+				}
+				else if(level.equals("11111111101"))
+				{
+					
+					Thread thread = new Thread(new Runnable() 
+					{
+						@Override
+						public void run() 
+						{
+							storyPanel.getStory1_34().setVisible(true);
+							baseController.waitFor2();
+							storyPanel.getStory1_35().setVisible(true);
+							baseController.waitFor2();
+							storyPanel.getStory1_36().setVisible(true);
+							baseController.waitFor2();
+							storyPanel.getStory1_37().setVisible(true);
+							baseController.waitFor2();
+							storyPanel.getStory1_38().setVisible(true);
+							baseController.waitFor2();
+							storyPanel.getStory1_39().setVisible(true);
+							baseController.waitFor2();
+							storyPanel.getStory1_40().setVisible(true);
+							baseController.waitFor2();
+							storyPanel.getStory1_41().setVisible(true);
+							baseController.waitFor2();
+							storyPanel.getStory1_42().setVisible(true);
+							baseController.waitFor2();
+							rightButton.setText("Fine ditch the rock and run to the mountain");
+							leftButton.setText("Sit down and take a break but don't leave the rock.");
+							
+						}
+					});
+					thread.start();
+					level = level + "0";
+				}
+				else if(level.equals("111111111010"))
+				{
+					
+					Thread thread = new Thread(new Runnable() 
+					{
+						@Override
+						public void run() 
+						{
+							storyPanel.getStory1_43().setVisible(true);
+							baseController.waitFor2();
+							storyPanel.getStory1_44().setVisible(true);
+							baseController.waitFor2();
+							storyPanel.getStory1_45().setVisible(true);
+							baseController.waitFor2();
+							storyPanel.getStory1_46().setVisible(true);
+							baseController.waitFor2();
+							storyPanel.getStory1_47().setVisible(true);
+							rightButton.setText("Forget the rock and run to the mountain.");
+							leftButton.setText("Keep the rock move to the mountain.");
+							
+						}
+					});
+					thread.start();
+					level = level + "0";
+				}
+				else if(level.equals("1111111110100"))
+				{
+					
+					Thread thread = new Thread(new Runnable() 
+					{
+						@Override
+						public void run() 
+						{
+							storyPanel.getStory1_48().setVisible(true);
+							baseController.waitFor2();
+							storyPanel.getStory1_49().setVisible(true);
+							baseController.waitFor2();
+							storyPanel.getStory1_50().setVisible(true);
+							baseController.waitFor2();
+							storyPanel.getStory1_51().setVisible(true);
+							baseController.waitFor2();
+							storyPanel.getStory1_52().setVisible(true);
+							baseController.waitFor2();
+							storyPanel.getStory1_53().setVisible(true);
+							baseController.waitFor2();
+							storyPanel.getStory1_54().setVisible(true);
+							baseController.waitFor2();
+							storyPanel.getStory1_55().setVisible(true);
+							baseController.waitFor2();
+							storyPanel.getStory1_56().setVisible(true);
+							baseController.waitFor2();
+							storyPanel.getStory1_57().setVisible(true);
+							baseController.waitFor2();
+							storyPanel.getStory1_58().setVisible(true);
+							baseController.waitFor2();
+							storyPanel.getStory1_59().setVisible(true);
+							baseController.waitFor2();
+							storyPanel.getStory1_60().setVisible(true);
+							baseController.waitFor2();
+							storyPanel.getStory1_61().setVisible(true);
+							baseController.waitFor2();
+							storyPanel.getStory1_62().setVisible(true);
+							rightButton.setText("Yha I'm here.");
+							leftButton.setText("Thank goodness you're alive!");
+							
+						}
+					});
+					thread.start();
+					level = level + "0";
+				}
 			}
+			
 
 		});
 		

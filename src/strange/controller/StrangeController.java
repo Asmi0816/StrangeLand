@@ -12,7 +12,7 @@ public class StrangeController
 	{
 		try
 		{
-		    Thread.sleep(999);
+		    Thread.sleep(1500);
 		} 
 		catch(InterruptedException ex) 
 		{
