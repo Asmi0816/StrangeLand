@@ -89,9 +89,40 @@ public class StoryPanel extends JPanel
 	private JLabel story1_67;
 	private JLabel story1_68;
 	private JLabel story1_69;
-	
-
-
+	private JLabel story1_70;
+	private JLabel story1_71;
+	private JLabel story1_72;
+	private JLabel story1_73;
+	private JLabel story1_74;
+	private JLabel story1_75;
+	private JLabel story1_76;
+	private JLabel story1_77;
+	private JLabel story1_78;
+	private JLabel story1_79;
+	private JLabel story1_80;
+	private JLabel story1_81;
+	private JLabel story1_82;
+	private JLabel story1_83;
+	private JLabel story1_84;
+	private JLabel story1_85;
+	private JLabel story1_86;
+	private JLabel story1_87;
+	private JLabel story1_88;
+	private JLabel story1_89;
+	private JLabel story1_90;
+	private JLabel story1_91;
+	private JLabel story1_92;
+	private JLabel story1_93;
+	private JLabel story1_94;
+	private JLabel story1_95;
+	private JLabel story1_96;
+	private JLabel story1_97;
+	private JLabel story1_98;
+	private JLabel story1_99;
+	private JLabel story1_100;
+	private JLabel story1_101;
+	private JLabel story1_102;
+	private JLabel story1_103;
 	private StrangeController baseController;
 	
 	public StoryPanel(StrangeController baseController)
@@ -1414,6 +1445,479 @@ public class StoryPanel extends JPanel
 
 	public void setStory1_67(JLabel story1_67) {
 		this.story1_67 = story1_67;
+	}
+
+	public JLabel getStory1_70() {
+		return story1_70;
+	}
+
+
+
+
+	public void setStory1_70(JLabel story1_70) {
+		this.story1_70 = story1_70;
+	}
+
+
+
+
+	public JLabel getStory1_71() {
+		return story1_71;
+	}
+
+
+
+
+	public void setStory1_71(JLabel story1_71) {
+		this.story1_71 = story1_71;
+	}
+
+
+
+
+	public JLabel getStory1_72() {
+		return story1_72;
+	}
+
+
+
+
+	public void setStory1_72(JLabel story1_72) {
+		this.story1_72 = story1_72;
+	}
+
+
+
+
+	public JLabel getStory1_73() {
+		return story1_73;
+	}
+
+
+
+
+	public void setStory1_73(JLabel story1_73) {
+		this.story1_73 = story1_73;
+	}
+
+
+
+
+	public JLabel getStory1_74() {
+		return story1_74;
+	}
+
+
+
+
+	public void setStory1_74(JLabel story1_74) {
+		this.story1_74 = story1_74;
+	}
+
+
+
+
+	public JLabel getStory1_75() {
+		return story1_75;
+	}
+
+
+
+
+	public void setStory1_75(JLabel story1_75) {
+		this.story1_75 = story1_75;
+	}
+
+
+
+
+	public JLabel getStory1_76() {
+		return story1_76;
+	}
+
+
+
+
+	public void setStory1_76(JLabel story1_76) {
+		this.story1_76 = story1_76;
+	}
+
+
+
+
+	public JLabel getStory1_77() {
+		return story1_77;
+	}
+
+
+
+
+	public void setStory1_77(JLabel story1_77) {
+		this.story1_77 = story1_77;
+	}
+
+
+
+
+	public JLabel getStory1_78() {
+		return story1_78;
+	}
+
+
+
+
+	public void setStory1_78(JLabel story1_78) {
+		this.story1_78 = story1_78;
+	}
+
+
+
+
+	public JLabel getStory1_79() {
+		return story1_79;
+	}
+
+
+
+
+	public void setStory1_79(JLabel story1_79) {
+		this.story1_79 = story1_79;
+	}
+
+
+
+
+	public JLabel getStory1_80() {
+		return story1_80;
+	}
+
+
+
+
+	public void setStory1_80(JLabel story1_80) {
+		this.story1_80 = story1_80;
+	}
+
+
+
+
+	public JLabel getStory1_81() {
+		return story1_81;
+	}
+
+
+
+
+	public void setStory1_81(JLabel story1_81) {
+		this.story1_81 = story1_81;
+	}
+
+
+
+
+	public JLabel getStory1_82() {
+		return story1_82;
+	}
+
+
+
+
+	public void setStory1_82(JLabel story1_82) {
+		this.story1_82 = story1_82;
+	}
+
+
+
+
+	public JLabel getStory1_83() {
+		return story1_83;
+	}
+
+
+
+
+	public void setStory1_83(JLabel story1_83) {
+		this.story1_83 = story1_83;
+	}
+
+
+
+
+	public JLabel getStory1_84() {
+		return story1_84;
+	}
+
+
+
+
+	public void setStory1_84(JLabel story1_84) {
+		this.story1_84 = story1_84;
+	}
+
+
+
+
+	public JLabel getStory1_85() {
+		return story1_85;
+	}
+
+
+
+
+	public void setStory1_85(JLabel story1_85) {
+		this.story1_85 = story1_85;
+	}
+
+
+
+
+	public JLabel getStory1_86() {
+		return story1_86;
+	}
+
+
+
+
+	public void setStory1_86(JLabel story1_86) {
+		this.story1_86 = story1_86;
+	}
+
+
+
+
+	public JLabel getStory1_87() {
+		return story1_87;
+	}
+
+
+
+
+	public void setStory1_87(JLabel story1_87) {
+		this.story1_87 = story1_87;
+	}
+
+
+
+
+	public JLabel getStory1_88() {
+		return story1_88;
+	}
+
+
+
+
+	public void setStory1_88(JLabel story1_88) {
+		this.story1_88 = story1_88;
+	}
+
+
+
+
+	public JLabel getStory1_89() {
+		return story1_89;
+	}
+
+
+
+
+	public void setStory1_89(JLabel story1_89) {
+		this.story1_89 = story1_89;
+	}
+
+
+
+
+	public JLabel getStory1_90() {
+		return story1_90;
+	}
+
+
+
+
+	public void setStory1_90(JLabel story1_90) {
+		this.story1_90 = story1_90;
+	}
+
+
+
+
+	public JLabel getStory1_91() {
+		return story1_91;
+	}
+
+
+
+
+	public void setStory1_91(JLabel story1_91) {
+		this.story1_91 = story1_91;
+	}
+
+
+
+
+	public JLabel getStory1_92() {
+		return story1_92;
+	}
+
+
+
+
+	public void setStory1_92(JLabel story1_92) {
+		this.story1_92 = story1_92;
+	}
+
+
+
+
+	public JLabel getStory1_93() {
+		return story1_93;
+	}
+
+
+
+
+	public void setStory1_93(JLabel story1_93) {
+		this.story1_93 = story1_93;
+	}
+
+
+
+
+	public JLabel getStory1_94() {
+		return story1_94;
+	}
+
+
+
+
+	public void setStory1_94(JLabel story1_94) {
+		this.story1_94 = story1_94;
+	}
+
+
+
+
+	public JLabel getStory1_95() {
+		return story1_95;
+	}
+
+
+
+
+	public void setStory1_95(JLabel story1_95) {
+		this.story1_95 = story1_95;
+	}
+
+
+
+
+	public JLabel getStory1_96() {
+		return story1_96;
+	}
+
+
+
+
+	public void setStory1_96(JLabel story1_96) {
+		this.story1_96 = story1_96;
+	}
+
+
+
+
+	public JLabel getStory1_97() {
+		return story1_97;
+	}
+
+
+
+
+	public void setStory1_97(JLabel story1_97) {
+		this.story1_97 = story1_97;
+	}
+
+
+
+
+	public JLabel getStory1_98() {
+		return story1_98;
+	}
+
+
+
+
+	public void setStory1_98(JLabel story1_98) {
+		this.story1_98 = story1_98;
+	}
+
+
+
+
+	public JLabel getStory1_99() {
+		return story1_99;
+	}
+
+
+
+
+	public void setStory1_99(JLabel story1_99) {
+		this.story1_99 = story1_99;
+	}
+
+
+
+
+	public JLabel getStory1_100() {
+		return story1_100;
+	}
+
+
+
+
+	public void setStory1_100(JLabel story1_100) {
+		this.story1_100 = story1_100;
+	}
+
+
+
+
+	public JLabel getStory1_101() {
+		return story1_101;
+	}
+
+
+
+
+	public void setStory1_101(JLabel story1_101) {
+		this.story1_101 = story1_101;
+	}
+
+
+
+
+	public JLabel getStory1_102() {
+		return story1_102;
+	}
+
+
+
+
+	public void setStory1_102(JLabel story1_102) {
+		this.story1_102 = story1_102;
+	}
+
+
+
+
+	public JLabel getStory1_103() {
+		return story1_103;
+	}
+
+
+
+
+	public void setStory1_103(JLabel story1_103) {
+		this.story1_103 = story1_103;
 	}
 
 
