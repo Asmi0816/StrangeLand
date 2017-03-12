@@ -205,7 +205,7 @@ public class StrangePanel extends JPanel
 				{
 					storyPanel.getFirstChoice2().setVisible(true);
 					rightButton.setText("Yes what happened to you?");
-					leftButton.setText("No way! I think a problem would acctually happen!");
+					leftButton.setText("No way! It's not my job!");
 					level = level + "1";
 				}
 				
@@ -242,7 +242,7 @@ public class StrangePanel extends JPanel
 							baseController.waitFor2();
 							storyPanel.getStory1_6().setVisible(true);
 							rightButton.setText("Slow down what ocean?");
-							leftButton.setText("Calm down we need to get busy if we are to save you.");
+							leftButton.setText("Calm down we need to hurry save you.");
 							
 						}
 					});
@@ -346,7 +346,7 @@ public class StrangePanel extends JPanel
 						public void run() 
 						{
 							storyPanel.getStory1_21().setVisible(true);
-							rightButton.setText("You should rip the bottom part of your shirt off to bandage that cut.");
+							rightButton.setText("Rip your shirt off to bandage that cut.");
 							leftButton.setText("You do have nothing.");
 							
 						}
@@ -368,8 +368,8 @@ public class StrangePanel extends JPanel
 							baseController.waitFor2();
 							storyPanel.getStory1_24().setVisible(true);
 							baseController.waitFor2();
-							rightButton.setText("Grab some wood from around you and build a fire!");
-							leftButton.setText("Stones, grab stones that were exposed to the sun!");
+							rightButton.setText("Grab some wood and build a fire!");
+							leftButton.setText("Grab stones that were exposed to the sun!");
 							
 						}
 					});
@@ -398,6 +398,26 @@ public class StrangePanel extends JPanel
 							baseController.waitFor2();
 							rightButton.setText("Ditch the rocks.");
 							leftButton.setText("Could get cold you should keep carrying a few.");
+							
+						}
+					});
+					thread.start();
+					level = level + "1";
+				}
+				else if(level.equals("11111111101000"))
+				{
+					
+					Thread thread = new Thread(new Runnable() 
+					{
+						@Override
+						public void run() 
+						{
+							storyPanel.getStory1_63().setVisible(true);
+							baseController.waitFor2();
+							storyPanel.getStory1_64().setVisible(true);
+							baseController.waitFor2();
+							rightButton.setText("Okay, sounds good.");
+							leftButton.setText("No, I don't trust it go around.");
 							
 						}
 					});
@@ -498,7 +518,7 @@ public class StrangePanel extends JPanel
 							baseController.waitFor2();
 							storyPanel.getStory1_27().setVisible(true);
 							baseController.waitFor2();
-							rightButton.setText("I agree. You should start moving towards the mountains tonight.");
+							rightButton.setText("I agree. Start moving towards the mountains tonight.");
 							leftButton.setText("I think you should get some sleep.");
 							
 						}
@@ -533,7 +553,7 @@ public class StrangePanel extends JPanel
 							storyPanel.getStory1_42().setVisible(true);
 							baseController.waitFor2();
 							rightButton.setText("Fine ditch the rock and run to the mountain");
-							leftButton.setText("Sit down and take a break but don't leave the rock.");
+							leftButton.setText("Sit down and take a break");
 							
 						}
 					});
@@ -604,6 +624,26 @@ public class StrangePanel extends JPanel
 							storyPanel.getStory1_62().setVisible(true);
 							rightButton.setText("Yha I'm here.");
 							leftButton.setText("Thank goodness you're alive!");
+							
+						}
+					});
+					thread.start();
+					level = level + "0";
+				}
+				else if(level.equals("11111111101000"))
+				{
+					
+					Thread thread = new Thread(new Runnable() 
+					{
+						@Override
+						public void run() 
+						{
+							storyPanel.getStory1_63().setVisible(true);
+							baseController.waitFor2();
+							storyPanel.getStory1_64().setVisible(true);
+							baseController.waitFor2();
+							rightButton.setText("Okay, sounds good.");
+							leftButton.setText("No, I don't trust it go around.");
 							
 						}
 					});
