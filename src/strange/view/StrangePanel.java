@@ -424,6 +424,65 @@ public class StrangePanel extends JPanel
 					thread.start();
 					level = level + "1";
 				}
+				else if(level.equals("111111111010001"))
+				{
+					
+					Thread thread = new Thread(new Runnable() 
+					{
+						@Override
+						public void run() 
+						{
+							storyPanel.getStory1_65().setVisible(true);
+							baseController.waitFor2();
+							storyPanel.getStory1_66().setVisible(true);
+							baseController.waitFor2();
+							storyPanel.getStory1_67().setVisible(true);
+							rightButton.setText("What's inside of it?");
+							leftButton.setText("No, I don't trust it go around.");
+							
+						}
+					});
+					thread.start();
+					level = level + "0";
+				}
+				else if(level.equals("11111111101000101"))
+				{
+					
+					Thread thread = new Thread(new Runnable() 
+					{
+						@Override
+						public void run() 
+						{
+							storyPanel.getStory1_71().setVisible(true);
+							baseController.waitFor2();
+							storyPanel.getStory1_72().setVisible(true);
+							baseController.waitFor2();
+							storyPanel.getStory1_73().setVisible(true);
+							rightButton.setText("Probably nothing to worry about.");
+							leftButton.setText("Look for a weapon.");
+							
+						}
+					});
+					thread.start();
+					level = level + "1";
+				}
+				else if(level.equals("111111111010001011"))
+				{
+					
+					Thread thread = new Thread(new Runnable() 
+					{
+						@Override
+						public void run() 
+						{
+							storyPanel.getStory1_74().setVisible(true);
+							rightButton.setText("Don't eat the fruit.");
+							leftButton.setText("Eat the fruit.");
+							
+						}
+					});
+					thread.start();
+					level = level + "1";
+				}
 			}
 
 		});
@@ -642,8 +701,50 @@ public class StrangePanel extends JPanel
 							baseController.waitFor2();
 							storyPanel.getStory1_64().setVisible(true);
 							baseController.waitFor2();
-							rightButton.setText("Okay, sounds good.");
-							leftButton.setText("No, I don't trust it go around.");
+							rightButton.setText("No, I don't trust it go around.");
+							leftButton.setText("Okay, sounds good.");
+							
+						}
+					});
+					thread.start();
+					level = level + "1";
+				}
+				else if(level.equals("1111111110100010"))
+				{
+					
+					Thread thread = new Thread(new Runnable() 
+					{
+						@Override
+						public void run() 
+						{
+							storyPanel.getStory1_68().setVisible(true);
+							baseController.waitFor2();
+							storyPanel.getStory1_69().setVisible(true);
+							baseController.waitFor2();
+							storyPanel.getStory1_70().setVisible(true);
+							rightButton.setText("You should look for food.");
+							leftButton.setText("Just pass through.");
+							
+						}
+					});
+					thread.start();
+					level = level + "1";
+				}
+				else if(level.equals("1111111110100010111"))
+				{
+					
+					Thread thread = new Thread(new Runnable() 
+					{
+						@Override
+						public void run() 
+						{
+							storyPanel.getStory1_75().setVisible(true);
+							baseController.waitFor2();
+							storyPanel.getStory1_76().setVisible(true);
+							baseController.waitFor2();
+							storyPanel.getStory1_77().setVisible(true);
+							rightButton.setText("Keep looking around.");
+							leftButton.setText("Just leave the cave.");
 							
 						}
 					});

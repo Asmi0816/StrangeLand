@@ -207,30 +207,39 @@ public class StoryPanel extends JPanel
 		this.story1_62 = new JLabel("Are you there?");
 		this.story1_63 = new JLabel("I'm going to keep heading for the mountain cave.");
 		this.story1_64 = new JLabel("Hopefully there is something good that I can use or at least protection from the cold.");
+		
 		this.story1_65 = new JLabel("Alright, I'm almost there and this isn't just some cave in the mountains.");
 		this.story1_66 = new JLabel("This thing is almost the size of the mountain and it's not a cave.");
 		this.story1_67 = new JLabel("It's like it was a giant structure.");
+		
 		this.story1_68 = new JLabel("Okay, there are huge statues of people.");
 		this.story1_69 = new JLabel("As well as thousands of houses on the side of the cave walls.");
 		this.story1_70 = new JLabel("A lot of this stuff looks ancient, but made with the precision of modern tools.");
+		
 		this.story1_71 = new JLabel("Alright, I am pretty hungry and I could find some food and supplies.");
 		this.story1_72 = new JLabel("You know, as I'm going from room to room looking for supplies.");
 		this.story1_73 = new JLabel("I'm noticing it looks like who ever was living here got out in a hurry.");
+		
 		this.story1_74 = new JLabel("Okay, I found what looks like a pear tree of some sort.");
+		
 		this.story1_75 = new JLabel("It tastes way better than a pear!");
 		this.story1_76 = new JLabel("I'm going to eat as many as possible and then carry some with me for later.");
 		this.story1_77 = new JLabel("I'm going to finish looking around here and continue on.");
+		
 		this.story1_78 = new JLabel("So, I finished looking around and it was a lot of the same.");
 		this.story1_79 = new JLabel("Amazing, old, ground breaking, discovery mind you.");
 		this.story1_80 = new JLabel("But nothing else to help me survive.");
+		
 		this.story1_81 = new JLabel("I made it out of the cave and there is something incredible here.");
 		this.story1_82 = new JLabel("Wrecks,");
-		this.story1_83 = new JLabel("hundreds of wrecks all in this bowl of mountains.");
+		this.story1_83 = new JLabel("hundreds of boat wrecks all in this bowl of mountains.");
 		this.story1_84 = new JLabel("Some look like they date back hunders of years. Coulmbus era kindof stuff is here,");
 		this.story1_85 = new JLabel("all of them wrecked in the center lake.");
 		this.story1_86 = new JLabel("Actually, there are planes, planes are also wrecked on the sides of this bowl.");
+		
 		this.story1_87 = new JLabel("Yes, there is another cave like the one I went through on the other side of the bowl.");
 		this.story1_88 = new JLabel("But it's about another mile.");
+		
 		this.story1_89 = new JLabel("");
 
 	
