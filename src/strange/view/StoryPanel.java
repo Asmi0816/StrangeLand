@@ -123,6 +123,60 @@ public class StoryPanel extends JPanel
 	private JLabel story1_101;
 	private JLabel story1_102;
 	private JLabel story1_103;
+	private JLabel story1_104;
+	private JLabel story1_105;
+	private JLabel story1_106;
+	private JLabel story1_107;
+	private JLabel story1_108;
+	private JLabel story1_109;
+	private JLabel story1_110;
+	private JLabel story1_111;
+	private JLabel story1_112;
+	private JLabel story1_113;
+	private JLabel story1_114;
+	private JLabel story1_115;
+	private JLabel story1_116;
+	private JLabel story1_117;
+	private JLabel story1_118;
+	private JLabel story1_119;
+	private JLabel story1_120;
+	private JLabel story1_121;
+	private JLabel story1_122;
+	private JLabel story2_1;
+	private JLabel story2_2;
+	private JLabel story2_3;
+	private JLabel story3_1;
+	private JLabel story3_2;
+	private JLabel story3_3;
+	private JLabel story3_4;
+	private JLabel story3_5;
+	private JLabel story3_6;
+	private JLabel story3_7;
+	private JLabel story3_8;
+	private JLabel story3_9;
+	private JLabel story3_10;
+	private JLabel story3_11;
+	private JLabel story4_1;
+	private JLabel story4_2;
+	private JLabel story4_3;
+	private JLabel story4_4;
+	private JLabel story4_5;
+	private JLabel story4_6;
+	private JLabel story5_1;
+	private JLabel story5_2;
+	private JLabel story5_3;
+	private JLabel story5_4;
+	private JLabel story5_5;
+	private JLabel story5_6;
+	private JLabel story5_7;
+
+	
+
+
+
+
+
+
 	private StrangeController baseController;
 	
 	public StoryPanel(StrangeController baseController)
@@ -132,17 +186,19 @@ public class StoryPanel extends JPanel
 		this.baseLayout = new SpringLayout();
 		
 		this.baseController = baseController;
-		this.newsLabel = new JLabel("<html>This is a mix of the two games Reigns and LifeLine both amazing. <br>You will have text show up on the screen and you press buttons to affect the story.<br> Press either button to start the game.<html>");
+		this.newsLabel = new JLabel("<html>This is a mix of the two games: Reigns and LifeLine...both amazing. <br>You will have text show up on the screen and you press buttons to affect the story.<br> Press either button to start the game.<html>");
 		this.startUp = new JLabel("Booting up...");
 		this.startUp1 = new JLabel("Logging in...");
 		this.startUp2 = new JLabel("receving signal...");
 		this.firstLabel = new JLabel("\"Fun! Nothing could ever go wrong!\" they said.");
 		this.firstChoice1 = new JLabel("Who is this?");
+		
 		this.firstChoice2 = new JLabel("I'm Michael Larson. Are you the person I'm supposed to contact in an emergency?");
 		this.openingStory = new JLabel("Great.");
 		this.openingStory2 = new JLabel("Hey, can you get a less sarcastic moron to help me?");
 		this.openingStory3 = new JLabel("I'm going to die out here with a useless idiot leading me to my doom.");
-		this.openingStory4 = new JLabel("Hey, do you actually know how to get me out of this mess?");
+	
+		this.openingStory4 = new JLabel("Hey, I think I can probably get out of this on my own. Nice talking to ya.");
 		this.story1_1 = new JLabel("Fantastic! I have been trying to get someone to answer my hails for hours.");
 		this.story1_2 = new JLabel("Do you have any clue how to get me out of this horrible situation?");
 		this.story1_3 = new JLabel("All that is around me for about a mile is sand and rocks.");
@@ -207,41 +263,90 @@ public class StoryPanel extends JPanel
 		this.story1_62 = new JLabel("Are you there?");
 		this.story1_63 = new JLabel("I'm going to keep heading for the mountain cave.");
 		this.story1_64 = new JLabel("Hopefully there is something good that I can use or at least protection from the cold.");
-		
 		this.story1_65 = new JLabel("Alright, I'm almost there and this isn't just some cave in the mountains.");
 		this.story1_66 = new JLabel("This thing is almost the size of the mountain and it's not a cave.");
 		this.story1_67 = new JLabel("It's like it was a giant structure.");
-		
 		this.story1_68 = new JLabel("Okay, there are huge statues of people.");
 		this.story1_69 = new JLabel("As well as thousands of houses on the side of the cave walls.");
 		this.story1_70 = new JLabel("A lot of this stuff looks ancient, but made with the precision of modern tools.");
-		
 		this.story1_71 = new JLabel("Alright, I am pretty hungry and I could find some food and supplies.");
 		this.story1_72 = new JLabel("You know, as I'm going from room to room looking for supplies.");
 		this.story1_73 = new JLabel("I'm noticing it looks like who ever was living here got out in a hurry.");
-		
 		this.story1_74 = new JLabel("Okay, I found what looks like a pear tree of some sort.");
-		
 		this.story1_75 = new JLabel("It tastes way better than a pear!");
 		this.story1_76 = new JLabel("I'm going to eat as many as possible and then carry some with me for later.");
 		this.story1_77 = new JLabel("I'm going to finish looking around here and continue on.");
-		
 		this.story1_78 = new JLabel("So, I finished looking around and it was a lot of the same.");
 		this.story1_79 = new JLabel("Amazing, old, ground breaking, discovery mind you.");
 		this.story1_80 = new JLabel("But nothing else to help me survive.");
-		
 		this.story1_81 = new JLabel("I made it out of the cave and there is something incredible here.");
 		this.story1_82 = new JLabel("Wrecks,");
 		this.story1_83 = new JLabel("hundreds of boat wrecks all in this bowl of mountains.");
 		this.story1_84 = new JLabel("Some look like they date back hunders of years. Coulmbus era kindof stuff is here,");
 		this.story1_85 = new JLabel("all of them wrecked in the center lake.");
 		this.story1_86 = new JLabel("Actually, there are planes, planes are also wrecked on the sides of this bowl.");
-		
 		this.story1_87 = new JLabel("Yes, there is another cave like the one I went through on the other side of the bowl.");
 		this.story1_88 = new JLabel("But it's about another mile.");
-		
-		this.story1_89 = new JLabel("");
+		this.story1_89 = new JLabel("Alright there's an airplane nearby and it looks fairly recent.");
+		this.story1_90 = new JLabel("...");
+		this.story1_91 = new JLabel("Okay it took a little while but I made it.");
+		this.story1_92 = new JLabel("And there was something stange about it.");
+		this.story1_93 = new JLabel("It is completely destroyed, but the inside and outside have been stripped of everything.");
+		this.story1_94 = new JLabel("Even things that wouldn't seem needed.");
+		this.story1_95 = new JLabel("The storage compartment doors have been taken.");
+		this.story1_96 = new JLabel("Alright, at least there's wood to start a fire.");
+		this.story1_97 = new JLabel("Okay, I found some leaves, wood, and string.");
+		this.story1_98 = new JLabel("What now I never started a fire in the wild.");
+		this.story1_99 = new JLabel("Okay I got a spark what should I do now?");
+		this.story1_100 = new JLabel("Right, got the small fire and I was wondering.");
+		this.story1_101 = new JLabel("Should I make it be a bonfire or a small fire?");
+		this.story1_102 = new JLabel("The bon fire would attract attention from possible survivors...");
+		this.story1_103 = new JLabel("but what if the survivors are hostile?");
+		this.story1_104 = new JLabel("This fire is huge!");
+		this.story1_105 = new JLabel("Alright, now all that's left to do is wait.");
+		this.story1_106 = new JLabel("*snap*");
+		this.story1_107 = new JLabel("Wai...");
+		this.story1_108 = new JLabel("*thud*");
+		this.story1_109 = new JLabel("...");
+		this.story1_110 = new JLabel("...");
+		this.story1_111 = new JLabel("...");
+		this.story1_112 = new JLabel("...");
+		this.story1_113 = new JLabel("(whisper)Hey I just got jummped from behind while watching my fire.");
+		this.story1_114 = new JLabel("and now I woke up in a strange government looking facility.");
+		this.story1_115 = new JLabel("Almost every survivor who has crashed in the bermuda triangle is here.");
+		this.story1_116 = new JLabel("I'm stuck in a cell. Please when the boat arrives...");
+		this.story1_117 = new JLabel("*Hey you!*");
+		this.story1_118 = new JLabel("Tell them to look for me!");
+		this.story1_119 = new JLabel("*thud*");
+		this.story1_120 = new JLabel("Signal lost...");
+		this.story1_121 = new JLabel("Closing connection.");
+		this.story1_122 = new JLabel("Nice to meet you.");
+		this.story2_1 = new JLabel("Yeah, sounds depressing. But after the storm I guess this will be the best possible situation.");
+		this.story2_2 = new JLabel("Surrounded with sand and rocks.");
+		this.story2_3 = new JLabel("Wait, theres no ocean!");
+		this.story3_1 = new JLabel("Alright, I should let you know that I have a gash on my side.");
+		this.story3_2 = new JLabel("Probably not life threatening, but I'm not a doctor.");
+		this.story3_3 = new JLabel("Okay, I don't have much time the sun is a little close to setting.");
+		this.story3_4 = new JLabel("There's not a lot to work with around me.");
+		this.story3_5 = new JLabel("But there's enough to make do.");
+		this.story3_6 = new JLabel("Before I was talking with you,");
+		this.story3_7 = new JLabel("I already found these black colored berrys on the ground.");
+		this.story3_8 = new JLabel("But I don't know if I should eat them.");
+		this.story3_9 = new JLabel("Probably the best move.");
+		this.story3_10 = new JLabel("I'm not all that hungry anyways.");
+		this.story3_11 = new JLabel("But the wound is hurting fairly badly.");
+		this.story4_1 = new JLabel("Well they taste fine.");
+		this.story4_2 = new JLabel("*cough*");
+		this.story4_3 = new JLabel("*cough* *cough* *cough*");
+		this.story4_4 = new JLabel("-VITALS FALLING-");
+		this.story4_5 = new JLabel("-VITALS LOST-");
+		this.story4_6 = new JLabel("-CLOSING CONNECTION-");
 
+		
+
+
+
+		
 	
 		
 		setupPanel();
@@ -356,7 +461,59 @@ public class StoryPanel extends JPanel
 		this.add(story1_87);
 		this.add(story1_88);
 		this.add(story1_89);
-		
+		this.add(story1_90);
+		this.add(story1_91);
+		this.add(story1_92);
+		this.add(story1_93);
+		this.add(story1_94);
+		this.add(story1_95);
+		this.add(story1_96);
+		this.add(story1_97);
+		this.add(story1_98);
+		this.add(story1_99);
+		this.add(story1_100);
+		this.add(story1_101);
+		this.add(story1_102);
+		this.add(story1_103);
+		this.add(story1_104);
+		this.add(story1_105);
+		this.add(story1_106);
+		this.add(story1_107);
+		this.add(story1_108);
+		this.add(story1_109);
+		this.add(story1_110);
+		this.add(story1_111);
+		this.add(story1_112);
+		this.add(story1_113);
+		this.add(story1_114);
+		this.add(story1_115);
+		this.add(story1_116);
+		this.add(story1_117);
+		this.add(story1_118);
+		this.add(story1_119);
+		this.add(story1_120);
+		this.add(story1_121);
+		this.add(story1_122);
+		this.add(story2_1);
+		this.add(story2_2);
+		this.add(story2_3);
+		this.add(story3_1);
+		this.add(story3_2);
+		this.add(story3_3);
+		this.add(story3_4);
+		this.add(story3_5);
+		this.add(story3_6);
+		this.add(story3_7);
+		this.add(story3_8);
+		this.add(story3_9);
+		this.add(story3_10);
+		this.add(story3_11);
+		this.add(story4_1);
+		this.add(story4_2);
+		this.add(story4_3);
+		this.add(story4_4);
+		this.add(story4_5);
+		this.add(story4_6);
 	}
 	
 	public void setupLayout()
@@ -460,8 +617,65 @@ public class StoryPanel extends JPanel
 		story1_87.setVisible(false);
 		story1_88.setVisible(false);
 		story1_89.setVisible(false);
+		story1_90.setVisible(false);
+		story1_91.setVisible(false);
+		story1_92.setVisible(false);
+		story1_93.setVisible(false);
+		story1_94.setVisible(false);
+		story1_95.setVisible(false);
+		story1_96.setVisible(false);
+		story1_97.setVisible(false);
+		story1_98.setVisible(false);
+		story1_99.setVisible(false);
+		story1_100.setVisible(false);
+		story1_101.setVisible(false);
+		story1_102.setVisible(false);
+		story1_103.setVisible(false);
+		story1_104.setVisible(false);
+		story1_105.setVisible(false);
+		story1_106.setVisible(false);
+		story1_107.setVisible(false);
+		story1_108.setVisible(false);
+		story1_109.setVisible(false);
+		story1_110.setVisible(false);
+		story1_111.setVisible(false);
+		story1_112.setVisible(false);
+		story1_113.setVisible(false);
+		story1_114.setVisible(false);
+		story1_115.setVisible(false);
+		story1_116.setVisible(false);
+		story1_117.setVisible(false);
+		story1_118.setVisible(false);
+		story1_119.setVisible(false);
+		story1_120.setVisible(false);
+		story1_121.setVisible(false);
+		story1_122.setVisible(false);
+		story2_1.setVisible(false);
+		story2_2.setVisible(false);
+		story2_3.setVisible(false);
+		story3_1.setVisible(false);
+		story3_3.setVisible(false);
+		story3_2.setVisible(false);
+		story3_4.setVisible(false);
+		story3_5.setVisible(false);
+		story3_6.setVisible(false);
+		story3_7.setVisible(false);
+		story3_8.setVisible(false);
+		story3_9.setVisible(false);
+		story3_10.setVisible(false);
+		story3_11.setVisible(false);
+		story4_1.setVisible(false);
+		story4_3.setVisible(false);
+		story4_2.setVisible(false);
+		story4_4.setVisible(false);
+		story4_5.setVisible(false);
+		story4_6.setVisible(false);
+		story1_122.setForeground(new Color(124, 252, 0));
+		baseLayout.putConstraint(SpringLayout.NORTH, openingStory3, 20, SpringLayout.NORTH, openingStory);
+		baseLayout.putConstraint(SpringLayout.NORTH, story1_122, 20, SpringLayout.NORTH, firstChoice1);
+
+		baseLayout.putConstraint(SpringLayout.NORTH, firstChoice1, 20, SpringLayout.NORTH, firstLabel);
 		baseLayout.putConstraint(SpringLayout.NORTH, firstLabel, 600, SpringLayout.NORTH, newsLabel);
-		baseLayout.putConstraint(SpringLayout.NORTH, firstChoice1, 40, SpringLayout.NORTH, firstLabel);
 		baseLayout.putConstraint(SpringLayout.NORTH, firstChoice2, 40, SpringLayout.NORTH, firstLabel);
 		newsLabel.setForeground(new Color(124, 252, 0));
 		startUp.setForeground(new Color(124, 252, 0));
@@ -478,7 +692,6 @@ public class StoryPanel extends JPanel
 		firstChoice1.setForeground(new Color(124, 252, 0));
 		firstChoice2.setForeground(new Color(124, 252, 0));
 		openingStory3.setForeground(new Color(124, 252, 0));
-		baseLayout.putConstraint(SpringLayout.NORTH, openingStory3, 20, SpringLayout.NORTH, openingStory2);
 		openingStory4.setForeground(new Color(124, 252, 0));
 		baseLayout.putConstraint(SpringLayout.NORTH, openingStory4, 20, SpringLayout.NORTH, openingStory3);
 		baseLayout.putConstraint(SpringLayout.NORTH, story1_1, 20, SpringLayout.NORTH, firstChoice2);
@@ -570,6 +783,8 @@ public class StoryPanel extends JPanel
 		story1_44.setForeground(new Color(124, 252, 0));
 		baseLayout.putConstraint(SpringLayout.NORTH, story1_44, 20, SpringLayout.NORTH, story1_43);
 		story1_45.setForeground(new Color(124, 252, 0));
+		baseLayout.putConstraint(SpringLayout.NORTH, story3_1, 20, SpringLayout.NORTH, story1_6);
+
 		baseLayout.putConstraint(SpringLayout.NORTH, story1_45, 20, SpringLayout.NORTH, story1_44);
 		story1_46.setForeground(new Color(124, 252, 0));
 		baseLayout.putConstraint(SpringLayout.NORTH, story1_46, 20, SpringLayout.NORTH, story1_45);
@@ -659,9 +874,268 @@ public class StoryPanel extends JPanel
 		baseLayout.putConstraint(SpringLayout.NORTH, story1_88, 20, SpringLayout.NORTH, story1_87);
 		story1_89.setForeground(new Color(124, 252, 0));
 		baseLayout.putConstraint(SpringLayout.NORTH, story1_89, 20, SpringLayout.NORTH, story1_88);
+		story1_90.setForeground(new Color(124, 252, 0));
+		baseLayout.putConstraint(SpringLayout.NORTH, story1_90, 20, SpringLayout.NORTH, story1_89);
+		story1_91.setForeground(new Color(124, 252, 0));
+		baseLayout.putConstraint(SpringLayout.NORTH, story1_91, 20, SpringLayout.NORTH, story1_90);
+		story1_92.setForeground(new Color(124, 252, 0));
+		baseLayout.putConstraint(SpringLayout.NORTH, story1_92, 20, SpringLayout.NORTH, story1_91);
+		story1_93.setForeground(new Color(124, 252, 0));
+		baseLayout.putConstraint(SpringLayout.NORTH, story1_93, 20, SpringLayout.NORTH, story1_92);
+		story1_94.setForeground(new Color(124, 252, 0));
+		baseLayout.putConstraint(SpringLayout.NORTH, story1_94, 20, SpringLayout.NORTH, story1_93);
+		story1_95.setForeground(new Color(124, 252, 0));
+		baseLayout.putConstraint(SpringLayout.NORTH, story1_95, 20, SpringLayout.NORTH, story1_94);
+		story1_96.setForeground(new Color(124, 252, 0));
+		baseLayout.putConstraint(SpringLayout.NORTH, story1_96, 20, SpringLayout.NORTH, story1_95);
+		story1_97.setForeground(new Color(124, 252, 0));
+		baseLayout.putConstraint(SpringLayout.NORTH, story1_97, 20, SpringLayout.NORTH, story1_96);
+		story1_98.setForeground(new Color(124, 252, 0));
+		baseLayout.putConstraint(SpringLayout.NORTH, story1_98, 20, SpringLayout.NORTH, story1_97);
+		story1_99.setForeground(new Color(124, 252, 0));
+		baseLayout.putConstraint(SpringLayout.NORTH, story1_99, 20, SpringLayout.NORTH, story1_98);
+		story1_100.setForeground(new Color(124, 252, 0));
+		baseLayout.putConstraint(SpringLayout.NORTH, story1_100, 20, SpringLayout.NORTH, story1_99);
+		story1_101.setForeground(new Color(124, 252, 0));
+		baseLayout.putConstraint(SpringLayout.NORTH, story1_101, 20, SpringLayout.NORTH, story1_100);
+		story1_102.setForeground(new Color(124, 252, 0));
+		baseLayout.putConstraint(SpringLayout.NORTH, story1_102, 20, SpringLayout.NORTH, story1_101);
+		story1_103.setForeground(new Color(124, 252, 0));
+		baseLayout.putConstraint(SpringLayout.NORTH, story1_103, 20, SpringLayout.NORTH, story1_102);
+		story1_104.setForeground(new Color(124, 252, 0));
+		baseLayout.putConstraint(SpringLayout.NORTH, story1_104, 20, SpringLayout.NORTH, story1_103);
+		story1_105.setForeground(new Color(124, 252, 0));
+		baseLayout.putConstraint(SpringLayout.NORTH, story1_105, 20, SpringLayout.NORTH, story1_104);
+		story1_106.setForeground(new Color(124, 252, 0));
+		baseLayout.putConstraint(SpringLayout.NORTH, story1_106, 20, SpringLayout.NORTH, story1_105);
+		story1_107.setForeground(new Color(124, 252, 0));
+		baseLayout.putConstraint(SpringLayout.NORTH, story1_107, 20, SpringLayout.NORTH, story1_106);
+		story1_108.setForeground(new Color(124, 252, 0));
+		baseLayout.putConstraint(SpringLayout.NORTH, story1_108, 20, SpringLayout.NORTH, story1_107);
+		story1_109.setForeground(new Color(124, 252, 0));
+		baseLayout.putConstraint(SpringLayout.NORTH, story1_109, 20, SpringLayout.NORTH, story1_108);
+		story1_110.setForeground(new Color(124, 252, 0));
+		baseLayout.putConstraint(SpringLayout.NORTH, story1_110, 20, SpringLayout.NORTH, story1_109);
+		story1_111.setForeground(new Color(124, 252, 0));
+		baseLayout.putConstraint(SpringLayout.NORTH, story1_111, 20, SpringLayout.NORTH, story1_110);
+		story1_112.setForeground(new Color(124, 252, 0));
+		baseLayout.putConstraint(SpringLayout.NORTH, story1_112, 20, SpringLayout.NORTH, story1_111);
+		story1_113.setForeground(new Color(124, 252, 0));
+		baseLayout.putConstraint(SpringLayout.NORTH, story1_113, 20, SpringLayout.NORTH, story1_112);
+		story1_114.setForeground(new Color(124, 252, 0));
+		baseLayout.putConstraint(SpringLayout.NORTH, story1_114, 20, SpringLayout.NORTH, story1_113);
+		story1_115.setForeground(new Color(124, 252, 0));
+		baseLayout.putConstraint(SpringLayout.NORTH, story1_115, 20, SpringLayout.NORTH, story1_114);
+		story1_116.setForeground(new Color(124, 252, 0));
+		baseLayout.putConstraint(SpringLayout.NORTH, story1_116, 20, SpringLayout.NORTH, story1_115);
+		story1_117.setForeground(new Color(124, 252, 0));
+		baseLayout.putConstraint(SpringLayout.NORTH, story1_117, 20, SpringLayout.NORTH, story1_116);
+		story1_118.setForeground(new Color(124, 252, 0));
+		baseLayout.putConstraint(SpringLayout.NORTH, story1_118, 20, SpringLayout.NORTH, story1_117);
+		story1_119.setForeground(new Color(124, 252, 0));
+		baseLayout.putConstraint(SpringLayout.NORTH, story1_119, 20, SpringLayout.NORTH, story1_118);
+		story1_120.setForeground(new Color(124, 252, 0));
+		baseLayout.putConstraint(SpringLayout.NORTH, story1_120, 20, SpringLayout.NORTH, story1_119);
+		story1_121.setForeground(new Color(124, 252, 0));
+		baseLayout.putConstraint(SpringLayout.NORTH, story1_121, 20, SpringLayout.NORTH, story1_120);
+		story2_1.setForeground(new Color(124, 252, 0));
+		baseLayout.putConstraint(SpringLayout.NORTH, story2_1, 20, SpringLayout.NORTH, story1_2);
+		story2_2.setForeground(new Color(124, 252, 0));
+		baseLayout.putConstraint(SpringLayout.NORTH, story2_2, 20, SpringLayout.NORTH, story2_1);
+		story2_3.setForeground(new Color(124, 252, 0));
+		baseLayout.putConstraint(SpringLayout.NORTH, story2_3, 20, SpringLayout.NORTH, story2_2);
+		story3_1.setForeground(new Color(124, 252, 0));
+		story3_2.setForeground(new Color(124, 252, 0));
+		baseLayout.putConstraint(SpringLayout.NORTH, story3_2, 20, SpringLayout.NORTH, story3_1);
+		story3_3.setForeground(new Color(124, 252, 0));
+		baseLayout.putConstraint(SpringLayout.NORTH, story3_3, 20, SpringLayout.NORTH, story3_2);
+		story3_4.setForeground(new Color(124, 252, 0));
+		baseLayout.putConstraint(SpringLayout.NORTH, story3_4, 20, SpringLayout.NORTH, story3_3);
+		story3_5.setForeground(new Color(124, 252, 0));
+		baseLayout.putConstraint(SpringLayout.NORTH, story3_5, 20, SpringLayout.NORTH, story3_4);
+		story3_6.setForeground(new Color(124, 252, 0));
+		baseLayout.putConstraint(SpringLayout.NORTH, story3_6, 20, SpringLayout.NORTH, story3_5);
+		story3_7.setForeground(new Color(124, 252, 0));
+		baseLayout.putConstraint(SpringLayout.NORTH, story3_7, 20, SpringLayout.NORTH, story3_6);
+		story3_8.setForeground(new Color(124, 252, 0));
+		baseLayout.putConstraint(SpringLayout.NORTH, story3_8, 20, SpringLayout.NORTH, story3_7);
+		story3_9.setForeground(new Color(124, 252, 0));
+		baseLayout.putConstraint(SpringLayout.NORTH, story3_9, 20, SpringLayout.NORTH, story3_8);
+		story3_10.setForeground(new Color(124, 252, 0));
+		baseLayout.putConstraint(SpringLayout.NORTH, story3_10, 20, SpringLayout.NORTH, story3_9);
+		story3_11.setForeground(new Color(124, 252, 0));
+		baseLayout.putConstraint(SpringLayout.NORTH, story3_11, 20, SpringLayout.NORTH, story3_10);
+		story4_1.setForeground(new Color(124, 252, 0));
+		baseLayout.putConstraint(SpringLayout.NORTH, story4_1, 20, SpringLayout.NORTH, story3_8);
+		story4_2.setForeground(new Color(124, 252, 0));
+		baseLayout.putConstraint(SpringLayout.NORTH, story4_2, 20, SpringLayout.NORTH, story4_1);
+		story4_3.setForeground(new Color(124, 252, 0));
+		baseLayout.putConstraint(SpringLayout.NORTH, story4_3, 20, SpringLayout.NORTH, story4_2);
+		story4_4.setForeground(new Color(124, 252, 0));
+		baseLayout.putConstraint(SpringLayout.NORTH, story4_4, 20, SpringLayout.NORTH, story4_3);
+		story4_5.setForeground(new Color(124, 252, 0));
+		baseLayout.putConstraint(SpringLayout.NORTH, story4_5, 20, SpringLayout.NORTH, story4_4);
+		story4_6.setForeground(new Color(124, 252, 0));
+		baseLayout.putConstraint(SpringLayout.NORTH, story4_6, 20, SpringLayout.NORTH, story4_5);
+
+		
 		
 		
 	}
+	public JLabel getStory3_1() {
+		return story3_1;
+	}
+
+
+
+
+	public void setStory3_1(JLabel story3_1) {
+		this.story3_1 = story3_1;
+	}
+
+
+
+
+	public JLabel getStory3_2() {
+		return story3_2;
+	}
+
+
+
+
+	public void setStory3_2(JLabel story3_2) {
+		this.story3_2 = story3_2;
+	}
+
+
+
+
+	public JLabel getStory3_3() {
+		return story3_3;
+	}
+
+
+
+
+	public void setStory3_3(JLabel story3_3) {
+		this.story3_3 = story3_3;
+	}
+
+
+
+
+	public JLabel getStory3_4() {
+		return story3_4;
+	}
+
+
+
+
+	public void setStory3_4(JLabel story3_4) {
+		this.story3_4 = story3_4;
+	}
+
+
+
+
+	public JLabel getStory3_5() {
+		return story3_5;
+	}
+
+
+
+
+	public void setStory3_5(JLabel story3_5) {
+		this.story3_5 = story3_5;
+	}
+
+
+
+
+	public JLabel getStory3_6() {
+		return story3_6;
+	}
+
+
+
+
+	public void setStory3_6(JLabel story3_6) {
+		this.story3_6 = story3_6;
+	}
+
+
+
+
+	public JLabel getStory3_7() {
+		return story3_7;
+	}
+
+
+
+
+	public void setStory3_7(JLabel story3_7) {
+		this.story3_7 = story3_7;
+	}
+
+
+
+
+	public JLabel getStory3_8() {
+		return story3_8;
+	}
+
+
+
+
+	public void setStory3_8(JLabel story3_8) {
+		this.story3_8 = story3_8;
+	}
+
+
+
+
+	public JLabel getStory3_9() {
+		return story3_9;
+	}
+
+
+
+
+	public void setStory3_9(JLabel story3_9) {
+		this.story3_9 = story3_9;
+	}
+
+
+
+
+	public JLabel getStory3_10() {
+		return story3_10;
+	}
+
+
+
+
+	public void setStory3_10(JLabel story3_10) {
+		this.story3_10 = story3_10;
+	}
+
+
+
+
+	public JLabel getStory3_11() {
+		return story3_11;
+	}
+
+
+
+
+	public void setStory3_11(JLabel story3_11) {
+		this.story3_11 = story3_11;
+	}
+
+
+
+
 	public JLabel getNewsLabel() 
 	{
 		return newsLabel;
@@ -2062,6 +2536,475 @@ public class StoryPanel extends JPanel
 
 	public void setStory1_103(JLabel story1_103) {
 		this.story1_103 = story1_103;
+	}
+	public JLabel getStory1_104() {
+		return story1_104;
+	}
+
+
+
+
+	public void setStory1_104(JLabel story1_104) {
+		this.story1_104 = story1_104;
+	}
+
+
+
+
+	public JLabel getStory1_105() {
+		return story1_105;
+	}
+
+
+
+
+	public void setStory1_105(JLabel story1_105) {
+		this.story1_105 = story1_105;
+	}
+
+
+
+
+	public JLabel getStory1_106() {
+		return story1_106;
+	}
+
+
+
+
+	public void setStory1_106(JLabel story1_106) {
+		this.story1_106 = story1_106;
+	}
+
+
+
+
+	public JLabel getStory1_107() {
+		return story1_107;
+	}
+
+
+
+
+	public void setStory1_107(JLabel story1_107) {
+		this.story1_107 = story1_107;
+	}
+
+
+
+
+	public JLabel getStory1_108() {
+		return story1_108;
+	}
+
+
+
+
+	public void setStory1_108(JLabel story1_108) {
+		this.story1_108 = story1_108;
+	}
+
+
+
+
+	public JLabel getStory1_109() {
+		return story1_109;
+	}
+
+
+
+
+	public void setStory1_109(JLabel story1_109) {
+		this.story1_109 = story1_109;
+	}
+
+
+
+
+	public JLabel getStory1_110() {
+		return story1_110;
+	}
+
+
+
+
+	public void setStory1_110(JLabel story1_110) {
+		this.story1_110 = story1_110;
+	}
+
+
+
+
+	public JLabel getStory1_111() {
+		return story1_111;
+	}
+
+
+
+
+	public void setStory1_111(JLabel story1_111) {
+		this.story1_111 = story1_111;
+	}
+
+
+
+
+	public JLabel getStory1_112() {
+		return story1_112;
+	}
+
+
+
+
+	public void setStory1_112(JLabel story1_112) {
+		this.story1_112 = story1_112;
+	}
+
+
+
+
+	public JLabel getStory1_113() {
+		return story1_113;
+	}
+
+
+
+
+	public void setStory1_113(JLabel story1_113) {
+		this.story1_113 = story1_113;
+	}
+
+
+
+
+	public JLabel getStory1_114() {
+		return story1_114;
+	}
+
+
+
+
+	public void setStory1_114(JLabel story1_114) {
+		this.story1_114 = story1_114;
+	}
+
+
+
+
+	public JLabel getStory1_115() {
+		return story1_115;
+	}
+
+
+
+
+	public void setStory1_115(JLabel story1_115) {
+		this.story1_115 = story1_115;
+	}
+
+
+
+
+	public JLabel getStory1_116() {
+		return story1_116;
+	}
+
+
+
+
+	public void setStory1_116(JLabel story1_116) {
+		this.story1_116 = story1_116;
+	}
+
+
+
+
+	public JLabel getStory1_117() {
+		return story1_117;
+	}
+
+
+
+
+	public void setStory1_117(JLabel story1_117) {
+		this.story1_117 = story1_117;
+	}
+
+
+
+
+	public JLabel getStory1_118() {
+		return story1_118;
+	}
+
+
+
+
+	public void setStory1_118(JLabel story1_118) {
+		this.story1_118 = story1_118;
+	}
+
+
+
+
+	public JLabel getStory1_119() {
+		return story1_119;
+	}
+
+
+
+
+	public void setStory1_119(JLabel story1_119) {
+		this.story1_119 = story1_119;
+	}
+	public JLabel getStory1_120() {
+		return story1_120;
+	}
+
+
+
+
+	public void setStory1_120(JLabel story1_120) {
+		this.story1_120 = story1_120;
+	}
+
+
+
+
+	public JLabel getStory1_121() {
+		return story1_121;
+	}
+
+
+
+
+	public void setStory1_121(JLabel story1_121) {
+		this.story1_121 = story1_121;
+	}
+
+
+
+
+	public JLabel getStory1_122() {
+		return story1_122;
+	}
+
+
+
+
+	public void setStory1_122(JLabel story1_122) {
+		this.story1_122 = story1_122;
+	}
+
+	public JLabel getStory2_1() {
+		return story2_1;
+	}
+
+
+
+
+	public void setStory2_1(JLabel story2_1) {
+		this.story2_1 = story2_1;
+	}
+
+	public JLabel getStory2_2() {
+		return story2_2;
+	}
+
+
+
+
+	public void setStory2_2(JLabel story2_2) {
+		this.story2_2 = story2_2;
+	}
+
+
+	public JLabel getStory2_3() {
+		return story2_3;
+	}
+
+
+
+
+	public void setStory2_3(JLabel story2_3) {
+		this.story2_3 = story2_3;
+	}
+	
+
+	public JLabel getStory4_1() {
+		return story4_1;
+	}
+
+
+
+
+	public void setStory4_1(JLabel story4_1) {
+		this.story4_1 = story4_1;
+	}
+
+
+
+
+	public JLabel getStory4_2() {
+		return story4_2;
+	}
+
+
+
+
+	public void setStory4_2(JLabel story4_2) {
+		this.story4_2 = story4_2;
+	}
+
+
+
+
+	public JLabel getStory4_3() {
+		return story4_3;
+	}
+
+
+
+
+	public void setStory4_3(JLabel story4_3) {
+		this.story4_3 = story4_3;
+	}
+
+
+
+
+	public JLabel getStory4_4() {
+		return story4_4;
+	}
+
+
+
+
+	public void setStory4_4(JLabel story4_4) {
+		this.story4_4 = story4_4;
+	}
+
+
+
+
+	public JLabel getStory4_5() {
+		return story4_5;
+	}
+
+
+
+
+	public void setStory4_5(JLabel story4_5) {
+		this.story4_5 = story4_5;
+	}
+
+
+
+
+	public JLabel getStory4_6() {
+		return story4_6;
+	}
+
+
+
+
+	public void setStory4_6(JLabel story4_6) {
+		this.story4_6 = story4_6;
+	}
+
+	public JLabel getStory5_1() {
+		return story5_1;
+	}
+
+
+
+
+	public void setStory5_1(JLabel story5_1) {
+		this.story5_1 = story5_1;
+	}
+
+
+
+
+	public JLabel getStory5_2() {
+		return story5_2;
+	}
+
+
+
+
+	public void setStory5_2(JLabel story5_2) {
+		this.story5_2 = story5_2;
+	}
+
+
+
+
+	public JLabel getStory5_3() {
+		return story5_3;
+	}
+
+
+
+
+	public void setStory5_3(JLabel story5_3) {
+		this.story5_3 = story5_3;
+	}
+
+
+
+
+	public JLabel getStory5_4() {
+		return story5_4;
+	}
+
+
+
+
+	public void setStory5_4(JLabel story5_4) {
+		this.story5_4 = story5_4;
+	}
+
+
+
+
+	public JLabel getStory5_5() {
+		return story5_5;
+	}
+
+
+
+
+	public void setStory5_5(JLabel story5_5) {
+		this.story5_5 = story5_5;
+	}
+
+
+
+
+	public JLabel getStory5_6() {
+		return story5_6;
+	}
+
+
+
+
+	public void setStory5_6(JLabel story5_6) {
+		this.story5_6 = story5_6;
+	}
+
+
+
+
+	public JLabel getStory5_7() {
+		return story5_7;
+	}
+
+
+
+
+	public void setStory5_7(JLabel story5_7) {
+		this.story5_7 = story5_7;
 	}
 
 
