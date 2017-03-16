@@ -211,6 +211,44 @@ public class StoryPanel extends JPanel
 	private JLabel story10_8;
 	private JLabel story10_9;
 	private JLabel story10_10;
+	private JLabel story11_1;
+	private JLabel story11_2;
+	private JLabel story11_3;
+	private JLabel story11_4;
+	private JLabel story11_5;
+	private JLabel story11_6;
+	private JLabel story11_7;
+	private JLabel story12_1;
+	private JLabel story12_2;
+	private JLabel story12_3;
+	private JLabel story13_1;
+	private JLabel story13_2;
+	private JLabel story13_3;
+	private JLabel story13_4;
+	private JLabel story13_5;
+	private JLabel story13_6;
+	private JLabel story13_7;
+	private JLabel story13_8;
+	private JLabel story13_9;
+	private JLabel story13_10;
+	
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
 
 
 	private StrangeController baseController;
@@ -426,9 +464,28 @@ public class StoryPanel extends JPanel
 		this.story10_8 = new JLabel("HARPOONS SHOT OUT OF THE WALLS KILLING HIM");
 		this.story10_9 = new JLabel("(He should have seen that one coming)");
 		this.story10_10 = new JLabel("SHUTTING DOWN");
+		this.story11_1 = new JLabel("Okay I found what looks like a spear of some sort.");
+		this.story11_2 = new JLabel("And I'm running out of here because where I found it was where skeletons were piled.");
+		this.story11_3 = new JLabel("*thud*");
+		this.story11_4 = new JLabel("Hey so I just tripped down the stairs and landed on the spear in my rush to get out.");
+		this.story11_5 = new JLabel("VITALS FAILING");
+		this.story11_6 = new JLabel("Just thought I would say thanks for your help.");
+		this.story11_7 = new JLabel("COMMUNICATION DISCONNECTED.");
+		this.story12_1 = new JLabel("Yhea, propably poisonous.");
+		this.story12_2 = new JLabel("But I am hungry...");
+		this.story12_3 = new JLabel("Really hungry...");
+		this.story13_1 = new JLabel("Okay on of the huge statues looks like it could topple easily.");
+		this.story13_2 = new JLabel("...");
+		this.story13_3 = new JLabel("Okay I'm going to have to climb to the top to push the head.");
+		this.story13_4 = new JLabel("1... 2... 3! *grinding stone sound*");
+		this.story13_5 = new JLabel("*boom*");
+		this.story13_6 = new JLabel("*screaming*");
+		this.story13_7 = new JLabel("Hey I don't know what I was thinking but when it fell, I fell");
+		this.story13_8 = new JLabel("And I landed on the broken shards of rock below and I'm bleeding out badly.");
+		this.story13_9 = new JLabel("Well at least I Destroyed priceless artifacts befor I died.s");
+		this.story13_10 = new JLabel("SYSTEM SHUTTING DOWN");
 
 		
-
 		setupPanel();
 		setupLayout();
 		
@@ -646,6 +703,26 @@ public class StoryPanel extends JPanel
 		this.add(story10_8);
 		this.add(story10_9);
 		this.add(story10_10);
+		this.add(story11_1);
+		this.add(story11_2);
+		this.add(story11_3);
+		this.add(story11_4);
+		this.add(story11_5);
+		this.add(story11_6);
+		this.add(story11_7);
+		this.add(story12_1);
+		this.add(story12_2);
+		this.add(story12_3);
+		this.add(story13_1);
+		this.add(story13_2);
+		this.add(story13_3);
+		this.add(story13_4);
+		this.add(story13_5);
+		this.add(story13_6);
+		this.add(story13_7);
+		this.add(story13_8);
+		this.add(story13_9);
+		this.add(story13_10);
 	}
 	
 	public void setupLayout()
@@ -851,6 +928,26 @@ public class StoryPanel extends JPanel
 		story10_8.setVisible(false);
 		story10_9.setVisible(false);
 		story10_10.setVisible(false);
+		story11_1.setVisible(false);
+		story11_2.setVisible(false);
+		story11_3.setVisible(false);
+		story11_4.setVisible(false);
+		story11_5.setVisible(false);
+		story11_6.setVisible(false);
+		story11_7.setVisible(false);
+		story12_1.setVisible(false);
+		story12_3.setVisible(false);
+		story12_2.setVisible(false);
+		story13_1.setVisible(false);
+		story13_2.setVisible(false);
+		story13_3.setVisible(false);
+		story13_4.setVisible(false);
+		story13_5.setVisible(false);
+		story13_6.setVisible(false);
+		story13_7.setVisible(false);
+		story13_8.setVisible(false);
+		story13_9.setVisible(false);
+		story13_10.setVisible(false);
 		story1_122.setForeground(new Color(124, 252, 0));
 		baseLayout.putConstraint(SpringLayout.NORTH, openingStory3, 20, SpringLayout.NORTH, openingStory);
 		baseLayout.putConstraint(SpringLayout.NORTH, story1_122, 20, SpringLayout.NORTH, firstChoice1);
@@ -1123,6 +1220,20 @@ public class StoryPanel extends JPanel
 		baseLayout.putConstraint(SpringLayout.NORTH, story1_117, 20, SpringLayout.NORTH, story1_116);
 		story1_118.setForeground(new Color(124, 252, 0));
 		baseLayout.putConstraint(SpringLayout.NORTH, story1_118, 20, SpringLayout.NORTH, story1_117);
+		story11_1.setForeground(new Color(124, 252, 0));
+		baseLayout.putConstraint(SpringLayout.NORTH, story11_1, 20, SpringLayout.NORTH, story1_73);
+		story11_2.setForeground(new Color(124, 252, 0));
+		baseLayout.putConstraint(SpringLayout.NORTH, story11_2, 20, SpringLayout.NORTH, story11_1);
+		story11_3.setForeground(new Color(124, 252, 0));
+		baseLayout.putConstraint(SpringLayout.NORTH, story11_3, 20, SpringLayout.NORTH, story11_2);
+		story11_4.setForeground(new Color(124, 252, 0));
+		baseLayout.putConstraint(SpringLayout.NORTH, story11_4, 20, SpringLayout.NORTH, story11_3);
+		story11_5.setForeground(new Color(124, 252, 0));
+		baseLayout.putConstraint(SpringLayout.NORTH, story11_5, 20, SpringLayout.NORTH, story11_4);
+		story11_6.setForeground(new Color(124, 252, 0));
+		baseLayout.putConstraint(SpringLayout.NORTH, story11_6, 20, SpringLayout.NORTH, story11_5);
+		story11_7.setForeground(new Color(124, 252, 0));
+		baseLayout.putConstraint(SpringLayout.NORTH, story11_7, 20, SpringLayout.NORTH, story11_6);
 		story1_119.setForeground(new Color(124, 252, 0));
 		baseLayout.putConstraint(SpringLayout.NORTH, story1_119, 20, SpringLayout.NORTH, story1_118);
 		story1_120.setForeground(new Color(124, 252, 0));
@@ -1261,10 +1372,246 @@ public class StoryPanel extends JPanel
 		story10_9.setForeground(new Color(124, 252, 0));
 		baseLayout.putConstraint(SpringLayout.NORTH, story10_9, 20, SpringLayout.NORTH, story10_8);
 		story10_10.setForeground(new Color(124, 252, 0));
+		story13_1.setForeground(new Color(124, 252, 0));
+		baseLayout.putConstraint(SpringLayout.NORTH, story13_1, 20, SpringLayout.NORTH, story1_80);
+		story13_2.setForeground(new Color(124, 252, 0));
+		baseLayout.putConstraint(SpringLayout.NORTH, story13_2, 20, SpringLayout.NORTH, story13_1);
+		story13_3.setForeground(new Color(124, 252, 0));
+		baseLayout.putConstraint(SpringLayout.NORTH, story13_3, 20, SpringLayout.NORTH, story13_2);
+		story13_4.setForeground(new Color(124, 252, 0));
+		baseLayout.putConstraint(SpringLayout.NORTH, story13_4, 20, SpringLayout.NORTH, story13_3);
+		story13_5.setForeground(new Color(124, 252, 0));
+		baseLayout.putConstraint(SpringLayout.NORTH, story13_5, 20, SpringLayout.NORTH, story13_4);
+		story13_6.setForeground(new Color(124, 252, 0));
+		baseLayout.putConstraint(SpringLayout.NORTH, story13_6, 20, SpringLayout.NORTH, story13_5);
+		story13_7.setForeground(new Color(124, 252, 0));
+		baseLayout.putConstraint(SpringLayout.NORTH, story13_7, 20, SpringLayout.NORTH, story13_6);
+		story13_8.setForeground(new Color(124, 252, 0));
+		baseLayout.putConstraint(SpringLayout.NORTH, story13_8, 20, SpringLayout.NORTH, story13_7);
+		story13_9.setForeground(new Color(124, 252, 0));
+		baseLayout.putConstraint(SpringLayout.NORTH, story13_9, 20, SpringLayout.NORTH, story13_8);
+		story13_10.setForeground(new Color(124, 252, 0));
+		baseLayout.putConstraint(SpringLayout.NORTH, story13_10, 20, SpringLayout.NORTH, story13_9);
 		baseLayout.putConstraint(SpringLayout.NORTH, story10_10, 20, SpringLayout.NORTH, story10_9);
 		
 		
 		
+	}
+	
+	public void reset()
+	{
+		
+		firstLabel.setVisible(false);
+		firstChoice1.setVisible(false);
+		firstChoice2.setVisible(false);
+		startUp.setVisible(false);
+		startUp1.setVisible(false);
+		startUp2.setVisible(false);
+		openingStory.setVisible(false);
+		openingStory2.setVisible(false);
+		openingStory3.setVisible(false);
+		openingStory4.setVisible(false);
+		story1_1.setVisible(false);
+		story1_2.setVisible(false);
+		story1_3.setVisible(false);
+		story1_4.setVisible(false);
+		story1_5.setVisible(false);
+		story1_6.setVisible(false);
+		story1_7.setVisible(false);
+		story1_8.setVisible(false);
+		story1_9.setVisible(false);
+		story1_10.setVisible(false);
+		story1_11.setVisible(false);
+		story1_12.setVisible(false);
+		story1_13.setVisible(false);
+		story1_14.setVisible(false);
+		story1_15.setVisible(false);
+		story1_16.setVisible(false);
+		story1_17.setVisible(false);
+		story1_18.setVisible(false);
+		story1_19.setVisible(false);
+		story1_20.setVisible(false);
+		story1_21.setVisible(false);
+		story1_22.setVisible(false);
+		story1_23.setVisible(false);
+		story1_24.setVisible(false);
+		story1_25.setVisible(false);
+		story1_26.setVisible(false);
+		story1_27.setVisible(false);
+		story1_28.setVisible(false);
+		story1_29.setVisible(false);
+		story1_30.setVisible(false);
+		story1_31.setVisible(false);
+		story1_32.setVisible(false);
+		story1_33.setVisible(false);
+		story1_34.setVisible(false);
+		story1_35.setVisible(false);
+		story1_36.setVisible(false);
+		story1_37.setVisible(false);
+		story1_38.setVisible(false);
+		story1_39.setVisible(false);
+		story1_40.setVisible(false);
+		story1_41.setVisible(false);
+		story1_42.setVisible(false);
+		story1_43.setVisible(false);
+		story1_44.setVisible(false);
+		story1_45.setVisible(false);
+		story1_46.setVisible(false);
+		story1_47.setVisible(false);
+		story1_48.setVisible(false);
+		story1_49.setVisible(false);
+		story1_50.setVisible(false);
+		story1_51.setVisible(false);
+		story1_52.setVisible(false);
+		story1_53.setVisible(false);
+		story1_54.setVisible(false);
+		story1_55.setVisible(false);
+		story1_56.setVisible(false);
+		story1_57.setVisible(false);
+		story1_58.setVisible(false);
+		story1_59.setVisible(false);
+		story1_60.setVisible(false);
+		story1_61.setVisible(false);
+		story1_62.setVisible(false);
+		story1_63.setVisible(false);
+		story1_64.setVisible(false);
+		story1_65.setVisible(false);
+		story1_66.setVisible(false);
+		story1_67.setVisible(false);
+		story1_68.setVisible(false);
+		story1_69.setVisible(false);
+		story1_70.setVisible(false);
+		story1_71.setVisible(false);
+		story1_72.setVisible(false);
+		story1_73.setVisible(false);
+		story1_74.setVisible(false);
+		story1_75.setVisible(false);
+		story1_76.setVisible(false);
+		story1_77.setVisible(false);
+		story1_78.setVisible(false);
+		story1_79.setVisible(false);
+		story1_80.setVisible(false);
+		story1_81.setVisible(false);
+		story1_82.setVisible(false);
+		story1_83.setVisible(false);
+		story1_84.setVisible(false);
+		story1_85.setVisible(false);
+		story1_86.setVisible(false);
+		story1_87.setVisible(false);
+		story1_88.setVisible(false);
+		story1_89.setVisible(false);
+		story1_90.setVisible(false);
+		story1_91.setVisible(false);
+		story1_92.setVisible(false);
+		story1_93.setVisible(false);
+		story1_94.setVisible(false);
+		story1_95.setVisible(false);
+		story1_96.setVisible(false);
+		story1_97.setVisible(false);
+		story1_98.setVisible(false);
+		story1_99.setVisible(false);
+		story1_100.setVisible(false);
+		story1_101.setVisible(false);
+		story1_102.setVisible(false);
+		story1_103.setVisible(false);
+		story1_104.setVisible(false);
+		story1_105.setVisible(false);
+		story1_106.setVisible(false);
+		story1_107.setVisible(false);
+		story1_108.setVisible(false);
+		story1_109.setVisible(false);
+		story1_110.setVisible(false);
+		story1_111.setVisible(false);
+		story1_112.setVisible(false);
+		story1_113.setVisible(false);
+		story1_114.setVisible(false);
+		story1_115.setVisible(false);
+		story1_116.setVisible(false);
+		story1_117.setVisible(false);
+		story1_118.setVisible(false);
+		story1_119.setVisible(false);
+		story1_120.setVisible(false);
+		story1_121.setVisible(false);
+		story1_122.setVisible(false);
+		story2_1.setVisible(false);
+		story2_2.setVisible(false);
+		story2_3.setVisible(false);
+		story3_1.setVisible(false);
+		story3_3.setVisible(false);
+		story3_2.setVisible(false);
+		story3_4.setVisible(false);
+		story3_5.setVisible(false);
+		story3_6.setVisible(false);
+		story3_7.setVisible(false);
+		story3_8.setVisible(false);
+		story3_9.setVisible(false);
+		story3_10.setVisible(false);
+		story3_11.setVisible(false);
+		story4_1.setVisible(false);
+		story4_3.setVisible(false);
+		story4_2.setVisible(false);
+		story4_4.setVisible(false);
+		story4_5.setVisible(false);
+		story4_6.setVisible(false);
+		story5_1.setVisible(false);
+		story5_3.setVisible(false);
+		story5_2.setVisible(false);
+		story5_4.setVisible(false);
+		story5_5.setVisible(false);
+		story5_6.setVisible(false);
+		story5_7.setVisible(false);
+		story5_8.setVisible(false);
+		story5_9.setVisible(false);
+		story5_10.setVisible(false);
+		story6_1.setVisible(false);
+		story6_3.setVisible(false);
+		story6_2.setVisible(false);
+		story6_4.setVisible(false);
+		story6_5.setVisible(false);
+		story6_6.setVisible(false);
+		story7_1.setVisible(false);
+		story7_3.setVisible(false);
+		story7_2.setVisible(false);
+		story7_4.setVisible(false);
+		story7_5.setVisible(false);
+		story7_6.setVisible(false);
+		story7_7.setVisible(false);
+		story8_1.setVisible(false);
+		story8_3.setVisible(false);
+		story8_2.setVisible(false);
+		story8_4.setVisible(false);
+		story8_5.setVisible(false);
+		story8_6.setVisible(false);
+		story8_7.setVisible(false);
+		story8_8.setVisible(false);
+		story9_1.setVisible(false);
+		story9_2.setVisible(false);
+		story9_3.setVisible(false);
+		story9_4.setVisible(false);
+		story9_5.setVisible(false);
+		story9_6.setVisible(false);
+		story9_7.setVisible(false);
+		story9_8.setVisible(false);
+		story10_1.setVisible(false);
+		story10_2.setVisible(false);
+		story10_3.setVisible(false);
+		story10_4.setVisible(false);
+		story10_5.setVisible(false);
+		story10_6.setVisible(false);
+		story10_7.setVisible(false);
+		story10_8.setVisible(false);
+		story10_9.setVisible(false);
+		story10_10.setVisible(false);
+		story11_1.setVisible(false);
+		story11_2.setVisible(false);
+		story11_3.setVisible(false);
+		story11_4.setVisible(false);
+		story11_5.setVisible(false);
+		story11_6.setVisible(false);
+		story11_7.setVisible(false);
+		story12_1.setVisible(false);
+		story12_3.setVisible(false);
+		story12_2.setVisible(false);
 	}
 	public JLabel getStory3_1() {
 		return story3_1;
@@ -3863,6 +4210,393 @@ public class StoryPanel extends JPanel
 	public void setStory10_10(JLabel story10_10) {
 		this.story10_10 = story10_10;
 	}
+
+	public JLabel getStory11_1() {
+		return story11_1;
+	}
+
+
+
+
+
+
+
+	public void setStory11_1(JLabel story11_1) {
+		this.story11_1 = story11_1;
+	}
+
+
+
+
+
+
+
+	public JLabel getStory11_2() {
+		return story11_2;
+	}
+
+
+
+
+
+
+
+	public void setStory11_2(JLabel story11_2) {
+		this.story11_2 = story11_2;
+	}
+
+
+
+
+
+
+
+	public JLabel getStory11_3() {
+		return story11_3;
+	}
+
+
+
+
+
+
+
+	public void setStory11_3(JLabel story11_3) {
+		this.story11_3 = story11_3;
+	}
+
+
+
+
+
+
+
+	public JLabel getStory11_4() {
+		return story11_4;
+	}
+
+
+
+
+
+
+
+	public void setStory11_4(JLabel story11_4) {
+		this.story11_4 = story11_4;
+	}
+
+
+
+
+
+
+
+	public JLabel getStory11_5() {
+		return story11_5;
+	}
+
+
+
+
+
+
+
+	public void setStory11_5(JLabel story11_5) {
+		this.story11_5 = story11_5;
+	}
+
+
+
+
+
+
+
+	public JLabel getStory11_6() {
+		return story11_6;
+	}
+
+
+
+
+
+
+
+	public void setStory11_6(JLabel story11_6) {
+		this.story11_6 = story11_6;
+	}
+
+
+
+
+
+
+
+	public JLabel getStory11_7() {
+		return story11_7;
+	}
+
+
+
+
+
+
+
+	public void setStory11_7(JLabel story11_7) {
+		this.story11_7 = story11_7;
+	}
+	public JLabel getStory12_1() {
+		return story12_1;
+	}
+
+
+
+
+
+
+
+	public void setStory12_1(JLabel story12_1) {
+		this.story12_1 = story12_1;
+	}
+
+
+
+
+
+
+
+	public JLabel getStory12_2() {
+		return story12_2;
+	}
+
+
+
+
+
+
+
+	public void setStory12_2(JLabel story12_2) {
+		this.story12_2 = story12_2;
+	}
+
+
+
+
+
+
+
+	public JLabel getStory12_3() {
+		return story12_3;
+	}
+
+
+
+
+
+
+
+	public void setStory12_3(JLabel story12_3) {
+		this.story12_3 = story12_3;
+	}
+	public JLabel getStory13_1() {
+		return story13_1;
+	}
+
+
+
+
+
+
+
+	public void setStory13_1(JLabel story13_1) {
+		this.story13_1 = story13_1;
+	}
+
+
+
+
+
+
+
+	public JLabel getStory13_2() {
+		return story13_2;
+	}
+
+
+
+
+
+
+
+	public void setStory13_2(JLabel story13_2) {
+		this.story13_2 = story13_2;
+	}
+
+
+
+
+
+
+
+	public JLabel getStory13_3() {
+		return story13_3;
+	}
+
+
+
+
+
+
+
+	public void setStory13_3(JLabel story13_3) {
+		this.story13_3 = story13_3;
+	}
+
+
+
+
+
+
+
+	public JLabel getStory13_4() {
+		return story13_4;
+	}
+
+
+
+
+
+
+
+	public void setStory13_4(JLabel story13_4) {
+		this.story13_4 = story13_4;
+	}
+
+
+
+
+
+
+
+	public JLabel getStory13_5() {
+		return story13_5;
+	}
+
+
+
+
+
+
+
+	public void setStory13_5(JLabel story13_5) {
+		this.story13_5 = story13_5;
+	}
+
+
+
+
+
+
+
+	public JLabel getStory13_6() {
+		return story13_6;
+	}
+
+
+
+
+
+
+
+	public void setStory13_6(JLabel story13_6) {
+		this.story13_6 = story13_6;
+	}
+
+
+
+
+
+
+
+	public JLabel getStory13_7() {
+		return story13_7;
+	}
+
+
+
+
+
+
+
+	public void setStory13_7(JLabel story13_7) {
+		this.story13_7 = story13_7;
+	}
+
+
+	public JLabel getStory13_8() {
+		return story13_8;
+	}
+
+
+
+
+
+
+
+	public void setStory13_8(JLabel story13_8) {
+		this.story13_8 = story13_8;
+	}
+
+
+
+
+
+
+
+	public JLabel getStory13_9() {
+		return story13_9;
+	}
+
+
+
+
+
+
+
+	public void setStory13_9(JLabel story13_9) {
+		this.story13_9 = story13_9;
+	}
+
+
+
+
+
+
+
+	public JLabel getStory13_10() {
+		return story13_10;
+	}
+
+
+
+
+
+
+
+	public void setStory13_10(JLabel story13_10) {
+		this.story13_10 = story13_10;
+	}
+
+
+
+
+
+
+
+	
+
+
+
+
 
 
 }
