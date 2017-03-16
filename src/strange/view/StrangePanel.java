@@ -4,6 +4,7 @@ import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
+import java.util.Scanner;
 
 import javax.sound.sampled.AudioInputStream;
 import javax.sound.sampled.AudioSystem;
@@ -138,10 +139,10 @@ public class StrangePanel extends JPanel
 		try
     	{
     		
-            AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(new File("C:/Users/Arick Smith/Music/MySong.wav").getAbsoluteFile());
-            Clip clip = AudioSystem.getClip();
-            clip.open(audioInputStream);
-            clip.start();
+			AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(this.getClass().getResourceAsStream("/strange/view/music/StrangeLandSong (1).wav"));
+			Clip clip = AudioSystem.getClip();
+			clip.open(audioInputStream);
+			clip.start();
         }
     	catch(Exception ex) {
             System.out.println("Error with playing sound.");
@@ -155,11 +156,10 @@ public class StrangePanel extends JPanel
 		    	
 		    	try
 		    	{
-		    		
-		            AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(new File("C:/Users/Arick Smith/Music/MySong.wav").getAbsoluteFile());
-		            Clip clip = AudioSystem.getClip();
-		            clip.open(audioInputStream);
-		            clip.start();
+					AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(this.getClass().getResourceAsStream("/strange/view/music/StrangeLandSong (1).wav"));
+					Clip clip = AudioSystem.getClip();
+					clip.open(audioInputStream);
+					clip.start();
 		        }
 		    	catch(Exception ex) {
 		            System.out.println("Error with playing sound.");
