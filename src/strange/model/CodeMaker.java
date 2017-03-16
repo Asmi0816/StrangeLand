@@ -17,17 +17,20 @@ public class CodeMaker
 		return encodedAlphabet;
 	}
 	
-	private String randomMath()
+	private int randomMath()
 	{
 		int choiceNumber = 0;
 		generateRandom = "";
 		choiceNumber = (int)(Math.random() * 26);
 		if(choiceNumber == 1)
 		{
-			
-			
+			if(encodedAlphabet.contains("a") == false)
+			{
+			encodedAlphabet += "a";	
+			System.out.println(encodedAlphabet);
+			}
 		}
-		return generateRandom;
+		return choiceNumber;
 	}
 	
 	
