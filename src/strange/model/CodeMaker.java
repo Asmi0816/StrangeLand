@@ -29,20 +29,21 @@ public class CodeMaker
 		return choiceNumber;
 	}
 	
-	private String generateCode()
+	private void generateCode()
 	{
-		
-			if(encodedAlphabet.contains(alphabet.substring(choiceNumber, choiceNumber+1)) == false)
-			{
-				encodedAlphabet += alphabet.substring(choiceNumber, choiceNumber+1);	
-			}
-			else
-			{
-				tracker--;	
-			}
-		
+		if(encodedAlphabet.contains(alphabet.substring(choiceNumber, choiceNumber+1)) == false)
+		{
+			encodedAlphabet += alphabet.substring(choiceNumber, choiceNumber+1);	
+		}
+		else
+		{
+			tracker--;	
+		}
+	}
 	
-		
+	private String secretMessage()
+	{
+		String [] words = {"Tyler", "is", "a", "rock", "Jacob", "plays", "MooMoo.io", "Issac", "makes", "music", "word"};
 		return generateRandom;
 	}
 	
