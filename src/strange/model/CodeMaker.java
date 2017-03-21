@@ -77,6 +77,30 @@ public class CodeMaker
 				tracker--;	
 			}
 		}
+		if(choiceNumber == 4)
+		{
+			if(encodedAlphabet.contains("e") == false)
+			{
+				encodedAlphabet += "e";	
+				System.out.println(encodedAlphabet);
+			}
+			else
+			{
+				tracker--;	
+			}
+		}
+		if(choiceNumber == 5)
+		{
+			if(encodedAlphabet.contains("f") == false)
+			{
+				encodedAlphabet += "f";	
+				System.out.println(encodedAlphabet);
+			}
+			else
+			{
+				tracker--;	
+			}
+		}
 		
 		return generateRandom;
 	}

@@ -1,12 +1,16 @@
 package strange.controller;
 import strange.view.StrangeFrame;
+import strange.model.CodeMaker;
 
 public class StrangeController
 {
 	private StrangeFrame baseFrame;
+	private CodeMaker logicController;
 	public void start()
 	{
 		baseFrame = new StrangeFrame(this);
+		logicController.encodeMessage();
+		
 	}
 	public void waitFor2()
 	{
