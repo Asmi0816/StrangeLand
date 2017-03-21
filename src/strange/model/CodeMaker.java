@@ -11,14 +11,16 @@ public class CodeMaker
 	
 	public String encodeMessage()
 	{
-		for(int tracker = 0; tracker < 25; tracker++)
+		for(tracker=0; tracker < 26; tracker++)
 		{
 			randomMath();
 			generateCode();
 			
 		}
-		
+		System.out.println(alphabet);
+		System.out.println(encodedAlphabet);
 		return encodedAlphabet;
+		
 	}
 	
 	private int randomMath()
@@ -29,78 +31,17 @@ public class CodeMaker
 	
 	private String generateCode()
 	{
-		if(choiceNumber == 0)
-		{
-			if(encodedAlphabet.contains("a") == false)
+		
+			if(encodedAlphabet.contains(alphabet.substring(choiceNumber, choiceNumber+1)) == false)
 			{
-				encodedAlphabet += "a";	
-				System.out.println(encodedAlphabet);
+				encodedAlphabet += alphabet.substring(choiceNumber, choiceNumber+1);	
 			}
 			else
 			{
 				tracker--;	
 			}
-		}
-		if(choiceNumber == 1)
-		{
-			if(encodedAlphabet.contains("b") == false)
-			{
-				encodedAlphabet += "b";	
-				System.out.println(encodedAlphabet);
-			}
-			else
-			{
-				tracker--;	
-			}
-		}
-		if(choiceNumber == 2)
-		{
-			if(encodedAlphabet.contains("c") == false)
-			{
-				encodedAlphabet += "c";	
-				System.out.println(encodedAlphabet);
-			}
-			else
-			{
-				tracker--;	
-			}
-		}
-		if(choiceNumber == 3)
-		{
-			if(encodedAlphabet.contains("d") == false)
-			{
-				encodedAlphabet += "d";	
-				System.out.println(encodedAlphabet);
-			}
-			else
-			{
-				tracker--;	
-			}
-		}
-		if(choiceNumber == 4)
-		{
-			if(encodedAlphabet.contains("e") == false)
-			{
-				encodedAlphabet += "e";	
-				System.out.println(encodedAlphabet);
-			}
-			else
-			{
-				tracker--;	
-			}
-		}
-		if(choiceNumber == 5)
-		{
-			if(encodedAlphabet.contains("f") == false)
-			{
-				encodedAlphabet += "f";	
-				System.out.println(encodedAlphabet);
-			}
-			else
-			{
-				tracker--;	
-			}
-		}
+		
+	
 		
 		return generateRandom;
 	}

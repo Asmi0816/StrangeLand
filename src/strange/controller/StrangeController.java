@@ -9,6 +9,7 @@ public class StrangeController
 	public void start()
 	{
 		baseFrame = new StrangeFrame(this);
+		logicController = new CodeMaker();
 		logicController.encodeMessage();
 		
 	}
