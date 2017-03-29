@@ -15,7 +15,7 @@ public class CodeMaker
 		{
 			randomMath();
 			generateCode();
-			
+			secretMessage();
 			
 		}
 		System.out.println(alphabet);
@@ -51,12 +51,16 @@ public class CodeMaker
 		{
 			int random = (int)(Math.random()*28);
 			generateRandom += words[random] + " ";
+			System.out.println(generateRandom);
 			
 		}
 		for(int search = 0; search < generateRandom.length(); search++)
 		{
-			generateRandom.substring(search, search +1);
-			
+			char replaceChar = generateRandom.charAt(search);
+			int reg = alphabet.indexOf(replaceChar);
+			char finalChar = encodedAlphabet.charAt(reg);
+			generateRandom.replace(replaceChar, finalChar);
+			System.out.println(generateRandom);
 			
 		}
 		
