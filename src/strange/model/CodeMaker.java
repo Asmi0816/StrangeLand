@@ -16,6 +16,7 @@ public class CodeMaker
 			randomMath();
 			generateCode();
 			
+			
 		}
 		System.out.println(alphabet);
 		System.out.println(encodedAlphabet);
@@ -43,7 +44,22 @@ public class CodeMaker
 	
 	private String secretMessage()
 	{
-		String [] words = {"Tyler", "is", "a", "rock", "Jacob", "plays", "MooMoo.io", "Issac", "makes", "music", "word"};
+		String [] words = {"Tyler", "is", "a", "rock", "Jacob", "plays", "MooMooio", "Issac", "makes", "music", "word", "abandon", 
+								"ability", "about", "scientific", "disagrees", "paint", "electrify", "loom", "every", "compose", "always",
+									"investigate", "sense", "wild", "picture", "masterpeice", "from"};
+		for(int index  = 0; index < 4; index++)
+		{
+			int random = (int)(Math.random()*28);
+			generateRandom += words[random] + " ";
+			
+		}
+		for(int search = 0; search < generateRandom.length(); search++)
+		{
+			generateRandom.substring(search, search +1);
+			
+			
+		}
+		
 		return generateRandom;
 	}
 	
