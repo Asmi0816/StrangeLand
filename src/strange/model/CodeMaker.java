@@ -6,6 +6,7 @@ public class CodeMaker
 	private String alphabet = "abcdefghijklmnopqrstuvwxyz";
 	private String encodedAlphabet = "";
 	private String generateRandom = "";
+	String codeString = "";
 	private int choiceNumber;
 	private int tracker = 0;
 	
@@ -15,11 +16,13 @@ public class CodeMaker
 		{
 			randomMath();
 			generateCode();
-			secretMessage();
-			
 		}
+		
+		secretMessage();
 		System.out.println(alphabet);
 		System.out.println(encodedAlphabet);
+		System.out.println(generateRandom);
+		System.out.println(codeString);
 		return encodedAlphabet;
 		
 	}
@@ -32,7 +35,7 @@ public class CodeMaker
 	
 	private void generateCode()
 	{
-		if(encodedAlphabet.contains(alphabet.substring(choiceNumber, choiceNumber+1)) == false)
+		if(!encodedAlphabet.contains(alphabet.substring(choiceNumber, choiceNumber+1)))
 		{
 			encodedAlphabet += alphabet.substring(choiceNumber, choiceNumber+1);	
 		}
@@ -44,27 +47,36 @@ public class CodeMaker
 	
 	private String secretMessage()
 	{
-		String [] words = {"Tyler", "is", "a", "rock", "Jacob", "plays", "MooMooio", "Issac", "makes", "music", "word", "abandon", 
+		String [] words = {"tyler", "is", "a", "rock", "jacob", "plays", "moomooio", "issac", "makes", "music", "word", "abandon", 
 								"ability", "about", "scientific", "disagrees", "paint", "electrify", "loom", "every", "compose", "always",
 									"investigate", "sense", "wild", "picture", "masterpeice", "from"};
+		
+		
 		for(int index  = 0; index < 4; index++)
 		{
 			int random = (int)(Math.random()*28);
 			generateRandom += words[random] + " ";
-			System.out.println(generateRandom);
+			
 			
 		}
-		for(int search = 0; search < generateRandom.length(); search++)
+		for(int search = 0; search < generateRandom.length()-1; search++)
 		{
+			if(!(generateRandom.charAt(search) == (' ')))
+			{
 			char replaceChar = generateRandom.charAt(search);
 			int reg = alphabet.indexOf(replaceChar);
 			char finalChar = encodedAlphabet.charAt(reg);
-			generateRandom.replace(replaceChar, finalChar);
-			System.out.println(generateRandom);
+			codeString += generateRandom.substring(search, search +1).replace(replaceChar, finalChar);
+			
+			}
+			else
+			{
+			codeString += "_";
+			}
 			
 		}
 		
-		return generateRandom;
+		return codeString;
 	}
 	
 	
