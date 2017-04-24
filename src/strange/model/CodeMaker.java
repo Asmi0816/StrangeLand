@@ -54,12 +54,20 @@ public class CodeMaker
 		
 		for(int index  = 0; index < 4; index++)
 		{
+			if(index != 3)
+			{
 			int random = (int)(Math.random()*28);
 			generateRandom += words[random] + " ";
+			}
+			else
+			{
+				int random = (int)(Math.random()*28);
+				generateRandom += words[random];
+			}
 			
 			
 		}
-		for(int search = 0; search < generateRandom.length()-1; search++)
+		for(int search = 0; search < generateRandom.length(); search++)
 		{
 			if(!(generateRandom.charAt(search) == (' ')))
 			{

@@ -231,6 +231,14 @@ public class StoryPanel extends JPanel
 	private JLabel story13_8;
 	private JLabel story13_9;
 	private JLabel story13_10;
+	private JLabel baseEnd1;
+	private JLabel baseEnd2;
+	private JLabel baseEnd3;
+	private JLabel baseEnd4;
+	private JLabel baseEnd5;
+	private JLabel baseEnd6;
+	private JLabel baseEnd7;
+	private JLabel baseEnd8;
 	
 
 
@@ -238,6 +246,12 @@ public class StoryPanel extends JPanel
 
 
 	
+
+
+
+
+
+
 
 
 
@@ -484,7 +498,18 @@ public class StoryPanel extends JPanel
 		this.story13_8 = new JLabel("And I landed on the broken shards of rock below and I'm bleeding out badly.");
 		this.story13_9 = new JLabel("Well at least I Destroyed priceless artifacts befor I died.s");
 		this.story13_10 = new JLabel("SYSTEM SHUTTING DOWN");
-
+		this.baseEnd1 = new JLabel("Thanks! I was probably going to faint from holding these things.");
+		this.baseEnd2 = new JLabel("Alright I'm at the base of the mountain and it's getting really cold.");
+		this.baseEnd3 = new JLabel("Wait... There's a light coming from the bushes up a little higher I'm going to investigate...");
+		this.baseEnd4 = new JLabel("Alright I made it to the light and there is a door ajar, should I go in?");
+		this.baseEnd5 = new JLabel("Okay I'm in and am going to run down this long corridor");
+	
+		this.baseEnd6 = new JLabel("Alright I'm at the base of the mountain and it's getting really cold.");
+		
+		this.baseEnd7 = new JLabel("Wait... There's a light coming from the bushes up a little higher I'm going to investigate...");
+		
+		this.baseEnd8 = new JLabel("Alright I made it to the light and there is a door ajar, should I go in?");
+		
 		
 		setupPanel();
 		setupLayout();
@@ -723,6 +748,17 @@ public class StoryPanel extends JPanel
 		this.add(story13_8);
 		this.add(story13_9);
 		this.add(story13_10);
+		
+		
+		this.add(baseEnd1);
+		this.add(baseEnd2);
+		this.add(baseEnd3);
+		this.add(baseEnd4);
+		this.add(baseEnd5);
+		this.add(baseEnd6);
+		this.add(baseEnd7);
+		this.add(baseEnd8);
+		
 	}
 	
 	public void setupLayout()
@@ -737,6 +773,10 @@ public class StoryPanel extends JPanel
 		openingStory2.setVisible(false);
 		openingStory3.setVisible(false);
 		openingStory4.setVisible(false);
+		baseEnd1.setVisible(false);
+		baseEnd2.setVisible(false);
+		baseEnd3.setVisible(false);
+		baseEnd4.setVisible(false);
 		story1_1.setVisible(false);
 		story1_2.setVisible(false);
 		story1_3.setVisible(false);
@@ -948,6 +988,8 @@ public class StoryPanel extends JPanel
 		story13_8.setVisible(false);
 		story13_9.setVisible(false);
 		story13_10.setVisible(false);
+		
+		
 		story1_122.setForeground(new Color(124, 252, 0));
 		baseLayout.putConstraint(SpringLayout.NORTH, openingStory3, 20, SpringLayout.NORTH, openingStory);
 		baseLayout.putConstraint(SpringLayout.NORTH, story1_122, 20, SpringLayout.NORTH, firstChoice1);
@@ -1394,7 +1436,22 @@ public class StoryPanel extends JPanel
 		baseLayout.putConstraint(SpringLayout.NORTH, story13_10, 20, SpringLayout.NORTH, story13_9);
 		baseLayout.putConstraint(SpringLayout.NORTH, story10_10, 20, SpringLayout.NORTH, story10_9);
 		
-		
+		baseEnd1.setForeground(new Color(124, 252, 0));
+		baseLayout.putConstraint(SpringLayout.NORTH, baseEnd1, 20, SpringLayout.NORTH, story1_33);
+		baseEnd4.setForeground(new Color(124, 252, 0));
+		baseLayout.putConstraint(SpringLayout.NORTH, baseEnd4, 20, SpringLayout.NORTH, baseEnd3);
+		baseEnd2.setForeground(new Color(124, 252, 0));
+		baseLayout.putConstraint(SpringLayout.NORTH, baseEnd2, 20, SpringLayout.NORTH, baseEnd1);
+		baseEnd3.setForeground(new Color(124, 252, 0));
+		baseLayout.putConstraint(SpringLayout.NORTH, baseEnd3, 20, SpringLayout.NORTH, baseEnd2);
+		baseEnd8.setForeground(new Color(124, 252, 0));
+		baseLayout.putConstraint(SpringLayout.NORTH, baseEnd8, 20, SpringLayout.NORTH, baseEnd7);
+		baseEnd7.setForeground(new Color(124, 252, 0));
+		baseLayout.putConstraint(SpringLayout.NORTH, baseEnd7, 20, SpringLayout.NORTH, baseEnd6);
+		baseEnd5.setForeground(new Color(124, 252, 0));
+		baseLayout.putConstraint(SpringLayout.NORTH, baseEnd5, 20, SpringLayout.NORTH, baseEnd4);
+		baseEnd6.setForeground(new Color(124, 252, 0));
+		baseLayout.putConstraint(SpringLayout.NORTH, baseEnd6, 20, SpringLayout.NORTH, baseEnd5);
 		
 	}
 	
@@ -1613,226 +1670,146 @@ public class StoryPanel extends JPanel
 		story12_3.setVisible(false);
 		story12_2.setVisible(false);
 	}
+
 	public JLabel getStory3_1() {
 		return story3_1;
 	}
-
-
-
 
 	public void setStory3_1(JLabel story3_1) {
 		this.story3_1 = story3_1;
 	}
 
-
-
-
 	public JLabel getStory3_2() {
 		return story3_2;
 	}
-
-
-
 
 	public void setStory3_2(JLabel story3_2) {
 		this.story3_2 = story3_2;
 	}
 
-
-
-
 	public JLabel getStory3_3() {
 		return story3_3;
 	}
-
-
-
 
 	public void setStory3_3(JLabel story3_3) {
 		this.story3_3 = story3_3;
 	}
 
-
-
-
 	public JLabel getStory3_4() {
 		return story3_4;
 	}
-
-
-
 
 	public void setStory3_4(JLabel story3_4) {
 		this.story3_4 = story3_4;
 	}
 
-
-
-
 	public JLabel getStory3_5() {
 		return story3_5;
 	}
-
-
-
 
 	public void setStory3_5(JLabel story3_5) {
 		this.story3_5 = story3_5;
 	}
 
-
-
-
 	public JLabel getStory3_6() {
 		return story3_6;
 	}
-
-
-
 
 	public void setStory3_6(JLabel story3_6) {
 		this.story3_6 = story3_6;
 	}
 
-
-
-
 	public JLabel getStory3_7() {
 		return story3_7;
 	}
-
-
-
 
 	public void setStory3_7(JLabel story3_7) {
 		this.story3_7 = story3_7;
 	}
 
-
-
-
 	public JLabel getStory3_8() {
 		return story3_8;
 	}
-
-
-
 
 	public void setStory3_8(JLabel story3_8) {
 		this.story3_8 = story3_8;
 	}
 
-
-
-
 	public JLabel getStory3_9() {
 		return story3_9;
 	}
-
-
-
 
 	public void setStory3_9(JLabel story3_9) {
 		this.story3_9 = story3_9;
 	}
 
-
-
-
 	public JLabel getStory3_10() {
 		return story3_10;
 	}
-
-
-
 
 	public void setStory3_10(JLabel story3_10) {
 		this.story3_10 = story3_10;
 	}
 
-
-
-
 	public JLabel getStory3_11() {
 		return story3_11;
 	}
-
-
-
 
 	public void setStory3_11(JLabel story3_11) {
 		this.story3_11 = story3_11;
 	}
 
-
-
-
-	public JLabel getNewsLabel() 
-	{
+	public JLabel getNewsLabel() {
 		return newsLabel;
 	}
 
-	public void setNewsLabel(JLabel newsLabel) 
-	{
+	public void setNewsLabel(JLabel newsLabel) {
 		this.newsLabel = newsLabel;
 	}
-	
+
 	public JLabel getFirstLabel() {
 		return firstLabel;
 	}
 
-
-
 	public void setFirstLabel(JLabel firstLabel) {
 		this.firstLabel = firstLabel;
 	}
-	
+
 	public JLabel getFirstChoice1() {
 		return firstChoice1;
 	}
-
-
 
 	public void setFirstChoice1(JLabel firstChoice1) {
 		this.firstChoice1 = firstChoice1;
 	}
 
-
-
 	public JLabel getFirstChoice2() {
 		return firstChoice2;
 	}
 
-
-
 	public void setFirstChoice2(JLabel firstChoice2) {
 		this.firstChoice2 = firstChoice2;
 	}
-	
+
 	public JLabel getStartUp() {
 		return startUp;
 	}
-
 
 	public void setStartUp(JLabel startUp) {
 		this.startUp = startUp;
 	}
 
-
 	public JLabel getStartUp1() {
 		return startUp1;
 	}
-
 
 	public void setStartUp1(JLabel startUp1) {
 		this.startUp1 = startUp1;
 	}
 
-
 	public JLabel getStartUp2() {
 		return startUp2;
 	}
-
 
 	public void setStartUp2(JLabel startUp2) {
 		this.startUp2 = startUp2;
@@ -1842,36 +1819,29 @@ public class StoryPanel extends JPanel
 		return openingStory;
 	}
 
-
 	public void setOpeningStory(JLabel openingStory) {
 		this.openingStory = openingStory;
 	}
-
 
 	public JLabel getOpeningStory2() {
 		return openingStory2;
 	}
 
-
 	public void setOpeningStory2(JLabel openingStory2) {
 		this.openingStory2 = openingStory2;
 	}
-
 
 	public JLabel getOpeningStory3() {
 		return openingStory3;
 	}
 
-
 	public void setOpeningStory3(JLabel openingStory3) {
 		this.openingStory3 = openingStory3;
 	}
 
-
 	public JLabel getOpeningStory4() {
 		return openingStory4;
 	}
-
 
 	public void setOpeningStory4(JLabel openingStory4) {
 		this.openingStory4 = openingStory4;
@@ -1881,66 +1851,53 @@ public class StoryPanel extends JPanel
 		return story1_1;
 	}
 
-
 	public void setStory1_1(JLabel story1_1) {
 		this.story1_1 = story1_1;
 	}
-
 
 	public JLabel getStory1_2() {
 		return story1_2;
 	}
 
-
 	public void setStory1_2(JLabel story1_2) {
 		this.story1_2 = story1_2;
 	}
-
 
 	public JLabel getStory1_3() {
 		return story1_3;
 	}
 
-
 	public void setStory1_3(JLabel story1_3) {
 		this.story1_3 = story1_3;
 	}
-
 
 	public JLabel getStory1_4() {
 		return story1_4;
 	}
 
-
 	public void setStory1_4(JLabel story1_4) {
 		this.story1_4 = story1_4;
 	}
-
 
 	public JLabel getStory1_5() {
 		return story1_5;
 	}
 
-
 	public void setStory1_5(JLabel story1_5) {
 		this.story1_5 = story1_5;
 	}
-
 
 	public JLabel getStory1_6() {
 		return story1_6;
 	}
 
-
 	public void setStory1_6(JLabel story1_6) {
 		this.story1_6 = story1_6;
 	}
 
-
 	public JLabel getStory1_7() {
 		return story1_7;
 	}
-
 
 	public void setStory1_7(JLabel story1_7) {
 		this.story1_7 = story1_7;
@@ -1950,284 +1907,229 @@ public class StoryPanel extends JPanel
 		return story1_8;
 	}
 
-
 	public void setStory1_8(JLabel story1_8) {
 		this.story1_8 = story1_8;
 	}
-
 
 	public JLabel getStory1_9() {
 		return story1_9;
 	}
 
-
 	public void setStory1_9(JLabel story1_9) {
 		this.story1_9 = story1_9;
 	}
-
 
 	public JLabel getStory1_10() {
 		return story1_10;
 	}
 
-
 	public void setStory1_10(JLabel story1_10) {
 		this.story1_10 = story1_10;
 	}
-
 
 	public JLabel getStory1_11() {
 		return story1_11;
 	}
 
-
 	public void setStory1_11(JLabel story1_11) {
 		this.story1_11 = story1_11;
 	}
-
 
 	public JLabel getStory1_12() {
 		return story1_12;
 	}
 
-
 	public void setStory1_12(JLabel story1_12) {
 		this.story1_12 = story1_12;
 	}
-
 
 	public JLabel getStory1_13() {
 		return story1_13;
 	}
 
-
 	public void setStory1_13(JLabel story1_13) {
 		this.story1_13 = story1_13;
 	}
-
 
 	public JLabel getStory1_14() {
 		return story1_14;
 	}
 
-
 	public void setStory1_14(JLabel story1_14) {
 		this.story1_14 = story1_14;
 	}
-
 
 	public JLabel getStory1_15() {
 		return story1_15;
 	}
 
-
 	public void setStory1_15(JLabel story1_15) {
 		this.story1_15 = story1_15;
 	}
-
 
 	public JLabel getStory1_16() {
 		return story1_16;
 	}
 
-
 	public void setStory1_16(JLabel story1_16) {
 		this.story1_16 = story1_16;
 	}
-
 
 	public JLabel getStory1_17() {
 		return story1_17;
 	}
 
-
 	public void setStory1_17(JLabel story1_17) {
 		this.story1_17 = story1_17;
 	}
-
 
 	public JLabel getStory1_18() {
 		return story1_18;
 	}
 
-
 	public void setStory1_18(JLabel story1_18) {
 		this.story1_18 = story1_18;
 	}
-
 
 	public JLabel getStory1_19() {
 		return story1_19;
 	}
 
-
 	public void setStory1_19(JLabel story1_19) {
 		this.story1_19 = story1_19;
 	}
-
 
 	public JLabel getStory1_20() {
 		return story1_20;
 	}
 
-
 	public void setStory1_20(JLabel story1_20) {
 		this.story1_20 = story1_20;
 	}
-
 
 	public JLabel getStory1_21() {
 		return story1_21;
 	}
 
-
 	public void setStory1_21(JLabel story1_21) {
 		this.story1_21 = story1_21;
 	}
-
 
 	public JLabel getStory1_22() {
 		return story1_22;
 	}
 
-
 	public void setStory1_22(JLabel story1_22) {
 		this.story1_22 = story1_22;
 	}
-
 
 	public JLabel getStory1_23() {
 		return story1_23;
 	}
 
-
 	public void setStory1_23(JLabel story1_23) {
 		this.story1_23 = story1_23;
 	}
-
 
 	public JLabel getStory1_24() {
 		return story1_24;
 	}
 
-
 	public void setStory1_24(JLabel story1_24) {
 		this.story1_24 = story1_24;
 	}
-
 
 	public JLabel getStory1_25() {
 		return story1_25;
 	}
 
-
 	public void setStory1_25(JLabel story1_25) {
 		this.story1_25 = story1_25;
 	}
-
 
 	public JLabel getStory1_26() {
 		return story1_26;
 	}
 
-
 	public void setStory1_26(JLabel story1_26) {
 		this.story1_26 = story1_26;
 	}
-
 
 	public JLabel getStory1_27() {
 		return story1_27;
 	}
 
-
 	public void setStory1_27(JLabel story1_27) {
 		this.story1_27 = story1_27;
 	}
-
 
 	public JLabel getStory1_28() {
 		return story1_28;
 	}
 
-
 	public void setStory1_28(JLabel story1_28) {
 		this.story1_28 = story1_28;
 	}
+
 	public JLabel getStory1_29() {
 		return story1_29;
 	}
-
 
 	public void setStory1_29(JLabel story1_29) {
 		this.story1_29 = story1_29;
 	}
 
-
 	public JLabel getStory1_30() {
 		return story1_30;
 	}
-
 
 	public void setStory1_30(JLabel story1_30) {
 		this.story1_30 = story1_30;
 	}
 
-
 	public JLabel getStory1_31() {
 		return story1_31;
 	}
-
 
 	public void setStory1_31(JLabel story1_31) {
 		this.story1_31 = story1_31;
 	}
 
-
 	public JLabel getStory1_32() {
 		return story1_32;
 	}
-
 
 	public void setStory1_32(JLabel story1_32) {
 		this.story1_32 = story1_32;
 	}
 
-
 	public JLabel getStory1_33() {
 		return story1_33;
 	}
-
 
 	public void setStory1_33(JLabel story1_33) {
 		this.story1_33 = story1_33;
 	}
 
-
 	public JLabel getStory1_34() {
 		return story1_34;
 	}
-
 
 	public void setStory1_34(JLabel story1_34) {
 		this.story1_34 = story1_34;
 	}
 
-
 	public JLabel getStory1_35() {
 		return story1_35;
 	}
-
 
 	public void setStory1_35(JLabel story1_35) {
 		this.story1_35 = story1_35;
 	}
 
-
 	public JLabel getStory1_36() {
 		return story1_36;
 	}
-
 
 	public void setStory1_36(JLabel story1_36) {
 		this.story1_36 = story1_36;
@@ -2237,460 +2139,261 @@ public class StoryPanel extends JPanel
 		return story1_37;
 	}
 
-
-
-
 	public void setStory1_37(JLabel story1_37) {
 		this.story1_37 = story1_37;
 	}
-
-
-
 
 	public JLabel getStory1_38() {
 		return story1_38;
 	}
 
-
-
-
 	public void setStory1_38(JLabel story1_38) {
 		this.story1_38 = story1_38;
 	}
-
-
-
 
 	public JLabel getStory1_39() {
 		return story1_39;
 	}
 
-
-
-
 	public void setStory1_39(JLabel story1_39) {
 		this.story1_39 = story1_39;
 	}
-
-
-
 
 	public JLabel getStory1_40() {
 		return story1_40;
 	}
 
-
-
-
 	public void setStory1_40(JLabel story1_40) {
 		this.story1_40 = story1_40;
 	}
-
-
-
 
 	public JLabel getStory1_41() {
 		return story1_41;
 	}
 
-
-
-
 	public void setStory1_41(JLabel story1_41) {
 		this.story1_41 = story1_41;
 	}
-
-
-
 
 	public JLabel getStory1_42() {
 		return story1_42;
 	}
 
-
-
-
 	public void setStory1_42(JLabel story1_42) {
 		this.story1_42 = story1_42;
 	}
-
-
-
 
 	public JLabel getStory1_43() {
 		return story1_43;
 	}
 
-
-
-
 	public void setStory1_43(JLabel story1_43) {
 		this.story1_43 = story1_43;
 	}
-
-
-
 
 	public JLabel getStory1_44() {
 		return story1_44;
 	}
 
-
-
-
 	public void setStory1_44(JLabel story1_44) {
 		this.story1_44 = story1_44;
 	}
-
-
-
 
 	public JLabel getStory1_45() {
 		return story1_45;
 	}
 
-
-
-
 	public void setStory1_45(JLabel story1_45) {
 		this.story1_45 = story1_45;
 	}
-
-
-
 
 	public JLabel getStory1_46() {
 		return story1_46;
 	}
 
-
-
-
 	public void setStory1_46(JLabel story1_46) {
 		this.story1_46 = story1_46;
 	}
-
-
-
 
 	public JLabel getStory1_47() {
 		return story1_47;
 	}
 
-
-
-
 	public void setStory1_47(JLabel story1_47) {
 		this.story1_47 = story1_47;
 	}
-
-
-
 
 	public JLabel getStory1_48() {
 		return story1_48;
 	}
 
-
-
-
 	public void setStory1_48(JLabel story1_48) {
 		this.story1_48 = story1_48;
 	}
-
-
-
 
 	public JLabel getStory1_49() {
 		return story1_49;
 	}
 
-
-
-
 	public void setStory1_49(JLabel story1_49) {
 		this.story1_49 = story1_49;
 	}
-
-
-
 
 	public JLabel getStory1_50() {
 		return story1_50;
 	}
 
-
-
-
 	public void setStory1_50(JLabel story1_50) {
 		this.story1_50 = story1_50;
 	}
-
-
-
 
 	public JLabel getStory1_51() {
 		return story1_51;
 	}
 
-
-
-
 	public void setStory1_51(JLabel story1_51) {
 		this.story1_51 = story1_51;
 	}
-
-
-
 
 	public JLabel getStory1_52() {
 		return story1_52;
 	}
 
-
-
-
 	public void setStory1_52(JLabel story1_52) {
 		this.story1_52 = story1_52;
 	}
-
-
-
 
 	public JLabel getStory1_53() {
 		return story1_53;
 	}
 
-
-
-
 	public void setStory1_53(JLabel story1_53) {
 		this.story1_53 = story1_53;
 	}
-
-
-
-
-
-
-
 
 	public JLabel getStory1_54() {
 		return story1_54;
 	}
 
-
-
-
 	public void setStory1_54(JLabel story1_54) {
 		this.story1_54 = story1_54;
 	}
-
-
-
 
 	public JLabel getStory1_55() {
 		return story1_55;
 	}
 
-
-
-
 	public void setStory1_55(JLabel story1_55) {
 		this.story1_55 = story1_55;
 	}
-
-
-
 
 	public JLabel getStory1_68() {
 		return story1_68;
 	}
 
-
-
-
 	public void setStory1_68(JLabel story1_68) {
 		this.story1_68 = story1_68;
 	}
-
-
-
 
 	public JLabel getStory1_69() {
 		return story1_69;
 	}
 
-
-
-
 	public void setStory1_69(JLabel story1_69) {
 		this.story1_69 = story1_69;
 	}
-
-
-
 
 	public JLabel getStory1_56() {
 		return story1_56;
 	}
 
-
-
-
 	public void setStory1_56(JLabel story1_56) {
 		this.story1_56 = story1_56;
 	}
-
-
-
 
 	public JLabel getStory1_57() {
 		return story1_57;
 	}
 
-
-
-
 	public void setStory1_57(JLabel story1_57) {
 		this.story1_57 = story1_57;
 	}
-
-
-
 
 	public JLabel getStory1_58() {
 		return story1_58;
 	}
 
-
-
-
 	public void setStory1_58(JLabel story1_58) {
 		this.story1_58 = story1_58;
 	}
-
-
-
 
 	public JLabel getStory1_59() {
 		return story1_59;
 	}
 
-
-
-
 	public void setStory1_59(JLabel story1_59) {
 		this.story1_59 = story1_59;
 	}
-
-
-
 
 	public JLabel getStory1_60() {
 		return story1_60;
 	}
 
-
-
-
 	public void setStory1_60(JLabel story1_60) {
 		this.story1_60 = story1_60;
 	}
-
-
-
 
 	public JLabel getStory1_61() {
 		return story1_61;
 	}
 
-
-
-
 	public void setStory1_61(JLabel story1_61) {
 		this.story1_61 = story1_61;
 	}
-
-
-
 
 	public JLabel getStory1_62() {
 		return story1_62;
 	}
 
-
-
-
 	public void setStory1_62(JLabel story1_62) {
 		this.story1_62 = story1_62;
 	}
-
-
-
 
 	public JLabel getStory1_63() {
 		return story1_63;
 	}
 
-
-
-
 	public void setStory1_63(JLabel story1_63) {
 		this.story1_63 = story1_63;
 	}
-
-
-
 
 	public JLabel getStory1_64() {
 		return story1_64;
 	}
 
-
-
-
 	public void setStory1_64(JLabel story1_64) {
 		this.story1_64 = story1_64;
 	}
-
-
-
 
 	public JLabel getStory1_65() {
 		return story1_65;
 	}
 
-
-
-
 	public void setStory1_65(JLabel story1_65) {
 		this.story1_65 = story1_65;
 	}
-
-
-
 
 	public JLabel getStory1_66() {
 		return story1_66;
 	}
 
-
-
-
 	public void setStory1_66(JLabel story1_66) {
 		this.story1_66 = story1_66;
 	}
 
-
-
-
 	public JLabel getStory1_67() {
 		return story1_67;
 	}
-
-
-
 
 	public void setStory1_67(JLabel story1_67) {
 		this.story1_67 = story1_67;
@@ -2700,728 +2403,421 @@ public class StoryPanel extends JPanel
 		return story1_70;
 	}
 
-
-
-
 	public void setStory1_70(JLabel story1_70) {
 		this.story1_70 = story1_70;
 	}
-
-
-
 
 	public JLabel getStory1_71() {
 		return story1_71;
 	}
 
-
-
-
 	public void setStory1_71(JLabel story1_71) {
 		this.story1_71 = story1_71;
 	}
-
-
-
 
 	public JLabel getStory1_72() {
 		return story1_72;
 	}
 
-
-
-
 	public void setStory1_72(JLabel story1_72) {
 		this.story1_72 = story1_72;
 	}
-
-
-
 
 	public JLabel getStory1_73() {
 		return story1_73;
 	}
 
-
-
-
 	public void setStory1_73(JLabel story1_73) {
 		this.story1_73 = story1_73;
 	}
-
-
-
 
 	public JLabel getStory1_74() {
 		return story1_74;
 	}
 
-
-
-
 	public void setStory1_74(JLabel story1_74) {
 		this.story1_74 = story1_74;
 	}
-
-
-
 
 	public JLabel getStory1_75() {
 		return story1_75;
 	}
 
-
-
-
 	public void setStory1_75(JLabel story1_75) {
 		this.story1_75 = story1_75;
 	}
-
-
-
 
 	public JLabel getStory1_76() {
 		return story1_76;
 	}
 
-
-
-
 	public void setStory1_76(JLabel story1_76) {
 		this.story1_76 = story1_76;
 	}
-
-
-
 
 	public JLabel getStory1_77() {
 		return story1_77;
 	}
 
-
-
-
 	public void setStory1_77(JLabel story1_77) {
 		this.story1_77 = story1_77;
 	}
-
-
-
 
 	public JLabel getStory1_78() {
 		return story1_78;
 	}
 
-
-
-
 	public void setStory1_78(JLabel story1_78) {
 		this.story1_78 = story1_78;
 	}
-
-
-
 
 	public JLabel getStory1_79() {
 		return story1_79;
 	}
 
-
-
-
 	public void setStory1_79(JLabel story1_79) {
 		this.story1_79 = story1_79;
 	}
-
-
-
 
 	public JLabel getStory1_80() {
 		return story1_80;
 	}
 
-
-
-
 	public void setStory1_80(JLabel story1_80) {
 		this.story1_80 = story1_80;
 	}
-
-
-
 
 	public JLabel getStory1_81() {
 		return story1_81;
 	}
 
-
-
-
 	public void setStory1_81(JLabel story1_81) {
 		this.story1_81 = story1_81;
 	}
-
-
-
 
 	public JLabel getStory1_82() {
 		return story1_82;
 	}
 
-
-
-
 	public void setStory1_82(JLabel story1_82) {
 		this.story1_82 = story1_82;
 	}
-
-
-
 
 	public JLabel getStory1_83() {
 		return story1_83;
 	}
 
-
-
-
 	public void setStory1_83(JLabel story1_83) {
 		this.story1_83 = story1_83;
 	}
-
-
-
 
 	public JLabel getStory1_84() {
 		return story1_84;
 	}
 
-
-
-
 	public void setStory1_84(JLabel story1_84) {
 		this.story1_84 = story1_84;
 	}
-
-
-
 
 	public JLabel getStory1_85() {
 		return story1_85;
 	}
 
-
-
-
 	public void setStory1_85(JLabel story1_85) {
 		this.story1_85 = story1_85;
 	}
-
-
-
 
 	public JLabel getStory1_86() {
 		return story1_86;
 	}
 
-
-
-
 	public void setStory1_86(JLabel story1_86) {
 		this.story1_86 = story1_86;
 	}
-
-
-
 
 	public JLabel getStory1_87() {
 		return story1_87;
 	}
 
-
-
-
 	public void setStory1_87(JLabel story1_87) {
 		this.story1_87 = story1_87;
 	}
-
-
-
 
 	public JLabel getStory1_88() {
 		return story1_88;
 	}
 
-
-
-
 	public void setStory1_88(JLabel story1_88) {
 		this.story1_88 = story1_88;
 	}
-
-
-
 
 	public JLabel getStory1_89() {
 		return story1_89;
 	}
 
-
-
-
 	public void setStory1_89(JLabel story1_89) {
 		this.story1_89 = story1_89;
 	}
-
-
-
 
 	public JLabel getStory1_90() {
 		return story1_90;
 	}
 
-
-
-
 	public void setStory1_90(JLabel story1_90) {
 		this.story1_90 = story1_90;
 	}
-
-
-
 
 	public JLabel getStory1_91() {
 		return story1_91;
 	}
 
-
-
-
 	public void setStory1_91(JLabel story1_91) {
 		this.story1_91 = story1_91;
 	}
-
-
-
 
 	public JLabel getStory1_92() {
 		return story1_92;
 	}
 
-
-
-
 	public void setStory1_92(JLabel story1_92) {
 		this.story1_92 = story1_92;
 	}
-
-
-
 
 	public JLabel getStory1_93() {
 		return story1_93;
 	}
 
-
-
-
 	public void setStory1_93(JLabel story1_93) {
 		this.story1_93 = story1_93;
 	}
-
-
-
 
 	public JLabel getStory1_94() {
 		return story1_94;
 	}
 
-
-
-
 	public void setStory1_94(JLabel story1_94) {
 		this.story1_94 = story1_94;
 	}
-
-
-
 
 	public JLabel getStory1_95() {
 		return story1_95;
 	}
 
-
-
-
 	public void setStory1_95(JLabel story1_95) {
 		this.story1_95 = story1_95;
 	}
-
-
-
 
 	public JLabel getStory1_96() {
 		return story1_96;
 	}
 
-
-
-
 	public void setStory1_96(JLabel story1_96) {
 		this.story1_96 = story1_96;
 	}
-
-
-
 
 	public JLabel getStory1_97() {
 		return story1_97;
 	}
 
-
-
-
 	public void setStory1_97(JLabel story1_97) {
 		this.story1_97 = story1_97;
 	}
-
-
-
 
 	public JLabel getStory1_98() {
 		return story1_98;
 	}
 
-
-
-
 	public void setStory1_98(JLabel story1_98) {
 		this.story1_98 = story1_98;
 	}
-
-
-
 
 	public JLabel getStory1_99() {
 		return story1_99;
 	}
 
-
-
-
 	public void setStory1_99(JLabel story1_99) {
 		this.story1_99 = story1_99;
 	}
-
-
-
 
 	public JLabel getStory1_100() {
 		return story1_100;
 	}
 
-
-
-
 	public void setStory1_100(JLabel story1_100) {
 		this.story1_100 = story1_100;
 	}
-
-
-
 
 	public JLabel getStory1_101() {
 		return story1_101;
 	}
 
-
-
-
 	public void setStory1_101(JLabel story1_101) {
 		this.story1_101 = story1_101;
 	}
-
-
-
 
 	public JLabel getStory1_102() {
 		return story1_102;
 	}
 
-
-
-
 	public void setStory1_102(JLabel story1_102) {
 		this.story1_102 = story1_102;
 	}
-
-
-
 
 	public JLabel getStory1_103() {
 		return story1_103;
 	}
 
-
-
-
 	public void setStory1_103(JLabel story1_103) {
 		this.story1_103 = story1_103;
 	}
+
 	public JLabel getStory1_104() {
 		return story1_104;
 	}
-
-
-
 
 	public void setStory1_104(JLabel story1_104) {
 		this.story1_104 = story1_104;
 	}
 
-
-
-
 	public JLabel getStory1_105() {
 		return story1_105;
 	}
-
-
-
 
 	public void setStory1_105(JLabel story1_105) {
 		this.story1_105 = story1_105;
 	}
 
-
-
-
 	public JLabel getStory1_106() {
 		return story1_106;
 	}
-
-
-
 
 	public void setStory1_106(JLabel story1_106) {
 		this.story1_106 = story1_106;
 	}
 
-
-
-
 	public JLabel getStory1_107() {
 		return story1_107;
 	}
-
-
-
 
 	public void setStory1_107(JLabel story1_107) {
 		this.story1_107 = story1_107;
 	}
 
-
-
-
 	public JLabel getStory1_108() {
 		return story1_108;
 	}
-
-
-
 
 	public void setStory1_108(JLabel story1_108) {
 		this.story1_108 = story1_108;
 	}
 
-
-
-
 	public JLabel getStory1_109() {
 		return story1_109;
 	}
-
-
-
 
 	public void setStory1_109(JLabel story1_109) {
 		this.story1_109 = story1_109;
 	}
 
-
-
-
 	public JLabel getStory1_110() {
 		return story1_110;
 	}
-
-
-
 
 	public void setStory1_110(JLabel story1_110) {
 		this.story1_110 = story1_110;
 	}
 
-
-
-
 	public JLabel getStory1_111() {
 		return story1_111;
 	}
-
-
-
 
 	public void setStory1_111(JLabel story1_111) {
 		this.story1_111 = story1_111;
 	}
 
-
-
-
 	public JLabel getStory1_112() {
 		return story1_112;
 	}
-
-
-
 
 	public void setStory1_112(JLabel story1_112) {
 		this.story1_112 = story1_112;
 	}
 
-
-
-
 	public JLabel getStory1_113() {
 		return story1_113;
 	}
-
-
-
 
 	public void setStory1_113(JLabel story1_113) {
 		this.story1_113 = story1_113;
 	}
 
-
-
-
 	public JLabel getStory1_114() {
 		return story1_114;
 	}
-
-
-
 
 	public void setStory1_114(JLabel story1_114) {
 		this.story1_114 = story1_114;
 	}
 
-
-
-
 	public JLabel getStory1_115() {
 		return story1_115;
 	}
-
-
-
 
 	public void setStory1_115(JLabel story1_115) {
 		this.story1_115 = story1_115;
 	}
 
-
-
-
 	public JLabel getStory1_116() {
 		return story1_116;
 	}
-
-
-
 
 	public void setStory1_116(JLabel story1_116) {
 		this.story1_116 = story1_116;
 	}
 
-
-
-
 	public JLabel getStory1_117() {
 		return story1_117;
 	}
-
-
-
 
 	public void setStory1_117(JLabel story1_117) {
 		this.story1_117 = story1_117;
 	}
 
-
-
-
 	public JLabel getStory1_118() {
 		return story1_118;
 	}
-
-
-
 
 	public void setStory1_118(JLabel story1_118) {
 		this.story1_118 = story1_118;
 	}
 
-
-
-
 	public JLabel getStory1_119() {
 		return story1_119;
 	}
 
-
-
-
 	public void setStory1_119(JLabel story1_119) {
 		this.story1_119 = story1_119;
 	}
+
 	public JLabel getStory1_120() {
 		return story1_120;
 	}
-
-
-
 
 	public void setStory1_120(JLabel story1_120) {
 		this.story1_120 = story1_120;
 	}
 
-
-
-
 	public JLabel getStory1_121() {
 		return story1_121;
 	}
-
-
-
 
 	public void setStory1_121(JLabel story1_121) {
 		this.story1_121 = story1_121;
 	}
 
-
-
-
 	public JLabel getStory1_122() {
 		return story1_122;
 	}
-
-
-
 
 	public void setStory1_122(JLabel story1_122) {
 		this.story1_122 = story1_122;
@@ -3431,9 +2827,6 @@ public class StoryPanel extends JPanel
 		return story2_1;
 	}
 
-
-
-
 	public void setStory2_1(JLabel story2_1) {
 		this.story2_1 = story2_1;
 	}
@@ -3442,102 +2835,61 @@ public class StoryPanel extends JPanel
 		return story2_2;
 	}
 
-
-
-
 	public void setStory2_2(JLabel story2_2) {
 		this.story2_2 = story2_2;
 	}
-
 
 	public JLabel getStory2_3() {
 		return story2_3;
 	}
 
-
-
-
 	public void setStory2_3(JLabel story2_3) {
 		this.story2_3 = story2_3;
 	}
-	
 
 	public JLabel getStory4_1() {
 		return story4_1;
 	}
 
-
-
-
 	public void setStory4_1(JLabel story4_1) {
 		this.story4_1 = story4_1;
 	}
-
-
-
 
 	public JLabel getStory4_2() {
 		return story4_2;
 	}
 
-
-
-
 	public void setStory4_2(JLabel story4_2) {
 		this.story4_2 = story4_2;
 	}
-
-
-
 
 	public JLabel getStory4_3() {
 		return story4_3;
 	}
 
-
-
-
 	public void setStory4_3(JLabel story4_3) {
 		this.story4_3 = story4_3;
 	}
-
-
-
 
 	public JLabel getStory4_4() {
 		return story4_4;
 	}
 
-
-
-
 	public void setStory4_4(JLabel story4_4) {
 		this.story4_4 = story4_4;
 	}
-
-
-
 
 	public JLabel getStory4_5() {
 		return story4_5;
 	}
 
-
-
-
 	public void setStory4_5(JLabel story4_5) {
 		this.story4_5 = story4_5;
 	}
 
-
-
-
 	public JLabel getStory4_6() {
 		return story4_6;
 	}
-
-
-
 
 	public void setStory4_6(JLabel story4_6) {
 		this.story4_6 = story4_6;
@@ -3547,92 +2899,53 @@ public class StoryPanel extends JPanel
 		return story5_1;
 	}
 
-
-
-
 	public void setStory5_1(JLabel story5_1) {
 		this.story5_1 = story5_1;
 	}
-
-
-
 
 	public JLabel getStory5_2() {
 		return story5_2;
 	}
 
-
-
-
 	public void setStory5_2(JLabel story5_2) {
 		this.story5_2 = story5_2;
 	}
-
-
-
 
 	public JLabel getStory5_3() {
 		return story5_3;
 	}
 
-
-
-
 	public void setStory5_3(JLabel story5_3) {
 		this.story5_3 = story5_3;
 	}
-
-
-
 
 	public JLabel getStory5_4() {
 		return story5_4;
 	}
 
-
-
-
 	public void setStory5_4(JLabel story5_4) {
 		this.story5_4 = story5_4;
 	}
-
-
-
 
 	public JLabel getStory5_5() {
 		return story5_5;
 	}
 
-
-
-
 	public void setStory5_5(JLabel story5_5) {
 		this.story5_5 = story5_5;
 	}
-
-
-
 
 	public JLabel getStory5_6() {
 		return story5_6;
 	}
 
-
-
-
 	public void setStory5_6(JLabel story5_6) {
 		this.story5_6 = story5_6;
 	}
 
-
-
-
 	public JLabel getStory5_7() {
 		return story5_7;
 	}
-
-
-
 
 	public void setStory5_7(JLabel story5_7) {
 		this.story5_7 = story5_7;
@@ -3642,36 +2955,21 @@ public class StoryPanel extends JPanel
 		return story5_8;
 	}
 
-
-
-
 	public void setStory5_8(JLabel story5_8) {
 		this.story5_8 = story5_8;
 	}
-
-
-
 
 	public JLabel getStory5_9() {
 		return story5_9;
 	}
 
-
-
-
 	public void setStory5_9(JLabel story5_9) {
 		this.story5_9 = story5_9;
 	}
 
-
-
-
 	public JLabel getStory5_10() {
 		return story5_10;
 	}
-
-
-
 
 	public void setStory5_10(JLabel story5_10) {
 		this.story5_10 = story5_10;
@@ -3681,285 +2979,165 @@ public class StoryPanel extends JPanel
 		return story6_1;
 	}
 
-
-
-
 	public void setStory6_1(JLabel story6_1) {
 		this.story6_1 = story6_1;
 	}
-
-
-
 
 	public JLabel getStory6_2() {
 		return story6_2;
 	}
 
-
-
-
 	public void setStory6_2(JLabel story6_2) {
 		this.story6_2 = story6_2;
 	}
-
-
-
 
 	public JLabel getStory6_3() {
 		return story6_3;
 	}
 
-
-
-
 	public void setStory6_3(JLabel story6_3) {
 		this.story6_3 = story6_3;
 	}
-
-
-
 
 	public JLabel getStory6_4() {
 		return story6_4;
 	}
 
-
-
-
 	public void setStory6_4(JLabel story6_4) {
 		this.story6_4 = story6_4;
 	}
-
-
-
 
 	public JLabel getStory6_5() {
 		return story6_5;
 	}
 
-
-
-
 	public void setStory6_5(JLabel story6_5) {
 		this.story6_5 = story6_5;
 	}
-
-
-
 
 	public JLabel getStory6_6() {
 		return story6_6;
 	}
 
-
-
-
 	public void setStory6_6(JLabel story6_6) {
 		this.story6_6 = story6_6;
 	}
-	
+
 	public JLabel getStory7_1() {
 		return story7_1;
 	}
-
-
-
 
 	public void setStory7_1(JLabel story7_1) {
 		this.story7_1 = story7_1;
 	}
 
-
-
-
 	public JLabel getStory7_2() {
 		return story7_2;
 	}
-
-
-
 
 	public void setStory7_2(JLabel story7_2) {
 		this.story7_2 = story7_2;
 	}
 
-
-
-
 	public JLabel getStory7_3() {
 		return story7_3;
 	}
-
-
-
 
 	public void setStory7_3(JLabel story7_3) {
 		this.story7_3 = story7_3;
 	}
 
-
-
-
 	public JLabel getStory7_4() {
 		return story7_4;
 	}
-
-
-
 
 	public void setStory7_4(JLabel story7_4) {
 		this.story7_4 = story7_4;
 	}
 
-
-
-
 	public JLabel getStory7_5() {
 		return story7_5;
 	}
-
-
-
 
 	public void setStory7_5(JLabel story7_5) {
 		this.story7_5 = story7_5;
 	}
 
-
-
-
 	public JLabel getStory7_6() {
 		return story7_6;
 	}
-
-
-
 
 	public void setStory7_6(JLabel story7_6) {
 		this.story7_6 = story7_6;
 	}
 
-
-
-
 	public JLabel getStory7_7() {
 		return story7_7;
 	}
-
-
-
 
 	public void setStory7_7(JLabel story7_7) {
 		this.story7_7 = story7_7;
 	}
 
-
-
-
 	public JLabel getStory8_1() {
 		return story8_1;
 	}
-
-
-
 
 	public void setStory8_1(JLabel story8_1) {
 		this.story8_1 = story8_1;
 	}
 
-
-
-
 	public JLabel getStory8_2() {
 		return story8_2;
 	}
-
-
-
 
 	public void setStory8_2(JLabel story8_2) {
 		this.story8_2 = story8_2;
 	}
 
-
-
-
 	public JLabel getStory8_3() {
 		return story8_3;
 	}
-
-
-
 
 	public void setStory8_3(JLabel story8_3) {
 		this.story8_3 = story8_3;
 	}
 
-
-
-
 	public JLabel getStory8_4() {
 		return story8_4;
 	}
-
-
-
 
 	public void setStory8_4(JLabel story8_4) {
 		this.story8_4 = story8_4;
 	}
 
-
-
-
 	public JLabel getStory8_5() {
 		return story8_5;
 	}
-
-
-
 
 	public void setStory8_5(JLabel story8_5) {
 		this.story8_5 = story8_5;
 	}
 
-
-
-
 	public JLabel getStory8_6() {
 		return story8_6;
 	}
-
-
-
 
 	public void setStory8_6(JLabel story8_6) {
 		this.story8_6 = story8_6;
 	}
 
-
-
-
 	public JLabel getStory8_7() {
 		return story8_7;
 	}
-
-
-
 
 	public void setStory8_7(JLabel story8_7) {
 		this.story8_7 = story8_7;
 	}
 
-
-
-
 	public JLabel getStory8_8() {
 		return story8_8;
 	}
-
-
-
 
 	public void setStory8_8(JLabel story8_8) {
 		this.story8_8 = story8_8;
@@ -3969,106 +3147,61 @@ public class StoryPanel extends JPanel
 		return story9_1;
 	}
 
-
-
-
 	public void setStory9_1(JLabel story9_1) {
 		this.story9_1 = story9_1;
 	}
-
-
-
 
 	public JLabel getStory9_2() {
 		return story9_2;
 	}
 
-
-
-
 	public void setStory9_2(JLabel story9_2) {
 		this.story9_2 = story9_2;
 	}
-
-
-
 
 	public JLabel getStory9_3() {
 		return story9_3;
 	}
 
-
-
-
 	public void setStory9_3(JLabel story9_3) {
 		this.story9_3 = story9_3;
 	}
-
-
-
 
 	public JLabel getStory9_4() {
 		return story9_4;
 	}
 
-
-
-
 	public void setStory9_4(JLabel story9_4) {
 		this.story9_4 = story9_4;
 	}
-
-
-
 
 	public JLabel getStory9_5() {
 		return story9_5;
 	}
 
-
-
-
 	public void setStory9_5(JLabel story9_5) {
 		this.story9_5 = story9_5;
 	}
-
-
-
 
 	public JLabel getStory9_6() {
 		return story9_6;
 	}
 
-
-
-
 	public void setStory9_6(JLabel story9_6) {
 		this.story9_6 = story9_6;
 	}
-
-
-
 
 	public JLabel getStory9_7() {
 		return story9_7;
 	}
 
-
-
-
 	public void setStory9_7(JLabel story9_7) {
 		this.story9_7 = story9_7;
 	}
 
-
-
-
 	public JLabel getStory9_8() {
 		return story9_8;
 	}
-
-
-
 
 	public void setStory9_8(JLabel story9_8) {
 		this.story9_8 = story9_8;
@@ -4078,134 +3211,77 @@ public class StoryPanel extends JPanel
 		return story10_1;
 	}
 
-
-
-
 	public void setStory10_1(JLabel story10_1) {
 		this.story10_1 = story10_1;
 	}
-
-
-
 
 	public JLabel getStory10_2() {
 		return story10_2;
 	}
 
-
-
-
 	public void setStory10_2(JLabel story10_2) {
 		this.story10_2 = story10_2;
 	}
-
-
-
 
 	public JLabel getStory10_3() {
 		return story10_3;
 	}
 
-
-
-
 	public void setStory10_3(JLabel story10_3) {
 		this.story10_3 = story10_3;
 	}
-
-
-
 
 	public JLabel getStory10_4() {
 		return story10_4;
 	}
 
-
-
-
 	public void setStory10_4(JLabel story10_4) {
 		this.story10_4 = story10_4;
 	}
-
-
-
 
 	public JLabel getStory10_5() {
 		return story10_5;
 	}
 
-
-
-
 	public void setStory10_5(JLabel story10_5) {
 		this.story10_5 = story10_5;
 	}
-
-
-
 
 	public JLabel getStory10_6() {
 		return story10_6;
 	}
 
-
-
-
 	public void setStory10_6(JLabel story10_6) {
 		this.story10_6 = story10_6;
 	}
-
-
-
 
 	public JLabel getStory10_7() {
 		return story10_7;
 	}
 
-
-
-
 	public void setStory10_7(JLabel story10_7) {
 		this.story10_7 = story10_7;
 	}
-
-
-
 
 	public JLabel getStory10_8() {
 		return story10_8;
 	}
 
-
-
-
 	public void setStory10_8(JLabel story10_8) {
 		this.story10_8 = story10_8;
 	}
-
-
-
 
 	public JLabel getStory10_9() {
 		return story10_9;
 	}
 
-
-
-
 	public void setStory10_9(JLabel story10_9) {
 		this.story10_9 = story10_9;
 	}
 
-
-
-
 	public JLabel getStory10_10() {
 		return story10_10;
 	}
-
-
-
 
 	public void setStory10_10(JLabel story10_10) {
 		this.story10_10 = story10_10;
@@ -4215,388 +3291,182 @@ public class StoryPanel extends JPanel
 		return story11_1;
 	}
 
-
-
-
-
-
-
 	public void setStory11_1(JLabel story11_1) {
 		this.story11_1 = story11_1;
 	}
-
-
-
-
-
-
 
 	public JLabel getStory11_2() {
 		return story11_2;
 	}
 
-
-
-
-
-
-
 	public void setStory11_2(JLabel story11_2) {
 		this.story11_2 = story11_2;
 	}
-
-
-
-
-
-
 
 	public JLabel getStory11_3() {
 		return story11_3;
 	}
 
-
-
-
-
-
-
 	public void setStory11_3(JLabel story11_3) {
 		this.story11_3 = story11_3;
 	}
-
-
-
-
-
-
 
 	public JLabel getStory11_4() {
 		return story11_4;
 	}
 
-
-
-
-
-
-
 	public void setStory11_4(JLabel story11_4) {
 		this.story11_4 = story11_4;
 	}
-
-
-
-
-
-
 
 	public JLabel getStory11_5() {
 		return story11_5;
 	}
 
-
-
-
-
-
-
 	public void setStory11_5(JLabel story11_5) {
 		this.story11_5 = story11_5;
 	}
-
-
-
-
-
-
 
 	public JLabel getStory11_6() {
 		return story11_6;
 	}
 
-
-
-
-
-
-
 	public void setStory11_6(JLabel story11_6) {
 		this.story11_6 = story11_6;
 	}
-
-
-
-
-
-
 
 	public JLabel getStory11_7() {
 		return story11_7;
 	}
 
-
-
-
-
-
-
 	public void setStory11_7(JLabel story11_7) {
 		this.story11_7 = story11_7;
 	}
+
 	public JLabel getStory12_1() {
 		return story12_1;
 	}
-
-
-
-
-
-
 
 	public void setStory12_1(JLabel story12_1) {
 		this.story12_1 = story12_1;
 	}
 
-
-
-
-
-
-
 	public JLabel getStory12_2() {
 		return story12_2;
 	}
-
-
-
-
-
-
 
 	public void setStory12_2(JLabel story12_2) {
 		this.story12_2 = story12_2;
 	}
 
-
-
-
-
-
-
 	public JLabel getStory12_3() {
 		return story12_3;
 	}
 
-
-
-
-
-
-
 	public void setStory12_3(JLabel story12_3) {
 		this.story12_3 = story12_3;
 	}
+
 	public JLabel getStory13_1() {
 		return story13_1;
 	}
-
-
-
-
-
-
 
 	public void setStory13_1(JLabel story13_1) {
 		this.story13_1 = story13_1;
 	}
 
-
-
-
-
-
-
 	public JLabel getStory13_2() {
 		return story13_2;
 	}
-
-
-
-
-
-
 
 	public void setStory13_2(JLabel story13_2) {
 		this.story13_2 = story13_2;
 	}
 
-
-
-
-
-
-
 	public JLabel getStory13_3() {
 		return story13_3;
 	}
-
-
-
-
-
-
 
 	public void setStory13_3(JLabel story13_3) {
 		this.story13_3 = story13_3;
 	}
 
-
-
-
-
-
-
 	public JLabel getStory13_4() {
 		return story13_4;
 	}
-
-
-
-
-
-
 
 	public void setStory13_4(JLabel story13_4) {
 		this.story13_4 = story13_4;
 	}
 
-
-
-
-
-
-
 	public JLabel getStory13_5() {
 		return story13_5;
 	}
-
-
-
-
-
-
 
 	public void setStory13_5(JLabel story13_5) {
 		this.story13_5 = story13_5;
 	}
 
-
-
-
-
-
-
 	public JLabel getStory13_6() {
 		return story13_6;
 	}
-
-
-
-
-
-
 
 	public void setStory13_6(JLabel story13_6) {
 		this.story13_6 = story13_6;
 	}
 
-
-
-
-
-
-
 	public JLabel getStory13_7() {
 		return story13_7;
 	}
-
-
-
-
-
-
 
 	public void setStory13_7(JLabel story13_7) {
 		this.story13_7 = story13_7;
 	}
 
-
 	public JLabel getStory13_8() {
 		return story13_8;
 	}
-
-
-
-
-
-
 
 	public void setStory13_8(JLabel story13_8) {
 		this.story13_8 = story13_8;
 	}
 
-
-
-
-
-
-
 	public JLabel getStory13_9() {
 		return story13_9;
 	}
 
-
-
-
-
-
-
 	public void setStory13_9(JLabel story13_9) {
 		this.story13_9 = story13_9;
 	}
-
-
-
-
-
-
-
 	public JLabel getStory13_10() {
 		return story13_10;
 	}
-
-
-
-
-
-
-
 	public void setStory13_10(JLabel story13_10) {
 		this.story13_10 = story13_10;
 	}
+	public JLabel getBaseEnd1() {
+		return baseEnd1;
+	}
+	public void setBaseEnd1(JLabel baseEnd1) {
+		this.baseEnd1 = baseEnd1;
+	}
+	public JLabel getBaseEnd2() {
+		return baseEnd2;
+	}
+	public void setBaseEnd2(JLabel baseEnd2) {
+		this.baseEnd2 = baseEnd2;
+	}
+	public JLabel getBaseEnd3() {
+		return baseEnd3;
+	}
+	public void setBaseEnd3(JLabel baseEnd3) {
+		this.baseEnd3 = baseEnd3;
+	}
 
-
-
-
-
-
-
-	
-
-
-
-
-
-
+	public JLabel getBaseEnd4() {
+		return baseEnd4;
+	}
+	public void setBaseEnd4(JLabel baseEnd4) {
+		this.baseEnd4 = baseEnd4;
+	}
 }

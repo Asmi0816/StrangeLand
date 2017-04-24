@@ -479,29 +479,20 @@ public class StrangePanel extends JPanel
 						public void run() 
 						{
 							
-							storyPanel.getStory8_1().setVisible(true);
+							storyPanel.getBaseEnd1().setVisible(true);
 							baseController.waitFor2();
-							storyPanel.getStory8_2().setVisible(true);
+							storyPanel.getBaseEnd2().setVisible(true);
 							baseController.waitFor2();
-							storyPanel.getStory8_3().setVisible(true);
+							storyPanel.getBaseEnd3().setVisible(true);
 							baseController.waitFor2();
-							storyPanel.getStory8_4().setVisible(true);
-							baseController.waitFor2();
-							storyPanel.getStory8_5().setVisible(true);
-							baseController.waitFor2();
-							storyPanel.getStory8_6().setVisible(true);
-							baseController.waitFor2();
-							storyPanel.getStory8_7().setVisible(true);
-							baseController.waitFor2();
-							storyPanel.getStory8_8().setVisible(true);
-							baseController.waitFor2();
-							rightButton.setText("Senseless abandonment ending");
-							leftButton.setText("Senseless abandonment ending");
+							storyPanel.getBaseEnd4().setVisible(true);
+							rightButton.setText("Go investigate.");
+							leftButton.setText("No way! That sounds like a trap.");
 							
 						}
 					});
 					thread.start();
-					level = "fmef";
+					level = level+"1";
 				}
 				else if(level.equals("111111111010"))
 				{
