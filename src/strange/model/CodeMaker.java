@@ -17,14 +17,15 @@ public class CodeMaker
 			randomMath();
 			generateCode();
 		}
-		
 		secretMessage();
-		System.out.println(alphabet);
-		System.out.println(encodedAlphabet);
-		System.out.println(generateRandom);
-		System.out.println(codeString);
-		return encodedAlphabet;
+		return alphabet + "\n" +encodedAlphabet + "\n" +codeString;
 		
+	}
+	
+	public String neededResponce()
+	{
+		
+		return generateRandom;
 	}
 	
 	private int randomMath()

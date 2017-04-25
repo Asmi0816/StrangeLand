@@ -6,13 +6,27 @@ public class StrangeController
 {
 	private StrangeFrame baseFrame;
 	private CodeMaker logicController;
-	public void start()
+	
+	public StrangeController()
 	{
-		baseFrame = new StrangeFrame(this);
 		logicController = new CodeMaker();
-		logicController.encodeMessage();
+		baseFrame = new StrangeFrame(this);
 		
 	}
+	public void start()
+	{
+		logicController.encodeMessage();
+	}
+	
+	public String gameMessage()
+	{
+		return logicController.encodeMessage();
+	}
+	public String neededResponce()
+	{
+		return logicController.neededResponce();
+	}
+	
 	public void waitFor2()
 	{
 		try

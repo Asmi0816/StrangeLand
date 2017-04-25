@@ -1,6 +1,8 @@
 package strange.view;
 import javax.swing.*;
 import strange.controller.StrangeController;
+import strange.model.CodeMaker;
+
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Font;
@@ -240,11 +242,8 @@ public class StoryPanel extends JPanel
 	private JLabel baseEnd7;
 	private JLabel baseEnd8;
 	
-
-
-
-
-
+	
+	private JTextField userAnswer;
 	
 
 
@@ -252,17 +251,7 @@ public class StoryPanel extends JPanel
 
 
 
-
-
-
-
-
-
-
-
-
-
-
+	private JTextArea computerMessage;
 
 
 	private StrangeController baseController;
@@ -272,8 +261,8 @@ public class StoryPanel extends JPanel
 		super();
 		setBackground(new Color(0, 0, 0));
 		this.baseLayout = new SpringLayout();
-		
 		this.baseController = baseController;
+		
 		this.newsLabel = new JLabel("<html>This is a mix of two games: Reigns and LifeLine...both amazing. <br>You will have text show up on the screen and you press buttons to affect the story.<br> Press either button to start the game.<html>");
 		this.startUp = new JLabel("Booting up...");
 		this.startUp1 = new JLabel("Logging in...");
@@ -503,12 +492,14 @@ public class StoryPanel extends JPanel
 		this.baseEnd3 = new JLabel("Wait... There's a light coming from the bushes up a little higher I'm going to investigate...");
 		this.baseEnd4 = new JLabel("Alright I made it to the light and there is a door ajar, should I go in?");
 		this.baseEnd5 = new JLabel("Okay I'm in and am going to run down this long corridor");
-	
-		this.baseEnd6 = new JLabel("Alright I'm at the base of the mountain and it's getting really cold.");
+		this.baseEnd6 = new JLabel("...");
+		this.baseEnd7 = new JLabel("Hey, I found something weird... It's a computer room with huge vault doors on one side.");
+		this.baseEnd8 = new JLabel("There's a lot of server looking things but one computer that says: ");
+		this.computerMessage = new JTextArea(baseController.gameMessage());
+		this.userAnswer = new JTextField(20);
 		
-		this.baseEnd7 = new JLabel("Wait... There's a light coming from the bushes up a little higher I'm going to investigate...");
 		
-		this.baseEnd8 = new JLabel("Alright I made it to the light and there is a door ajar, should I go in?");
+		
 		
 		
 		setupPanel();
@@ -758,7 +749,8 @@ public class StoryPanel extends JPanel
 		this.add(baseEnd6);
 		this.add(baseEnd7);
 		this.add(baseEnd8);
-		
+		this.add(computerMessage);
+		this.add(userAnswer);
 	}
 	
 	public void setupLayout()
@@ -773,10 +765,20 @@ public class StoryPanel extends JPanel
 		openingStory2.setVisible(false);
 		openingStory3.setVisible(false);
 		openingStory4.setVisible(false);
+		
 		baseEnd1.setVisible(false);
 		baseEnd2.setVisible(false);
 		baseEnd3.setVisible(false);
 		baseEnd4.setVisible(false);
+		baseEnd5.setVisible(false);
+		baseEnd6.setVisible(false);
+		baseEnd7.setVisible(false);
+		baseEnd8.setVisible(false);
+		computerMessage.setVisible(false);
+		userAnswer.setVisible(false);
+		
+		
+		
 		story1_1.setVisible(false);
 		story1_2.setVisible(false);
 		story1_3.setVisible(false);
@@ -988,7 +990,7 @@ public class StoryPanel extends JPanel
 		story13_8.setVisible(false);
 		story13_9.setVisible(false);
 		story13_10.setVisible(false);
-		
+		userAnswer.setVisible(false);
 		
 		story1_122.setForeground(new Color(124, 252, 0));
 		baseLayout.putConstraint(SpringLayout.NORTH, openingStory3, 20, SpringLayout.NORTH, openingStory);
@@ -1452,7 +1454,10 @@ public class StoryPanel extends JPanel
 		baseLayout.putConstraint(SpringLayout.NORTH, baseEnd5, 20, SpringLayout.NORTH, baseEnd4);
 		baseEnd6.setForeground(new Color(124, 252, 0));
 		baseLayout.putConstraint(SpringLayout.NORTH, baseEnd6, 20, SpringLayout.NORTH, baseEnd5);
-		
+		computerMessage.setForeground(new Color(124, 252, 0));
+		baseLayout.putConstraint(SpringLayout.NORTH, computerMessage, 20, SpringLayout.NORTH, baseEnd8);
+		computerMessage.setBackground(new Color(0, 0, 0));
+		baseLayout.putConstraint(SpringLayout.NORTH, userAnswer, 60, SpringLayout.NORTH, computerMessage);
 	}
 	
 	public void reset()
@@ -3469,4 +3474,63 @@ public class StoryPanel extends JPanel
 	public void setBaseEnd4(JLabel baseEnd4) {
 		this.baseEnd4 = baseEnd4;
 	}
+
+	public JLabel getBaseEnd5() {
+		return baseEnd5;
+	}
+
+	public void setBaseEnd5(JLabel baseEnd5) {
+		this.baseEnd5 = baseEnd5;
+	}
+
+	public JLabel getBaseEnd6() {
+		return baseEnd6;
+	}
+
+	public void setBaseEnd6(JLabel baseEnd6) {
+		this.baseEnd6 = baseEnd6;
+	}
+
+	public JLabel getBaseEnd7() {
+		return baseEnd7;
+	}
+
+	public void setBaseEnd7(JLabel baseEnd7) {
+		this.baseEnd7 = baseEnd7;
+	}
+
+	public JLabel getBaseEnd8() {
+		return baseEnd8;
+	}
+
+	public void setBaseEnd8(JLabel baseEnd8) {
+		this.baseEnd8 = baseEnd8;
+	}
+	public JTextArea getComputerMessage() {
+		return computerMessage;
+	}
+
+
+
+	public JTextField getUserAnswer() {
+		return userAnswer;
+	}
+
+
+
+
+
+
+
+	public void setUserAnswer(JTextField userAnswer) {
+		this.userAnswer = userAnswer;
+	}
+
+
+
+
+	public void setComputerMessage(JTextArea computerMessage) {
+		this.computerMessage = computerMessage;
+	}
+
 }
