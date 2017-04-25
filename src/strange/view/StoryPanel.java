@@ -252,6 +252,7 @@ public class StoryPanel extends JPanel
 
 
 	private JTextArea computerMessage;
+	private JTextArea endGame;
 
 
 	private StrangeController baseController;
@@ -496,6 +497,7 @@ public class StoryPanel extends JPanel
 		this.baseEnd7 = new JLabel("Hey, I found something weird... It's a computer room with huge vault doors on one side.");
 		this.baseEnd8 = new JLabel("There's a lot of server looking things but one computer that says: ");
 		this.computerMessage = new JTextArea(baseController.gameMessage());
+		this.endGame = new JTextArea("Computer Access Accepted \n DEFENCES GOING OFFLINE \n CLOAKING GOING OFFLINE \n \"Hey you there?\"");
 		this.userAnswer = new JTextField(20);
 		
 		
