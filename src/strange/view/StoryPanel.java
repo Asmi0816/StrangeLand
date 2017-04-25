@@ -251,6 +251,9 @@ public class StoryPanel extends JPanel
 
 
 
+	
+
+
 	private JTextArea computerMessage;
 	private JTextArea endGame;
 
@@ -497,8 +500,11 @@ public class StoryPanel extends JPanel
 		this.baseEnd7 = new JLabel("Hey, I found something weird... It's a computer room with huge vault doors on one side.");
 		this.baseEnd8 = new JLabel("There's a lot of server looking things but one computer that says: ");
 		this.computerMessage = new JTextArea(baseController.gameMessage());
-		this.endGame = new JTextArea("Computer Access Accepted \n DEFENCES GOING OFFLINE \n CLOAKING GOING OFFLINE \n \"Hey you there?\"");
+		this.endGame = new JTextArea("Computer Access Accepted \n DEFENCES GOING OFFLINE \n CLOAKING GOING OFFLINE \n DESTROYING ALL EVIDENCE \n \"Hey you there?\" \n "
+				+ "\"There's a count down and I can't get off the island\" \n  \"I hope you find a way to tell the world what has happened here today.\" \n END STORY");
+		
 		this.userAnswer = new JTextField(20);
+		
 		
 		
 		
@@ -753,6 +759,7 @@ public class StoryPanel extends JPanel
 		this.add(baseEnd8);
 		this.add(computerMessage);
 		this.add(userAnswer);
+		this.add(endGame);
 	}
 	
 	public void setupLayout()
@@ -767,7 +774,7 @@ public class StoryPanel extends JPanel
 		openingStory2.setVisible(false);
 		openingStory3.setVisible(false);
 		openingStory4.setVisible(false);
-		
+		endGame.setVisible(false);
 		baseEnd1.setVisible(false);
 		baseEnd2.setVisible(false);
 		baseEnd3.setVisible(false);
@@ -778,6 +785,7 @@ public class StoryPanel extends JPanel
 		baseEnd8.setVisible(false);
 		computerMessage.setVisible(false);
 		userAnswer.setVisible(false);
+		
 		
 		
 		
@@ -992,7 +1000,7 @@ public class StoryPanel extends JPanel
 		story13_8.setVisible(false);
 		story13_9.setVisible(false);
 		story13_10.setVisible(false);
-		userAnswer.setVisible(false);
+	
 		
 		story1_122.setForeground(new Color(124, 252, 0));
 		baseLayout.putConstraint(SpringLayout.NORTH, openingStory3, 20, SpringLayout.NORTH, openingStory);
@@ -1460,6 +1468,9 @@ public class StoryPanel extends JPanel
 		baseLayout.putConstraint(SpringLayout.NORTH, computerMessage, 20, SpringLayout.NORTH, baseEnd8);
 		computerMessage.setBackground(new Color(0, 0, 0));
 		baseLayout.putConstraint(SpringLayout.NORTH, userAnswer, 60, SpringLayout.NORTH, computerMessage);
+		endGame.setForeground(new Color(124, 252, 0));
+		endGame.setBackground(new Color(0, 0, 0));
+		baseLayout.putConstraint(SpringLayout.NORTH, endGame, 30, SpringLayout.NORTH, userAnswer);
 	}
 	
 	public void reset()
@@ -1676,6 +1687,17 @@ public class StoryPanel extends JPanel
 		story12_1.setVisible(false);
 		story12_3.setVisible(false);
 		story12_2.setVisible(false);
+		endGame.setVisible(false);
+		baseEnd1.setVisible(false);
+		baseEnd2.setVisible(false);
+		baseEnd3.setVisible(false);
+		baseEnd4.setVisible(false);
+		baseEnd5.setVisible(false);
+		baseEnd6.setVisible(false);
+		baseEnd7.setVisible(false);
+		baseEnd8.setVisible(false);
+		computerMessage.setVisible(false);
+		userAnswer.setVisible(false);
 	}
 
 	public JLabel getStory3_1() {
@@ -3534,5 +3556,19 @@ public class StoryPanel extends JPanel
 	public void setComputerMessage(JTextArea computerMessage) {
 		this.computerMessage = computerMessage;
 	}
+	public JTextArea getEndGame() {
+		return endGame;
+	}
+
+
+
+
+
+
+
+	public void setEndGame(JTextArea endGame) {
+		this.endGame = endGame;
+	}
+
 
 }

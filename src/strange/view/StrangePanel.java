@@ -1514,6 +1514,30 @@ public class StrangePanel extends JPanel
 					thread.start();
 					level = level + "1";
 				}
+				else if(level.equals("11111111101"))
+				{
+					
+					Thread thread = new Thread(new Runnable() 
+					{
+						@Override
+						public void run() 
+						{
+							
+							storyPanel.getBaseEnd1().setVisible(true);
+							baseController.waitFor2();
+							storyPanel.getBaseEnd2().setVisible(true);
+							baseController.waitFor2();
+							storyPanel.getBaseEnd3().setVisible(true);
+							baseController.waitFor2();
+							storyPanel.getBaseEnd4().setVisible(true);
+							rightButton.setText("Go investigate.");
+							leftButton.setText("You have to go in.");
+							
+						}
+					});
+					thread.start();
+					level = level+"1";
+				}
 				else if(leftButton.getText().equals("Just ignore it."))
 				{
 					Thread thread = new Thread(new Runnable() 
@@ -1656,19 +1680,9 @@ public class StrangePanel extends JPanel
 						public void run() 
 						{
 							
-							storyPanel.getBaseEnd5().setVisible(true);
-							baseController.waitFor2();
-							storyPanel.getBaseEnd6().setVisible(true);
-							baseController.waitFor2();
-							storyPanel.getBaseEnd7().setVisible(true);
-							baseController.waitFor2();
-							storyPanel.getBaseEnd8().setVisible(true);
-							baseController.waitFor2();
-							storyPanel.getComputerMessage().setVisible(true);
-							baseController.waitFor2();
-							storyPanel.getUserAnswer().setVisible(true);
-							rightButton.setText("Type code in the panel area");
-							leftButton.setText("Click this once you have the code.");
+							storyPanel.getEndGame().setVisible(true);
+							rightButton.setText("The end");
+							leftButton.setText("The end");
 							
 						}
 					});
